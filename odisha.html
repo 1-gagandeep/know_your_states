@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Odisha is located in the eastern part of India, bordered by West Bengal and Jharkhand to the north, Chhattisgarh to the west, Andhra Pradesh to the south, and the Bay of Bengal to the east.</p>
+        <p><strong>Capital:</strong> Bhubaneswar</p>
+        <p><strong>Major Cities:</strong> Bhubaneswar, Cuttack, Rourkela, Sambalpur, Puri, Berhampur</p>
+        <p><strong>Area:</strong> Approximately 155,707 square kilometers</p>
+        <p><strong>Population:</strong> Over 41 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/odisha_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/bhuneshwar_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Odisha has a rich historical heritage, with its history tracing back to the ancient Kalinga kingdom, which was a significant political and cultural center. The region is well-known for the Kalinga War, after which Emperor Ashoka embraced Buddhism.</p>
+        <p><strong>Medieval Period:</strong> The region was ruled by various dynasties, including the Eastern Ganga dynasty, which built the famous Sun Temple at Konark. The medieval period also saw the rise of the Odia language and literature.</p>
+        <p><strong>Colonial Period:</strong> Odisha came under British control in the 19th century and was initially part of the Bengal Presidency. The region played a significant role in India's struggle for independence, with leaders like Baji Rout and Madhusudan Das emerging from the state.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/konark_sun_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/ashoka_edict.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Odia is the official language and is widely spoken across the state. Other languages include Hindi, Bengali, and tribal languages such as Santali and Kui.</p>
+        <p><strong>Culture:</strong> Odisha is known for its rich cultural heritage, including classical dance forms like Odissi and traditional arts such as Pattachitra and silver filigree work. The state is also famous for its festivals, including the world-renowned Rath Yatra in Puri, and its vibrant music and theater traditions.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/odissi_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/pattachitra_art.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Odisha's economy is primarily agrarian, with rice being the staple crop. The state is also known for its production of pulses, oilseeds, and jute. The coastal regions are engaged in fishing and aquaculture.</p>
+        <p><strong>Industries:</strong> Odisha has a significant industrial base, particularly in steel, aluminum, and mining. The state is rich in natural resources like iron ore, coal, and bauxite, making it an important player in India's mining sector. Bhubaneswar and Rourkela are key industrial hubs.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Odisha is home to several renowned educational institutions, including the Indian Institute of Technology (IIT) Bhubaneswar, National Institute of Technology (NIT) Rourkela, and Utkal University. The state has a growing focus on technical and higher education.</p>
+        <p><strong>Historical Significance:</strong> The state has a rich tradition of learning and scholarship, with ancient centers of learning like Ratnagiri and Lalitgiri being significant Buddhist sites. Odisha's educational institutions continue to contribute to the state's development.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iit_bhubaneswar.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/nit_rourkela.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+        
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Odisha is famous for its historical and religious sites, including the Jagannath Temple in Puri, the Sun Temple at Konark, and the Lingaraj Temple in Bhubaneswar. The state also has ancient Buddhist sites like Dhauli and Udayagiri.</p>
+        <p><strong>Natural Beauty:</strong> Odisha is known for its scenic landscapes, including the beaches along the Bay of Bengal, the Chilika Lake, which is the largest coastal lagoon in India, and wildlife sanctuaries like Simlipal and Bhitarkanika, which are rich in biodiversity.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/jagannath_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/chilika_lake.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Mohan Charan Majhi</p>
+        <p><strong>Current Governor:</strong> Raghubar Das</p>
+        <p><strong>Political Landscape:</strong> Odisha has a stable political environment, with the Biju Janata Dal (BJD) being the dominant political force under the leadership of Chief Minister Naveen Patnaik. The state has also seen significant participation from the Indian National Congress (INC) and the Bharatiya Janata Party (BJP).</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_odisha.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_odisha.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Odisha</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Abhimanyu Sethi</td>
+            <td>Bhadrak</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Ananta Naik</td>
+            <td>Keonjhar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Anita Subhadarshini</td>
+            <td>Aska</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Aparajita Sarangi</td>
+            <td>Bhubaneswar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Balbhadra Majhi</td>
+            <td>Nabarangpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Bhartruhari Mahtab</td>
+            <td>Cuttack</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Bibhu Prasad Tarai</td>
+            <td>Jagatsinghpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dharmendra Pradhan</td>
+            <td>Sambalpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr. Rabindra Narayan Behera</td>
+            <td>Jajpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr. Sambit Patra</td>
+            <td>Puri</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Jual Oram</td>
+            <td>Sundargarh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Naba Charan Majhi</td>
+            <td>Mayurbhanj</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Pradeep Kumar Panigraphy</td>
+            <td>Berhampur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Pradeep Purohit</td>
+            <td>Bargarh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Pratap Chandra Sarangi</td>
+            <td>Balasore</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Rudra Narayan Pany</td>
+            <td>Dhenkanal</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Sapatgiri Shankar Ulaka</td>
+            <td>Koraput</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Smt. Malvika Keshari Deo</td>
+            <td>Kalahandi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Sangeeta Kumari Singh Deo</td>
+            <td>Bolangir</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Sukanta Kumar Panigrahi</td>
+            <td>Kandhamal</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Baijayant Jay Panda</td>
+            <td>Kendrapara</td>
+            <td>BJP</td>
+        </tr>
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

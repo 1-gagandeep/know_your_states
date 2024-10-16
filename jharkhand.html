@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Bordered by Bihar to the north, West Bengal to the east, Odisha to the south, and Chhattisgarh and Uttar Pradesh to the west.</p>
+        <p><strong>Capital:</strong> Ranchi</p>
+        <p><strong>Major Cities:</strong> Ranchi, Jamshedpur, Dhanbad, Bokaro, Hazaribagh</p>
+        <p><strong>Area:</strong> Approximately 79,714 square kilometers</p>
+        <p><strong>Population:</strong> Over 38 million</p>
+
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/jharkhand_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/ranchi_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> The region has been inhabited since ancient times, with evidence of early civilization dating back to the Indus Valley period. Various tribes have lived in this area, contributing to its rich cultural heritage.</p>
+        <p><strong>Medieval Period:</strong> Jharkhand was ruled by different dynasties including the Nagvanshi, Munda, and Paharia tribes. Later, it became part of the Mughal Empire.</p>
+        <p><strong>Colonial Period:</strong> During British rule, the region was part of the Bengal Presidency and later became part of Bihar.</p>
+
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/nagvanshi.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/mughal.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+        
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Hindi is the official language, but other languages like Santhali, Mundari, and Ho are also widely spoken by the tribal population.</p>
+        <p><strong>Culture:</strong> Jharkhand is known for its tribal culture, traditional festivals such as Sarhul and Karma, and its rich tradition of folk music and dance.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/sarhul.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/tribal_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+
+        <h2>Economy</h2>
+        <p><strong>Mining:</strong> Jharkhand is rich in mineral resources, with significant reserves of coal, iron ore, copper, and uranium. The state's economy is heavily dependent on mining and related industries.</p>
+        <p><strong>Industries:</strong> The state has a strong industrial base, particularly in steel production, with major companies like Tata Steel and Bokaro Steel Plant operating in the region.</p>
+        
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Jharkhand is home to several prominent educational institutions, including the Indian School of Mines (ISM) Dhanbad, Birla Institute of Technology (BIT) Mesra, and Ranchi University.</p>
+        <p><strong>Historical Significance:</strong> ISM Dhanbad, established in 1926, is one of the oldest and most prestigious mining institutes in India.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/ism_dhanbad.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/bit_mesra.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Key attractions include the ancient city of Rajrappa, the Parasnath Hills (a major Jain pilgrimage site), and the Baidyanath Temple in Deoghar.</p>
+        <p><strong>Natural Beauty:</strong> The state is known for its natural beauty, with several national parks and waterfalls, including Betla National Park, Hundru Falls, and Jonha Falls.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/rajrappa.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/belta.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+
+        <h2>Netarhat</h2>
+        <p><strong>Natural Beauty:</strong> Netarhat, located in the Latehar district, is known as the "Queen of Chotanagpur" for its beautiful sunsets, forests, and serene environment. It is a popular tourist destination known for its scenic hills and valleys, and is also famous for the Netarhat Residential School.</p>
+        
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Hemant Soren</p>
+        <p><strong>Current Governor:</strong> C.P. Radhakrishnan</p>
+        <p><strong>Political Landscape:</strong> Jharkhand's politics is characterized by significant influence from tribal communities and a strong presence of regional parties.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_jharkhand.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_jharkhand.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+
+    </div>   
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Jharkhand</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Chandra Prakash Choudhary</td>
+            <td>Giridih</td>
+            <td>AJSUP</td>
+        </tr>
+        <tr>
+            <td>Dulu Mahto</td>
+            <td>Dhanbad</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Joba Majhi</td>
+            <td>Singhbhum</td>
+            <td>JMM</td>
+        </tr>
+        <tr>
+            <td>Kalicharan Munda</td>
+            <td>Khunti</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Kalicharan Singh</td>
+            <td>Chatra</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Manish Jaiswal</td>
+            <td>Hazaribagh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Nalin Soren</td>
+            <td>Dumka</td>
+            <td>JMM</td>
+        </tr>
+        <tr>
+            <td>Nishikant Dubey</td>
+            <td>Gobba</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Sanjay Seth</td>
+            <td>Ranchi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Annapurna Devi</td>
+            <td>Kodarma</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Sukhdeo Bhagat</td>
+            <td>Lohradaga</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Vidhyut Baran Mahato</td>
+            <td>Jamshedpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Vijay Kumar Hansdak</td>
+            <td>Rajmahal</td>
+            <td>JMM</td>
+        </tr>
+        <tr>
+            <td>Vishnu Dayal Ram</td>
+            <td>Palamau</td>
+            <td>BJP</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

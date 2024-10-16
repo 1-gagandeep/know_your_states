@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Tamil Nadu is located in the southern part of India, bordered by Kerala to the west, Karnataka to the northwest, Andhra Pradesh to the north, and the Bay of Bengal to the east. To the south, it is separated from Sri Lanka by the narrow Palk Strait.</p>
+        <p><strong>Capital:</strong> Chennai</p>
+        <p><strong>Major Cities:</strong> Chennai, Coimbatore, Madurai, Tiruchirappalli, Salem, Tirunelveli</p>
+        <p><strong>Area:</strong> Approximately 130,058 square kilometers</p>
+        <p><strong>Population:</strong> Over 72 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/tamilnadu_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/chennai_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Tamil Nadu has a rich history that dates back to ancient times, being home to one of the world's oldest civilizations, the Tamil people. The region was ruled by powerful dynasties like the Cholas, Pandyas, and Cheras.</p>
+        <p><strong>Medieval Period:</strong> During the medieval period, Tamil Nadu was a major center of culture, literature, and architecture, with the Chola Empire reaching its zenith. The Vijayanagara Empire also played a significant role in the region's history.</p>
+        <p><strong>Colonial Period:</strong> Tamil Nadu came under British control in the 18th century. The region was part of the Madras Presidency and played a significant role in the Indian independence movement, with leaders like C. Rajagopalachari and K. Kamaraj emerging from the state.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/brihadeeswarar_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/fort_st_george.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Tamil is the official language of Tamil Nadu and one of the oldest languages in the world. It has a rich literary tradition dating back over two millennia. English is also widely used for official and business purposes.</p>
+        <p><strong>Culture:</strong> Tamil Nadu is known for its vibrant cultural heritage, including classical dance forms like Bharatanatyam, Carnatic music, and its temple architecture. The state celebrates numerous festivals, including Pongal, Deepavali, and Tamil New Year, which reflect its deep-rooted traditions.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/bharatanatyam_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/tanjore_painting.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Agriculture is a significant part of Tamil Nadu's economy, with rice being the staple crop. The state is also known for its production of sugarcane, cotton, bananas, and turmeric.</p>
+        <p><strong>Industries:</strong> Tamil Nadu has a diversified industrial base, with a strong presence in automotive, textile, electronics, and information technology sectors. Chennai, known as the "Detroit of India," is a major automotive hub, while Coimbatore is famous for its textile and engineering industries.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Tamil Nadu is home to several prestigious educational institutions, including the Indian Institute of Technology (IIT) Madras, Anna University, and the Indian Institute of Management (IIM) Tiruchirappalli. The state is known for its high literacy rate and focus on education.</p>
+        <p><strong>Historical Significance:</strong> The state has a long tradition of education, with institutions like the University of Madras playing a pivotal role in the educational history of southern India.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iit_madras.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/anna_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Major attractions include the UNESCO World Heritage Sites of the Brihadeeswarar Temple in Thanjavur, the Group of Monuments at Mahabalipuram, and the Meenakshi Temple in Madurai.</p>
+        <p><strong>Natural Beauty:</strong> Tamil Nadu is known for its beautiful landscapes, including the Nilgiri and Anamalai Hills, the serene beaches of Chennai and Kanyakumari, and the lush greenery of the Western Ghats. The state is also famous for its hill stations like Ooty and Kodaikanal.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/ooty_hills.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/meenakshi_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> M. K. Stalin</p>
+        <p><strong>Current Governor:</strong> R. N. Ravi</p>
+        <p><strong>Political Landscape:</strong> Tamil Nadu has a dynamic political landscape, dominated by the Dravidian parties—the DMK (Dravida Munnetra Kazhagam) and AIADMK (All India Anna Dravida Munnetra Kazhagam). The state is known for its strong regional identity and active political participation.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_tamilnadu.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_tamilnadu.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Tamilnadu</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>A. Karti Chidambaram</td>
+            <td>Sivaganga</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>A. Mani</td>
+            <td>Dharmpuri</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>A. Raja</td>
+            <td>Nilgiris</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Arun Nehru</td>
+            <td>Perambalur</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>B. Manickam Tagore</td>
+            <td>Virudhunagar</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Cn Annadurai</td>
+            <td>Tiruvannamalai</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>D Ravikumar</td>
+            <td>Vilupurram</td>
+            <td>VCK</td>
+        </tr>
+        <tr>
+            <td>Dharani Vendhan</td>
+            <td>Arani</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Dayanidhi Maran</td>
+            <td>Chennai Central</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Dr. C Robert Bruce</td>
+            <td>Tirunelveli</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dr. Kalanidhi Veeraswamy</td>
+            <td>Chennai North</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Dr. M.K. Vishnu Prasad</td>
+            <td>Cuddalore</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Durai Vaiko</td>
+            <td>Tiruchirappalli</td>
+            <td>MDMK</td>
+        </tr>
+        <tr>
+            <td>Eswaraswami</td>
+            <td>Pollachi</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>G Selvam</td>
+            <td>Kancheepuram</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Ganapathi Rajkumar</td>
+            <td>Coimbatore</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>K Subbarayan</td>
+            <td>Turuppur</td>
+            <td>CPI</td>
+        </tr>
+        <tr>
+            <td>K. Gopinath</td>
+            <td>Krishnagiri</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>K. Navaskani</td>
+            <td>Ramanathapuram</td>
+            <td>IUML</td>
+        </tr>
+        <tr>
+            <td>Kanimozhi Karunanidhi</td>
+            <td>Thoothukkadi</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Kathir Anand</td>
+            <td>Vellore</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Madheshwaran</td>
+            <td>Namakkal</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Malaiyarasan</td>
+            <td>Kallakurichi</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Ms. S. Jothimani</td>
+            <td>Karur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Murasoli</td>
+            <td>Thanjavur</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Prakash</td>
+            <td>Erode</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>R Sachidanandam</td>
+            <td>Dindigul</td>
+            <td>CPIM</td>
+        </tr>
+        <tr>
+            <td>R. Sudha</td>
+            <td>Mayiladuthurai</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Rani Srikumar</td>
+            <td>Tenkasi</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>S Jagathrakshagan</td>
+            <td>Arakkonam</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Sasikanth Senthil</td>
+            <td>Thiruvallur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Su Venkatesan</td>
+            <td>Madurai</td>
+            <td>CPIM</td>
+        </tr>
+        <tr>
+            <td>Tamilachi Thangapandian</td>
+            <td>Chennai South</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Thanga Tamilselvan</td>
+            <td>Theni</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Thirumaavalavan Thol</td>
+            <td>Chidambaram</td>
+            <td>VCK</td>
+        </tr>
+        <tr>
+            <td>Tm Selvaganapathi</td>
+            <td>Salem</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>Tr Balu</td>
+            <td>Srierumbudur</td>
+            <td>DMK</td>
+        </tr>
+        <tr>
+            <td>V Selvaraj</td>
+            <td>Nagapattinam</td>
+            <td>CPI</td>
+        </tr>
+        <tr>
+            <td>Vijay Vasanth</td>
+            <td>Kanniyakumari</td>
+            <td>INC</td>
+        </tr>
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

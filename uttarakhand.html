@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Uttarakhand is bordered by Tibet to the north, Nepal to the east, Uttar Pradesh to the south, and Himachal Pradesh to the west. The state is situated in the northern part of India, in the foothills of the Himalayas.</p>
+        <p><strong>Capital:</strong> Dehradun (Winter), Gairsain (Summer)</p>
+        <p><strong>Major Cities:</strong> Dehradun, Haridwar, Roorkee, Nainital, Haldwani, Rudrapur</p>
+        <p><strong>Area:</strong> Approximately 53,483 square kilometers</p>
+        <p><strong>Population:</strong> Over 10 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/uttarakhand_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/dehradun_valley.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Uttarakhand, known as "Devbhumi" or "Land of the Gods," has a history steeped in mythology and ancient lore. The region was part of the Mahajanapadas and later the Maurya and Gupta empires.</p>
+        <p><strong>Medieval Period:</strong> The region was ruled by several dynasties, including the Katyuri and Chand dynasties. The Garhwal and Kumaon regions have distinct historical identities, with each area ruled by local kings and chieftains.</p>
+        <p><strong>Colonial Period:</strong> Uttarakhand came under British control in the 19th century, with Dehradun becoming an important center of education and administration. The region was part of the United Provinces before gaining statehood in 2000.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kedarnath_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/badrinath_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Hindi is the official language of Uttarakhand, with Garhwali and Kumaoni being widely spoken in the respective regions. Other languages include Sanskrit, Punjabi, and Urdu.</p>
+        <p><strong>Culture:</strong> Uttarakhand's culture is deeply rooted in its religious and spiritual heritage. The state is known for its traditional music and dance forms, such as Jhora, Chholiya, and Barada Nati. The region's festivals, including Kumbh Mela, Nanda Devi Raj Jat, and Makar Sankranti, reflect its rich cultural diversity.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/chholiya_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/nanda_devi_festival.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Agriculture is a key component of Uttarakhand's economy, with the state known for its production of rice, wheat, pulses, and fruits like apples and plums. The terraced farms of the hill regions are a common sight.</p>
+        <p><strong>Industries:</strong> Uttarakhand has seen significant industrial growth, particularly in pharmaceuticals, textiles, and tourism. The state is also known for its hydroelectric power projects, taking advantage of the fast-flowing Himalayan rivers.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Uttarakhand is home to several prestigious educational institutions, including the Indian Institute of Technology (IIT) Roorkee, Forest Research Institute (FRI) Dehradun, and Govind Ballabh Pant University of Agriculture and Technology.</p>
+        <p><strong>Historical Significance:</strong> The state has a strong educational tradition, with institutions like the Doon School and Welham Girls' School in Dehradun contributing to the region's reputation as an educational hub.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iit_roorkee.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/forest_research_institute.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Uttarakhand is known for its religious and historical sites, including the Char Dham pilgrimage centers of Kedarnath, Badrinath, Gangotri, and Yamunotri. The state is also home to Haridwar, one of the holiest cities in Hinduism.</p>
+        <p><strong>Natural Beauty:</strong> The state's natural beauty is a major draw for tourists, with popular destinations like Nainital, Mussoorie, Rishikesh, and the Valley of Flowers. Uttarakhand is also a hub for adventure tourism, offering trekking, river rafting, and skiing.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/nainital_lake.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/valley_of_flowers.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Pushkar Singh Dhami</p>
+        <p><strong>Current Governor:</strong> Gurmit Singh</p>
+        <p><strong>Political Landscape:</strong> Uttarakhand has a vibrant political scene, with the Bharatiya Janata Party (BJP) and Indian National Congress (INC) being the major political parties. The state has seen frequent changes in government, reflecting the dynamic nature of its politics.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_uttarakhand.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_uttarakhand.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Uttarakhand</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Ajay Bhatt</td>
+            <td>Nainital-Udhamsingh Nagar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Ajay Tamta</td>
+            <td>Almora</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Anil Baluni</td>
+            <td>Garhwal</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Mala Rajya Laxmi Shah</td>
+            <td>Tehri Garhwal</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Trivendra Singh Rawat</td>
+            <td>Haridwar</td>
+            <td>BJP</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer" >
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

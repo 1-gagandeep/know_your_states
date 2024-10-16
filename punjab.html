@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Punjab is located in the northwestern part of India, bordered by Pakistan to the west, Jammu and Kashmir to the north, Himachal Pradesh to the northeast, Haryana to the south, and Rajasthan to the southwest.</p>
+        <p><strong>Capital:</strong> Chandigarh (shared with Haryana)</p>
+        <p><strong>Major Cities:</strong> Ludhiana, Amritsar, Jalandhar, Patiala, Bathinda, Mohali</p>
+        <p><strong>Area:</strong> Approximately 50,362 square kilometers</p>
+        <p><strong>Population:</strong> Over 30 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/punjab_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/airport_amritsar.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Punjab has a rich and ancient history, with its roots tracing back to the Indus Valley Civilization. The region was part of several great empires, including the Maurya, Kushan, and Gupta empires.</p>
+        <p><strong>Medieval Period:</strong> During the medieval period, Punjab was a significant center for the rise of Sikhism, with the establishment of Sikhism by Guru Nanak in the 15th century. The region witnessed various battles, including those against Mughal rule, leading to the formation of the Sikh Empire under Maharaja Ranjit Singh.</p>
+        <p><strong>Colonial Period:</strong> Punjab was one of the last regions to fall under British control in the 19th century. It played a crucial role in India's independence movement, with key events like the Jallianwala Bagh massacre occurring in Amritsar.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/golden_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/jalliawala_bagh.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Punjabi is the official language and is widely spoken across the state. Other languages include Hindi and English, with a rich tradition of Punjabi literature and folklore.</p>
+        <p><strong>Culture:</strong> Punjab is known for its vibrant culture, which includes Bhangra and Gidda dance forms, traditional folk music, and festivals like Vaisakhi, Lohri, and Diwali. The state is also famous for its cuisine, particularly its rich and flavorful dishes like butter chicken, sarson da saag, and makki di roti.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/bhangra_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/punjabi_cuisine.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Punjab is known as the "Granary of India" or the "Breadbasket of India" due to its extensive agricultural production. The state's economy is predominantly agrarian, with wheat, rice, and sugarcane being the major crops. Punjab played a pivotal role in India's Green Revolution.</p>
+        <p><strong>Industries:</strong> Besides agriculture, Punjab has a strong industrial base, particularly in textiles, hosiery, and manufacturing. Ludhiana is known as the "Manchester of India" for its textile industry, while Jalandhar is famous for its sports goods and leather products.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Punjab is home to several prestigious educational institutions, including Panjab University in Chandigarh, the Indian Institute of Technology (IIT) Ropar, and the Guru Nanak Dev University in Amritsar. The state has a strong focus on higher education and technical training.</p>
+        <p><strong>Historical Significance:</strong> The state has a long tradition of education and learning, with institutions like Khalsa College in Amritsar playing a significant role in the promotion of Sikh education and culture.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/khalsa_college.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/panjab_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Punjab is famous for its historical and religious sites, including the Golden Temple in Amritsar, the Jallianwala Bagh, and the ancient Qila Mubarak in Patiala. The Wagah Border near Amritsar is also a popular tourist destination, known for its daily flag-lowering ceremony.</p>
+        <p><strong>Natural Beauty:</strong> The state is known for its lush green fields, rivers, and traditional rural landscapes. The Sukhna Lake in Chandigarh and the Harike Wetland are popular spots for nature lovers.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/wagah_border.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/sukhna_lake.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Bhagwant Mann</p>
+        <p><strong>Current Governor:</strong> Gulab Chand Kataria</p>
+        <p><strong>Political Landscape:</strong> Punjab has a dynamic political environment, with the Aam Aadmi Party (AAP), Indian National Congress (INC), and Shiromani Akali Dal (SAD) being the major political forces. The state also sees active participation in politics from various regional parties and farmer organizations.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_punjab.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_punjab.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <section>MP's list of Punjab</section>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Amar Singh</td>
+            <td>Fatehgrah Sahib</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Amrinder Singh Brar</td>
+            <td>Ludhiana</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Amritpal Singh</td>
+            <td>Khadoor Sahib</td>
+            <td>INDE</td>
+        </tr>
+        <tr>
+            <td>Charanjit Singh Channi</td>
+            <td>Jalandhar</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dr. Dharamvir Ghandhi</td>
+            <td>Patiala</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dr. Raj Kumar Chabbewal</td>
+            <td>Hoshiarpur</td>
+            <td>AAP</td>
+        </tr>
+        <tr>
+            <td>Gurjeet Singh Aujla</td>
+            <td>Amritsar</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Gurmeet Singh Meet Hayer</td>
+            <td>Sangrur</td>
+            <td>AAP</td>
+        </tr>
+        <tr>
+            <td>Harsimarat Kaur Badal</td>
+            <td>Bhatinda</td>
+            <td>SAD</td>
+        </tr>
+        <tr>
+            <td>Malvinder Singh Kang</td>
+            <td>Anandpur Sahib</td>
+            <td>AAP</td>
+        </tr>
+        <tr>
+            <td>Sarabjeet Singh Khalsa</td>
+            <td>Faridkot</td>
+            <td>INDE</td>
+        </tr>
+        <tr>
+            <td>Sher Singh Ghubaya</td>
+            <td>Ferozpur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Sukhvinder Singh Randhawa</td>
+            <td>Gurdaspur</td>
+            <td>INC</td>
+        </tr>
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

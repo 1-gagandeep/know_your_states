@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Sikkim is a state in northeastern India, bordered by Nepal to the west, Bhutan to the east, Tibet (China) to the north, and the Indian state of West Bengal to the south.</p>
+        <p><strong>Capital:</strong> Gangtok</p>
+        <p><strong>Major Cities:</strong> Gangtok, Namchi, Gyalshing, Mangan, Jorethang</p>
+        <p><strong>Area:</strong> Approximately 7,096 square kilometers</p>
+        <p><strong>Population:</strong> Over 600,000</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/sikkim_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/gangtok_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Sikkim has a rich history dating back to ancient times, with its early history shaped by the migration of various ethnic groups from surrounding regions.</p>
+        <p><strong>Medieval Period:</strong> The Kingdom of Sikkim was established in the 17th century by Phuntsog Namgyal, who was consecrated as the first Chogyal (king) of Sikkim. The Namgyal dynasty ruled Sikkim for centuries, contributing to its distinct cultural identity.</p>
+        <p><strong>Colonial Period:</strong> During the British colonial period, Sikkim became a British protectorate in the 19th century. It maintained its status as a monarchy until it merged with India in 1975, becoming the 22nd state of the Indian Union.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/shikkim_monastery.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/chogyal_palace.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Sikkim's official languages include Nepali, Sikkimese (Bhutia), and Lepcha. English is also widely used for official purposes. The state is home to a diverse population, with various ethnic groups contributing to its cultural mosaic.</p>
+        <p><strong>Culture:</strong> Sikkim is known for its vibrant cultural heritage, influenced by Tibetan Buddhism and Hinduism. The state is famous for its festivals such as Losar, Saga Dawa, and Bumchu, and its traditional dances like the mask dance (Cham) performed in monasteries.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/sikkim_losar_festival.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/sikkim_cham_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Agriculture is a key component of Sikkim's economy, with the state being known for its organic farming practices. Major crops include cardamom, oranges, ginger, and various fruits and vegetables.</p>
+        <p><strong>Industries:</strong> Sikkim's economy also benefits from tourism, hydropower generation, and small-scale industries. The state is famous for its handloom and handicraft products, particularly those made from wool and silk.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Sikkim is home to several educational institutions, including Sikkim University in Gangtok, Sikkim Manipal University, and various other schools and colleges. The state places a strong emphasis on education, with efforts to improve literacy and educational infrastructure.</p>
+        <p><strong>Historical Significance:</strong> Education has played a significant role in Sikkim's modern development, with the state making strides in improving literacy rates and providing quality education to its population.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/sikkim_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/sikkim_school.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Key attractions in Sikkim include the Rumtek Monastery, the Tsomgo Lake, and the Nathula Pass, which are significant both historically and culturally.</p>
+        <p><strong>Natural Beauty:</strong> Sikkim is renowned for its breathtaking landscapes, including the Khangchendzonga National Park, a UNESCO World Heritage Site, and the serene Gurudongmar Lake. The state is also a popular destination for trekking and mountaineering enthusiasts.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/khangchendzonga.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/tsomgo_lake.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Prem Singh Tamang (P.S. Golay)</p>
+        <p><strong>Current Governor:</strong> Om Prakash Mathur</p>
+        <p><strong>Political Landscape:</strong> Sikkim has a stable political environment, with the Sikkim Krantikari Morcha (SKM) and the Sikkim Democratic Front (SDF) being the major political parties. The state also emphasizes maintaining its distinct identity while contributing to the larger Indian polity.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_sikkim.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_sikkim.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-state">
+        <table>
+        <section>MP's list of Sikkim</section>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Indra Hang Subba</td>
+            <td>Sikkim</td>
+            <td>SKM</td>
+        </tr>
+        
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

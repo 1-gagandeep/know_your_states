@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Madhya Pradesh is centrally located in India, bordered by Uttar Pradesh to the north, Chhattisgarh to the southeast, Maharashtra to the south, Gujarat to the west, and Rajasthan to the northwest.</p>
+        <p><strong>Capital:</strong> Bhopal</p>
+        <p><strong>Major Cities:</strong> Indore, Bhopal, Gwalior, Jabalpur, Ujjain, Sagar</p>
+        <p><strong>Area:</strong> Approximately 308,252 square kilometers</p>
+        <p><strong>Population:</strong> Over 85 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/madhya_pradesh_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/bhopal_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Madhya Pradesh has a rich history, with evidence of early human settlements dating back to the prehistoric period. The region was part of several ancient empires, including the Maurya and Gupta empires, and has significant connections to the Vedic period.</p>
+        <p><strong>Medieval Period:</strong> During the medieval period, the region was ruled by various dynasties, including the Rajputs, the Paramaras of Malwa, and the Chandela dynasty, known for the Khajuraho temples. The region later came under the control of the Delhi Sultanate and the Mughal Empire.</p>
+        <p><strong>Colonial Period:</strong> Madhya Pradesh came under British control in the 19th century and was part of the Central Provinces and Berar. The region played an important role in India's independence movement, with leaders like Tantia Tope and Rani Lakshmibai associated with the state.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/khajuraho_temples.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/gwalior_fort.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Hindi is the official language of Madhya Pradesh and is widely spoken across the state. Other languages include Marathi, Bundeli, Malvi, Nimadi, and various tribal languages.</p>
+        <p><strong>Culture:</strong> Madhya Pradesh is known for its diverse cultural heritage, including classical dance forms like Kathak, and folk traditions such as Gond and Bhil art. The state celebrates a variety of festivals, including Diwali, Holi, and the Khajuraho Dance Festival. Madhya Pradesh is also famous for its handicrafts, particularly Chanderi and Maheshwari sarees.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kathak_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/chanderi_saree.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Madhya Pradesh has a predominantly agrarian economy, with major crops including wheat, soybeans, rice, and pulses. The state is often referred to as the "Soy State of India" due to its large production of soybeans.</p>
+        <p><strong>Industries:</strong> The state has a growing industrial base, with significant contributions from the textile, automobile, and food processing sectors. Indore, the state's largest city, is a major industrial hub, particularly in the manufacturing and IT sectors.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Madhya Pradesh is home to several important educational institutions, including the Indian Institute of Technology (IIT) Indore, Indian Institute of Management (IIM) Indore, and the Maulana Azad National Institute of Technology (MANIT) in Bhopal.</p>
+        <p><strong>Historical Significance:</strong> The state has a strong tradition of education, with institutions like the University of Sagar and Maharaja Sayajirao University playing significant roles in the educational history of the region. Madhya Pradesh continues to focus on improving literacy and access to education.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iit_indore.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/iim_indore.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Madhya Pradesh is renowned for its historical sites, including the Khajuraho Group of Monuments, the Gwalior Fort, and the Sanchi Stupa. These UNESCO World Heritage Sites attract visitors from around the world.</p>
+        <p><strong>Natural Beauty:</strong> The state is also known for its natural beauty, with national parks like Kanha, Bandhavgarh, and Pench being home to diverse wildlife, including tigers. The Narmada River and the Satpura Range further enhance the state's scenic landscapes.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kanha_national_park.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/narmada_river.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Mohan Yadav</p>
+        <p><strong>Current Governor:</strong> Mangubhai C. Patel</p>
+        <p><strong>Political Landscape:</strong> Madhya Pradesh has a dynamic political environment, with the Bharatiya Janata Party (BJP) and the Indian National Congress (INC) being the major political forces. The state has a history of strong political engagement and sees active participation from various communities and groups.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_madhya_pradesh.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_madhya_pradesh.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Madhya Pradesh</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Alok Sharma</td>
+            <td>Bhopal</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Anil Firoziya</td>
+            <td>Ujjain</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Ashish Dubey</td>
+            <td>Jabalpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Bharat Singh Kushwaha</td>
+            <td>Gwalior</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Bharti Pardhi</td>
+            <td>Balaghat</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Bunty Vivek Sahu</td>
+            <td>Chhindwara</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Darshan Singh Choudhary</td>
+            <td>Hoshangabad</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr. Rajesh Mishra</td>
+            <td>Sidhi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Durga Das Uikey</td>
+            <td>Betul</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Faggab Singh Kulaste</td>
+            <td>Mandla</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Gajendra Patel</td>
+            <td>Khargone</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Ganesh Singh</td>
+            <td>Satna</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Gyaneshwar Patil</td>
+            <td>Khandwa</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Janardan Mishra</td>
+            <td>Rewa</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Jyotiraditya Scindia</td>
+            <td>Guna</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Mahendra Singh Solanki</td>
+            <td>Dewas</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Rahul Lodhi</td>
+            <td>Damoh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Radmal Nagar</td>
+            <td>Rajgarh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Shankar Lalwani</td>
+            <td>Indore</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Shivmangal Singh Tomar</td>
+            <td>Morena</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Shivraj Singh Chouhan</td>
+            <td>Vidisha</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Anita Nagar Singh Chauhan</td>
+            <td>Ratlam</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Himadari Singh</td>
+            <td>Shahdol</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Lata Wankhede</td>
+            <td>Sagar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. sandhya Rai</td>
+            <td>Bhind</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Savitri Thakur</td>
+            <td>Dhar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Sudhir Gupta</td>
+            <td>Mandsour</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>V.D. Sharma</td>
+            <td>Khajuraho</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Virendra Khatik</td>
+            <td>Tikamgrah</td>
+            <td>BJP</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

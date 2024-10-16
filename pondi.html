@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Puducherry, formerly known as Pondicherry, is a Union Territory of India. It consists of four small unconnected districts: Puducherry, Karaikal, Yanam, and Mahe. These districts are located on the southeastern coast, surrounded by Tamil Nadu, Andhra Pradesh, and Kerala.</p>
+        <p><strong>Capital:</strong> Puducherry</p>
+        <p><strong>Major Cities:</strong> Puducherry, Karaikal, Yanam, Mahe</p>
+        <p><strong>Area:</strong> Approximately 492 square kilometers</p>
+        <p><strong>Population:</strong> Over 1.2 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/pondicherry_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/pondicherry_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Colonial Period:</strong> Puducherry has a rich history of colonial rule, having been governed by the Portuguese, Dutch, and French. The French established their control in 1674 and ruled for nearly 300 years, leaving a lasting cultural influence on the region. Puducherry became part of independent India in 1954.</p>
+        <p><strong>Post-Independence:</strong> After joining India, Puducherry was made a Union Territory and has since developed a unique blend of French and Indian cultures. The region is known for its well-preserved colonial architecture and its role as a center for spiritual learning and tourism.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/fort_st_george.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/auroville.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Tamil is the most widely spoken language in Puducherry, followed by Telugu and Malayalam in the respective regions of Yanam and Mahe. French is still spoken by some older residents, and English is commonly used for official purposes.</p>
+        <p><strong>Culture:</strong> Puducherry is known for its unique blend of French and Tamil cultures, seen in its cuisine, festivals, and architecture. The region celebrates a variety of festivals, including Pongal, Bastille Day, and Diwali, reflecting its diverse cultural heritage. The ashram culture and the experimental township of Auroville are also significant cultural aspects of Puducherry.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/pondicherry_festival.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/auroville.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Agriculture plays a role in the economy of Puducherry, with crops like rice, sugarcane, and coconuts being cultivated. The region also has a significant fishing community.</p>
+        <p><strong>Industries:</strong> Puducherry has a growing industrial base, with sectors like information technology, textiles, and tourism being key contributors. The tourism industry, driven by the region's heritage, beaches, and spiritual centers, is particularly significant to the economy.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Puducherry is home to several important educational institutions, including Pondicherry University, Jawaharlal Institute of Postgraduate Medical Education and Research (JIPMER), and the French Institute of Pondicherry.</p>
+        <p><strong>Historical Significance:</strong> The region has a strong emphasis on education, with a mix of French and Indian educational systems. Puducherry's institutions are known for their academic excellence and contribution to research, particularly in medicine and humanities.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/pondicherry_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/jimper.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Major attractions include the French Quarter, with its colonial architecture, the Sri Aurobindo Ashram, Auroville, and the beaches of Puducherry. The Basilica of the Sacred Heart of Jesus and the Pondicherry Museum are also popular tourist spots.</p>
+        <p><strong>Natural Beauty:</strong> Puducherry is known for its scenic beaches, including Promenade Beach, Paradise Beach, and Auroville Beach. The region's well-maintained gardens, like the Botanical Garden and Bharathi Park, add to its natural charm.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/promenade_beach.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/pondicherry_colony.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> N. Rangasamy</p>
+        <p><strong>Current Lieutenant Governor:</strong> Tamilisai Soundararajan</p>
+        <p><strong>Political Landscape:</strong> Puducherry has a unique political environment with a mix of regional and national parties. The All India N.R. Congress (AINRC) and Dravida Munnetra Kazhagam (DMK) are significant regional players, while the Indian National Congress (INC) and Bharatiya Janata Party (BJP) also play key roles in the territory's politics.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_pondicherry.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_pondicherry.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Pondicherry</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Ve. Vaithilingam</td>
+            <td>Pondicherry</td>
+            <td>INC</td>
+        </tr>
+        
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

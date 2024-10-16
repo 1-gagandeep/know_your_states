@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Bordered by Telangana to the northwest, Odisha to the northeast, Karnataka to the west, Tamil Nadu to the south, and the Bay of Bengal to the east.</p>
+        <p><strong>Capital:</strong> Amaravati (de facto), with Visakhapatnam being proposed as the executive capital</p>
+        <p><strong>Major Cities:</strong> Visakhapatnam, Vijayawada, Guntur, Tirupati, Kurnool, Rajahmundry</p>
+        <p><strong>Area:</strong> Approximately 162,975 square kilometers</p>
+        <p><strong>Population:</strong> Over 53 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/ap_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/visakhapatnam_port.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Andhra Pradesh has a rich history, with evidence of early human settlements. It was part of the Maurya Empire and later the Satavahana Dynasty, which played a significant role in the region's development.</p>
+        <p><strong>Medieval Period:</strong> The region was ruled by various dynasties, including the Eastern Chalukyas, Kakatiyas, and Vijayanagara Empire. The Vijayanagara Empire, in particular, left a significant architectural legacy.</p>
+        <p><strong>Colonial Period:</strong> Andhra Pradesh was part of the Madras Presidency under British rule. The region was a key center during the Indian independence movement.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/vijayanagara_empire.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/amaravati_stupa.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Telugu is the official language and is widely spoken throughout the state. Urdu is also spoken in some regions.</p>
+        <p><strong>Culture:</strong> Andhra Pradesh is known for its classical dance form, Kuchipudi, and its rich tradition of music, literature, and art. The state celebrates various festivals like Ugadi, Sankranti, and Dasara with great enthusiasm.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kuchipudi_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/ugadi_festival.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Andhra Pradesh is a leading agricultural state, with major crops including rice, maize, pulses, and tobacco. The state is one of the largest producers of rice in India.</p>
+        <p><strong>Industries:</strong> The state has a strong industrial base, including sectors like information technology, pharmaceuticals, textiles, and seafood processing. Visakhapatnam is a major industrial hub, particularly for the steel industry.</p>
+        
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Andhra Pradesh is home to several prestigious educational institutions, including the Indian Institute of Technology (IIT) Tirupati, Andhra University, and the National Institute of Technology (NIT) Andhra Pradesh.</p>
+        <p><strong>Historical Significance:</strong> The state has a long tradition of education and scholarship, with ancient universities like Nagarjuna University playing a crucial role in the history of Indian education.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/andhra_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/iit_tirupati.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Key attractions include the ancient city of Amaravati, the Buddhist sites in Nagarjunakonda, and the historic temples of Tirupati and Lepakshi.</p>
+        <p><strong>Natural Beauty:</strong> Andhra Pradesh is known for its picturesque landscapes, including the Eastern Ghats, Araku Valley, and numerous beaches along the Bay of Bengal.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/tirupati_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/araku_valley.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> N. Chandrababu Naidu</p>
+        <p><strong>Current Governor:</strong> S. Abdul Nazeer</p>
+        <p><strong>Political Landscape:</strong> Andhra Pradesh has a dynamic political environment, with the Yuvajana Sramika Rythu Congress Party (YSRCP) and the Telugu Desam Party (TDP) being the major political parties. National parties like the BJP and Congress also have a presence in the state.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_ap.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_ap.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Andhra Pradesh</caption>
+            <tr>
+                <th>Candidate Name</th>
+                <th>Constituency Name</th>
+                <th>Party Name</th>
+            </tr>
+
+            <tr>
+                <td>Ambica G Lakshminarayana Valmiki</td>
+                <td>Anantapur</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Appalanaidu Kalisetti</td>
+                <td>Vizianagaram</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>B K Parthasarathi</td>
+                <td>Hindupur</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Balashowry Vallabhaneni</td>
+                <td>Machilipatnam</td>
+                <td>JSP</td>
+            </tr>
+            <tr>
+                <td>Bastipati Nagaraju Panchalingala</td>
+                <td>Kurnool</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Bupathiraju Srinivas Varma</td>
+                <td>Narsapuram</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Chetti Tanuja Rani</td>
+                <td>Aruku</td>
+                <td>YSRCP</td>
+            </tr>
+            <tr>
+                <td>CM Ramesh</td>
+                <td>Anakapalli</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>D Purandareshwari</td>
+                <td>Rajamundry</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Daggumall Prasada Rao</td>
+                <td>Chittoor</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Dr. Byreddy Shabari</td>
+                <td>Nandyal</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Dr Chandra Sekhar Pemmasani</td>
+                <td>Guntur</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>G M Harish</td>
+                <td>Amalapuram</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Kesineni Sivanath</td>
+                <td>Vijaywada</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Kinjarapu Rammohan Naidu</td>
+                <td>Srikakulam</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Krishna Prasad Tenneti</td>
+                <td>Bapatla</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Lavu Srikrishna Devarayalu</td>
+                <td>Narasaraopet</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Maddila Gurumurthy</td>
+                <td>Tirupati</td>
+                <td>YSRCP</td>
+            </tr>
+            <tr>
+                <td>Magunta Sreenivasulu Reddy</td>
+                <td>Ongole</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Peddireddy Venkata Midhun Reddy</td>
+                <td>Rajampet</td>
+                <td>YSRCP</td>
+            </tr>
+            <tr>
+                <td>Prabhakar Raddy Vemireddy</td>
+                <td>Nellore</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Putta Mahesh Kumar</td>
+                <td>Eluru</td>
+                <td>TDP</td>
+            </tr>
+            <tr>
+                <td>Sribharat Mathukumili</td>
+                <td>Visakhapatnam</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tangella Uday Srinivas</td>
+                <td>Kakinada</td>
+                <td>JSP</td>
+            </tr>
+            <tr>
+                <td>YS Avinash Reddy</td>
+                <td>Kadapa</td>
+                <td>YSRCP</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

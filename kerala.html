@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Kerala is located in the southwestern part of India, bordered by Karnataka to the north and northeast, Tamil Nadu to the east and south, and the Arabian Sea to the west.</p>
+        <p><strong>Capital:</strong> Thiruvananthapuram</p>
+        <p><strong>Major Cities:</strong> Kochi, Thiruvananthapuram, Kozhikode, Kollam, Thrissur, Alappuzha</p>
+        <p><strong>Area:</strong> Approximately 38,863 square kilometers</p>
+        <p><strong>Population:</strong> Over 33 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kerala_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/kochi_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Kerala has a history that dates back to ancient times, with references in texts like the Sangam literature. The region was known for its spice trade and had strong maritime connections with ancient Rome, China, and the Middle East.</p>
+        <p><strong>Medieval Period:</strong> The region was ruled by various kingdoms, including the Cheras, who played a significant role in shaping Kerala's cultural and political landscape. The arrival of European powers, beginning with the Portuguese, marked the start of colonial influence in Kerala.</p>
+        <p><strong>Colonial Period:</strong> Kerala came under British control in the 18th century, after which the region was divided into the princely states of Travancore and Cochin, and the Malabar district under direct British rule. Kerala played a key role in India's independence movement, with leaders like K. Kelappan and others leading significant movements.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/padmanabhapuram_palace.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/ancient_spice_trade.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Malayalam is the official language and is widely spoken across the state. English is also commonly used, especially in education and business.</p>
+        <p><strong>Culture:</strong> Kerala is renowned for its rich cultural heritage, which includes classical dance forms like Kathakali and Mohiniyattam, as well as its vibrant festivals like Onam and Vishu. The state is also famous for its traditional music, literature, and art forms like mural painting and Kalaripayattu, an ancient martial art.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kathakali_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/kerala_mural.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Kerala's economy is significantly supported by agriculture, with major crops including coconut, tea, coffee, rubber, and spices like cardamom and black pepper. The state's lush backwaters and highlands are crucial for its agrarian base.</p>
+        <p><strong>Industries:</strong> Kerala has a growing industrial base, with sectors like tourism, information technology, and healthcare playing major roles. The state is also known for its traditional industries, including coir, handloom, and cashew processing. Tourism is a key sector, with Kerala being a popular destination for its natural beauty, ayurveda, and cultural heritage.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Kerala boasts a high literacy rate and is home to several prominent educational institutions, including the Indian Institute of Technology (IIT) Palakkad, Indian Institute of Management (IIM) Kozhikode, and Kerala University. The state's education system is well-regarded for its quality and accessibility.</p>
+        <p><strong>Historical Significance:</strong> Kerala has a long tradition of education, with an emphasis on universal education and social reforms. Institutions like the Sree Narayana College and CMS College have played significant roles in the region's educational history.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iim_kozhikode.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/sree_narayan_college.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Major attractions in Kerala include the Padmanabhaswamy Temple, the Bekal Fort, and the ancient port of Muziris. The state's rich history is reflected in its numerous temples, churches, and palaces.</p>
+        <p><strong>Natural Beauty:</strong> Kerala is known for its stunning natural landscapes, including the serene backwaters of Alappuzha, the hill stations of Munnar and Wayanad, and the beaches of Kovalam and Varkala. The state's biodiversity is protected in several wildlife sanctuaries, such as Periyar and Eravikulam.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kerala_backwaters.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/munnar_tea_gardens.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Pinarayi Vijayan</p>
+        <p><strong>Current Governor:</strong> Arif Mohammad Khan</p>
+        <p><strong>Political Landscape:</strong> Kerala has a dynamic political scene, with the Communist Party of India (Marxist) (CPI(M)) and the Indian National Congress (INC) being the major political parties. The state is known for its strong political consciousness and voter turnout. Kerala's political landscape is also marked by coalition politics, with the Left Democratic Front (LDF) and United Democratic Front (UDF) being the two primary political alliances.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_kerala.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_kerala.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Kerala</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Adoor Prakash</td>
+            <td>Attingal</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Adv K Francis George</td>
+            <td>Kottayam</td>
+            <td>KEC</td>
+        </tr>
+        <tr>
+            <td>Anto Antony</td>
+            <td>Pathanamthitta</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Benny Behanan</td>
+            <td>Chalakudy</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dean Kuriakose</td>
+            <td>Idukki</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dr. Mp Abdurasmad Samdani</td>
+            <td>Ponnami</td>
+            <td>IUML</td>
+        </tr>
+        <tr>
+            <td>Et Mohammad Bashir</td>
+            <td>Malappuram</td>
+            <td>IUML</td>
+        </tr>
+        <tr>
+            <td>Hibi Eden</td>
+            <td>Ernakulam</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>K Radhakrishnan</td>
+            <td>Alathur</td>
+            <td>CPIM</td>
+        </tr>
+        <tr>
+            <td>K. Sudhakaran</td>
+            <td>Kannur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>K.c. Venogopal</td>
+            <td>Alappuzha</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Kodikunnil Suresh</td>
+            <td>Mavelikara</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>M.K. Raghavan</td>
+            <td>Kozhikode</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>N K Premachandran</td>
+            <td>Kollam</td>
+            <td>RSP</td>
+        </tr>
+        <tr>
+            <td>Rahul Gandhi</td>
+            <td>Wayanad</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Rajmohan Unnithan</td>
+            <td>Kasaragod</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Shafi Parambil</td>
+            <td>Vadakara</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Suresh Gopi</td>
+            <td>Thrissur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>V.K. Sreekandan</td>
+            <td>Palakkad</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dr. Shashi Tharoor</td>
+            <td>Thiruvanthapuram</td>
+            <td>INC</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

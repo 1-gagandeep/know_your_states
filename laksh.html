@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Lakshadweep is a group of islands in the Arabian Sea, located off the southwestern coast of India. It is the smallest Union Territory of India, comprising 36 islands, of which 10 are inhabited.</p>
+        <p><strong>Capital:</strong> Kavaratti</p>
+        <p><strong>Major Islands:</strong> Kavaratti, Agatti, Minicoy, Amini, Kalpeni</p>
+        <p><strong>Area:</strong> Approximately 32 square kilometers</p>
+        <p><strong>Population:</strong> Around 70,000</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/lakshadweep_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/kavaratti_island.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> The history of Lakshadweep dates back to ancient times, with references found in the Sangam literature. The islands have been inhabited for centuries, primarily by people of Malayalam and Tamil origin.</p>
+        <p><strong>Medieval Period:</strong> During the medieval period, Lakshadweep was under the rule of various regional powers, including the Chera dynasty and later the Chola dynasty. The islands were also influenced by the Arab traders who brought Islam to the region.</p>
+        <p><strong>Colonial Period:</strong> The islands came under Portuguese control in the 16th century, followed by the British in the 18th century. The British administered the islands as part of the Madras Presidency until India's independence in 1947.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/lakshadweep_boat.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/lakshadweep_mosque.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> The official languages of Lakshadweep are Malayalam and English, with a significant population speaking Jeseri (a dialect of Malayalam) and Mahl (a dialect of Dhivehi).</p>
+        <p><strong>Culture:</strong> Lakshadweep has a unique cultural heritage, heavily influenced by its Islamic faith. The islanders celebrate various festivals, including Eid-ul-Fitr and Eid-ul-Adha, with traditional dances like Lava and Parichakali being popular. The local art and craft, especially coir products, are well-known.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/lakshadweep_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/lakshadweep_coir_products.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Fishing:</strong> Fishing is the primary occupation in Lakshadweep, with tuna being the most significant catch. The islanders also engage in coconut cultivation, and the coir industry plays a vital role in the local economy.</p>
+        <p><strong>Tourism:</strong> Tourism is an emerging sector in Lakshadweep, with the islands attracting visitors due to their pristine beaches, coral reefs, and water sports opportunities. Agatti, Bangaram, and Kadmat are popular tourist destinations.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Educational facilities in Lakshadweep include government schools on each inhabited island, along with a few higher education institutions. The islands are focusing on improving educational infrastructure, with special emphasis on vocational training.</p>
+        <p><strong>Historical Significance:</strong> The educational system in Lakshadweep has traditionally focused on primary education, with recent initiatives aimed at expanding access to secondary and higher education, particularly in the areas of marine studies and tourism management.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/lakshadweep_school.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/lakshadweep_college.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Attractions:</strong> Major tourist attractions include the coral reefs of Agatti, the beautiful beaches of Bangaram, and the historic mosques in Kavaratti. The islands offer a variety of water sports such as snorkeling, scuba diving, and deep-sea fishing.</p>
+        <p><strong>Natural Beauty:</strong> Lakshadweep is known for its stunning natural beauty, with crystal-clear waters, white sandy beaches, and vibrant coral reefs. The unspoiled environment and serene atmosphere make it a paradise for nature lovers and adventure seekers.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/lakshadweep_beach.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/lakshadweep_coral.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Administrator:</strong> Praful Khoda Patel</p>
+        <p><strong>Political Landscape:</strong> Lakshadweep is a Union Territory administered directly by the Government of India, with an appointed Administrator overseeing the governance. The political landscape is relatively stable, with local governance focusing on development and environmental conservation.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/lakshadweep_council.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/lakshadweep_administrator.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Lakshadweep</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Mohd. Hamdullaha Sayeed</td>
+            <td>Lakshadweep</td>
+            <td>INC</td>
+        </tr>
+        
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

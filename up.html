@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Bordered by Nepal to the north, the Indian states of Uttarakhand to the northwest, Himachal Pradesh to the north, Haryana and Delhi to the west, Rajasthan to the southwest, Madhya Pradesh to the south, and Bihar to the east.</p>
+        <p><strong>Capital:</strong> Lucknow</p>
+        <p><strong>Major Cities:</strong> Lucknow, Kanpur, Varanasi, Agra, Allahabad (Prayagraj), Meerut</p>
+        <p><strong>Area:</strong> Approximately 243,286 square kilometers</p>
+        <p><strong>Population:</strong> Over 220 million (the most populous state in India)</p>
+
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/up_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/lucknow_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Uttar Pradesh has a rich history with significant cities like Varanasi, which is one of the oldest continuously inhabited cities in the world. It was a central region during the Vedic period and later formed part of various Indian empires, including the Maurya and Gupta Empires.</p>
+        <p><strong>Medieval Period:</strong> The region was ruled by various Muslim dynasties, including the Delhi Sultanate and the Mughals. Agra, a major city, was the capital during the Mughal period.</p>
+        <p><strong>Colonial Period:</strong> Uttar Pradesh was a significant center of activity during the British period and played a key role in the Indian independence movement.</p>
+
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/delhi_sultanate.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/mughal_empire.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+        
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Hindi is the official language, with Urdu also recognized. Other languages like Bhojpuri and Awadhi are spoken in various regions.</p>
+        <p><strong>Culture:</strong> Uttar Pradesh is known for its rich cultural heritage, with famous festivals like Diwali, Holi, and Eid being celebrated with great enthusiasm. The state is also renowned for its classical music, dance forms like Kathak, and literature.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/folk_dance_up.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/lathmar_holi.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Uttar Pradesh is one of India's leading agricultural states. Major crops include wheat, rice, sugarcane, and pulses. The state is the largest producer of sugarcane in India.</p>
+        <p><strong>Industries:</strong> The state has a diverse industrial base, including textiles, leather goods, handicrafts, and information technology. The cities of Kanpur and Agra are particularly known for their industries.</p>
+        
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Uttar Pradesh is home to several renowned educational institutions, including the Indian Institute of Technology (IIT) Kanpur, Banaras Hindu University (BHU), and Aligarh Muslim University (AMU).</p>
+        <p><strong>Historical Significance:</strong> The state has a long tradition of education and scholarship, with institutions like BHU playing a significant role in the modern history of Indian education.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/bhu.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/iit_kanpur.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Key attractions include the Taj Mahal in Agra, one of the Seven Wonders of the World, the ghats of Varanasi, and Fatehpur Sikri.</p>
+        <p><strong>Natural Beauty:</strong> Uttar Pradesh is home to several wildlife sanctuaries and national parks, including Dudhwa National Park and Pilibhit Tiger Reserve.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/taj_mahal.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/varanasi_ghats.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+
+        
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Yogi Adityanath</p>
+        <p><strong>Current Governor:</strong> Anandiben Patel</p>
+        <p><strong>Political Landscape:</strong> Uttar Pradesh has a vibrant political scene with a history of powerful regional parties like the Samajwadi Party (SP) and Bahujan Samaj Party (BSP) playing significant roles alongside national parties like the BJP and Congress.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_up.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_up.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+</div>
+
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Uttar Pradesh</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Aditya Yadav</td>
+            <td>Badaun</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Afzal Ansari</td>
+            <td>Ghazipur</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Ajendra Singh Rajput</td>
+            <td>Hamirpur</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Akhilesh Yadav</td>
+            <td>Kannauj</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Akshay Yadav</td>
+            <td>Firozabad</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Anand Bhadoria</td>
+            <td>Dhaurahra</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Anoop Valmiki</td>
+            <td>Hathras</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Anupriya Patel</td>
+            <td>Mirzapur</td>
+            <td>AD(S)</td>
+        </tr>
+        <tr>
+            <td>Anurag Verma</td>
+            <td>Jhansi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Arjun Kumar Sagar</td>
+            <td>Shahjahanpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Arun Govil</td>
+            <td>Meerut</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Ashok Kumar Rawat</td>
+            <td>Misrikh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Atul Garg</td>
+            <td>Ghaziabad</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Awadhesh Prasad</td>
+            <td>Faizabad</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Babbu Singh Kushwaha</td>
+            <td>Jaunpur</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Bhim Nishad</td>
+            <td>Sultanpur</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Birendra Singh</td>
+            <td>Chandauli</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Chandan Chauhan</td>
+            <td>Bijnor</td>
+            <td>RLD</td>
+        </tr>
+        <tr>
+            <td>Chandrashekhar</td>
+            <td>Nagina</td>
+            <td>ASP</td>
+        </tr>
+        <tr>
+            <td>Chhatrpal Singh Gangwar</td>
+            <td>Bareilly</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Chhotelal</td>
+            <td>Robertsganj</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Daroga Saroj</td>
+            <td>Lalganj</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Devendra Singh Bhole</td>
+            <td>Akbarpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Devesh Shakya</td>
+            <td>Etah</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Dharmendra Yadav</td>
+            <td>Azamgarh</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Dimple Yadav</td>
+            <td>Mainpuri</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Dr. Vinod Kumar Bind</td>
+            <td>Bhadohi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>DR. Anand Gond</td>
+            <td>Bahraich</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr. Bhola Singh</td>
+            <td>Bulandshahr</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr. Mahesh Sharma</td>
+            <td>Gautam Buddh Nagar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr. Raj Kumar Sangwan</td>
+            <td>Baghpat</td>
+            <td>RLD</td>
+        </tr>
+        <tr>
+            <td>Dr. SP Singh Patel</td>
+            <td>Pratapgarh</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Harendra Milak</td>
+            <td>Muzaffarnagar</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Imran Masood</td>
+            <td>Saharanpur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Iqra Hasan</td>
+            <td>Kairana</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Jagdambika Pal</td>
+            <td>Domriyaganj</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Jai Prakash Rawat</td>
+            <td>Hardoi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Jitendra Dohare</td>
+            <td>Etawah</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Jitin Prasada</td>
+            <td>Pilibhit</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Kamlesh Paswan</td>
+            <td>Bansgaon</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Kanwar Singh Tanwar</td>
+            <td>Amroha</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Karan Bhushan Singh</td>
+            <td>Kaiserganj</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Kirti Vardhan Singh(Raja Bhaiya)</td>
+            <td>Gonda</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Kishori Lal Sharma</td>
+            <td>Amethi</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Lalji Verma</td>
+            <td>Ambedkar Nagar</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Laxmikant(Pappu Nishad)</td>
+            <td>Sant Kabir Nagar</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Mohd. Asim Raza</td>
+            <td>Rampur</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Mukesh Rajput</td>
+            <td>Farrukhabad</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Narayan Das Ahirwar</td>
+            <td>Jalaun</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Narendra Modi</td>
+            <td>Varanasi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Naresh Uttam Patel</td>
+            <td>Fatehpur</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Neeraj Maurya</td>
+            <td>Aonla</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Pankaj Choudhary</td>
+            <td>Maharajganj</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Praveen Patel</td>
+            <td>Phulpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Pushpendra Saroj</td>
+            <td>Kaushambi</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>R K Chaudhary</td>
+            <td>Mohanlalganj</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Rahul Gandhi</td>
+            <td>Rae Bareli</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Raj Kumar Chahar</td>
+            <td>Fatehpur Sikri</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Rajiv Rai</td>
+            <td>Ghosi</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Rajnath Singh</td>
+            <td>Lucknow</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Rakesh Rathore</td>
+            <td>Sitapur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Ram Prasad Chaudhary</td>
+            <td>Basti</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Ram Shiromani Verma</td>
+            <td>Shrawasti</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Ramashankar Rajbhar</td>
+            <td>Salempur</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Ramesh Awasthi</td>
+            <td>Kanpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Ravi Kisan</td>
+            <td>Gorakhpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Ruchi Veera</td>
+            <td>Moradabad</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Sakshi Maharaj</td>
+            <td>Unnao</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Sanatan Pandey</td>
+            <td>Ballia</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Satish Gautam</td>
+            <td>Aligarh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Satyapak Singh Baghel</td>
+            <td>Agra</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Sh. Priya Saroj</td>
+            <td>Machhlishahr</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Shafiqur Rahman Barq</td>
+            <td>Sambhal</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Shashank Mani</td>
+            <td>Deoria</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Shivshankar Singh Patel</td>
+            <td>Banda</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Smt. Hema Malini</td>
+            <td>Mathura</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Tanuj Punia</td>
+            <td>Bara Banki</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Ujjwal Rewati Raman Singh</td>
+            <td>Allahabad</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Utkarsh Verma</td>
+            <td>Kheri</td>
+            <td>SP</td>
+        </tr>
+        <tr>
+            <td>Vijay Kumar Dubey</td>
+            <td>Kushi Nagar</td>
+            <td>BJP</td>
+        </tr>
+        
+        </table>
+    </div>
+    
+    <div class="footer" style="margin-top: 3%;">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

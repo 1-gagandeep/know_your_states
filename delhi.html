@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Delhi is bordered by Haryana on three sides and Uttar Pradesh to the east. It lies along the banks of the Yamuna River.</p>
+        <p><strong>Capital:</strong> Delhi is the capital city of India.</p>
+        <p><strong>Major Areas:</strong> New Delhi, Old Delhi, South Delhi, West Delhi, East Delhi, North Delhi</p>
+        <p><strong>Area:</strong> Approximately 1,484 square kilometers</p>
+        <p><strong>Population:</strong> Over 19 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/delhi_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/delhi_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Delhi's history dates back to the ancient period, with Indraprastha, mentioned in the Mahabharata, believed to have been located here. The city has been a significant center for various ancient empires.</p>
+        <p><strong>Medieval Period:</strong> Delhi became the seat of several powerful dynasties, including the Delhi Sultanate and the Mughal Empire. The city was rebuilt many times by rulers like Qutb-ud-din Aibak, Alauddin Khilji, and Shah Jahan, who made it his capital and built the Red Fort.</p>
+        <p><strong>Colonial Period:</strong> Delhi was made the capital of British India in 1911, replacing Calcutta. The British constructed New Delhi, which became the seat of government. Delhi played a crucial role in the independence movement, including being the site of the 1942 Quit India Movement.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/qutub_minar.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/red_fort.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Hindi is the official language of Delhi, while English is widely used for official purposes. Urdu, Punjabi, and other regional languages are also spoken by various communities.</p>
+        <p><strong>Culture:</strong> Delhi is a cultural melting pot, reflecting a blend of ancient traditions and modern influences. The city is known for its diverse cuisine, historical monuments, festivals like Diwali, Holi, Eid, and Christmas, and cultural hubs such as the India Habitat Centre and the National School of Drama.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/delhi_street_food.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/diwali_celebration.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Commerce:</strong> Delhi has a thriving economy, with major sectors including information technology, telecommunications, tourism, media, and real estate. The city is also a significant retail hub, with markets like Connaught Place and Chandni Chowk being key commercial centers.</p>
+        <p><strong>Industries:</strong> Delhi's industrial base includes manufacturing, handlooms, and handicrafts. The city also has a rapidly growing startup ecosystem, with many new businesses in technology, e-commerce, and services sectors.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Delhi is home to some of India's most prestigious educational institutions, including the University of Delhi, Jawaharlal Nehru University (JNU), and the Indian Institute of Technology (IIT) Delhi. The city also houses several renowned research institutes and professional colleges.</p>
+        <p><strong>Historical Significance:</strong> Delhi has a long tradition of education, with institutions like St. Stephen's College and the Delhi School of Economics playing a crucial role in India's academic history.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iit_delhi.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/jnu_campus.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Delhi is rich in historical landmarks, including the Red Fort, Qutub Minar, Humayun's Tomb, and India Gate. These sites reflect the city's long and varied history, from the Mughal era to British colonial times.</p>
+        <p><strong>Natural Beauty:</strong> Despite its urban character, Delhi has numerous parks and green spaces, such as Lodhi Gardens, the Garden of Five Senses, and Yamuna Biodiversity Park, offering residents and tourists a break from the hustle and bustle of city life.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/lodhi_gardens.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/humayun_tomb.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Arvind Kejriwal</p>
+        <p><strong>Current Lieutenant Governor:</strong> Vinay Kumar Saxena</p>
+        <p><strong>Political Landscape:</strong> Delhi's political environment is vibrant, with the Aam Aadmi Party (AAP) currently in power. The Bharatiya Janata Party (BJP) and the Indian National Congress (INC) are also key players. The city has its own Legislative Assembly, while law and order are under the central government's jurisdiction.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_delhi.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_delhi.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Delhi</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Bansuri Swaraj</td>
+            <td>New Delhi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Harsh Malhotra</td>
+            <td>East Delhi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Manoj Tiwari</td>
+            <td>North East Delhi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Praveen Khandelwal</td>
+            <td>Chandni Chowk</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Ramvir Singh Bidhuri</td>
+            <td>South Delhi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Kamalijeet Sehrawat</td>
+            <td>West Delhi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Yogendra Chandelia</td>
+            <td>North West Delhi</td>
+            <td>BJP</td>
+        </tr>
+        
+        </table>
+    </div>
+    
+    <div class="footer" style="margin-top: 3%;">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

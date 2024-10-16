@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+                
+            </div>
+        </div>
+        <a href="#contact">Contact</a>
+        
+       
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <div id="home">
+            <h2>Indian Parliament</h2>
+            <p>
+                The Parliament of India, the highest legislative authority in the country, is a cornerstone of India's democracy. It is a bicameral institution, meaning it consists of two separate chambers: the Rajya Sabha (Council of States) and the Lok Sabha (House of the People). Together, these two houses work to enact legislation, represent the interests of the people, and oversee the functioning of the executive branch.
+                
+            </p>
+            <p>
+                The Indian Parliament was established under the Constitution of India, which came into effect on January 26, 1950. The Parliament was designed to reflect the democratic ideals of the newly independent nation, ensuring a representative and accountable government. The Parliament building, located in New Delhi, was constructed between 1921 and 1927 and officially inaugurated by the then British monarch, King George V, in 1927. The building, with its distinctive circular shape, has been a symbol of India's democratic process.
+            </p>
+            <p>
+                The Rajya Sabha, or Council of States, is the upper house of Parliament. It was first constituted in 1952. The first Chairman of the Rajya Sabha was Dr. Sarvepalli Radhakrishnan, who later became the President of India. The Rajya Sabha is composed of 245 members, including representatives elected by the legislative assemblies of States and Union territories and nominated members. It provides representation to the states and Union territories, and its role is crucial in reviewing and revising proposed legislation.
+            </p>
+            <p>
+                The Lok Sabha, or House of the People, is the lower house and represents the people of India directly. Members of the Lok Sabha are elected through general elections held every five years. The first Lok Sabha session convened in 1952, with G.V. Mavalankar serving as its Speaker. The Lok Sabha is composed of 545 members, directly elected by the people, and is responsible for formulating and passing laws, scrutinizing the work of the government, and discussing national issues.
+            </p>
+            <p>
+                At the time of its establishment, the Indian Constitution had 395 articles divided into 22 parts. Over the years, the Constitution has been amended numerous times, and the number of articles has increased to accommodate the evolving needs of the country. The Parliament plays a key role in this process, with amendments requiring approval from both houses.
+            </p>
+            <p>
+                The Indian Parliament operates under a system of checks and balances. The two houses of Parliament, although working together, have distinct functions and powers. For instance, while both houses participate in the legislative process, money bills can only be introduced in the Lok Sabha, and the Rajya Sabha can only make recommendations on such bills. The Parliament also has the authority to amend the Constitution, a process that requires approval from both houses and, in some cases, the state legislatures.
+            </p>
+            <p>
+                The Indian Parliament is instrumental in shaping the country’s laws and policies, and its sessions are held in the iconic Parliament House in New Delhi. The building itself is a symbol of Indian democracy and a site of many significant debates and decisions that have shaped the nation. The legislative process involves multiple stages, including the introduction of bills, debates, committee reviews, and votes, reflecting the democratic ethos of India's governance.
+            </p>
+            <p>
+                The Parliament also plays a key role in ensuring government accountability. It provides a forum for elected representatives to question ministers, discuss government policies, and represent the concerns of their constituents. This system of parliamentary oversight helps maintain transparency and accountability within the government and is a fundamental aspect of the democratic framework in India.
+            </p>
+            
+        </div>
+
+        <div id="about">
+            <h2>Know About Me</h2>
+            <p>Hello to all! This side Gagandeep Kumar <br>Student || App Developer || Web Developer</p>
+            <p>As a web and app developer, I specialize in designing, creating, and maintaining websites and mobile applications. I use a variety of programming languages and technologies to build functional and visually appealing digital solutions. My role involves writing code in languages such as HTML, CSS, JavaScript, and frameworks like React or Angular for web development, and Swift or Kotlin for mobile app development. I collaborate with designers to ensure user-friendly interfaces and work closely with clients to understand their requirements. I'm also responsible for troubleshooting and debugging issues, optimizing performance, and ensuring compatibility across different devices and platforms. My work is crucial in providing seamless digital experiences that meet users' needs and enhance engagement.</p>
+        </div>
+
+        <div id="contact">
+            <h2>Reach out to me</h2>
+            <address>
+                <p>Happynest PG, Law gate <br> Maheru, Kapurthala, Punjab(144411), India <br> +91-7079020338 || gk7079020@gmail.com</p>
+            </address>
+            
+        </div>
+
+        <div class="form">
+            <h2>Feedback Form</h2>
+            <form id="feedbackForm" action="submit_feedback.php" method="post" onsubmit="return validateEmail()">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error" id="emailError"></div>
+    
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required min="1">
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+    
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="5" required></textarea>
+    
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

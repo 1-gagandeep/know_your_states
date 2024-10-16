@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Tripura is located in northeastern India, bordered by Bangladesh on three sides (north, west, and south) and the Indian states of Assam and Mizoram to the east. It is one of the smallest states in India.</p>
+        <p><strong>Capital:</strong> Agartala</p>
+        <p><strong>Major Cities:</strong> Agartala, Udaipur, Dharmanagar, Kailashahar, Belonia</p>
+        <p><strong>Area:</strong> Approximately 10,491 square kilometers</p>
+        <p><strong>Population:</strong> Over 3.6 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/tripura_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/agartala_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Tripura has a rich history, with its origins tracing back to the ancient kingdoms of the Tripuri people. The region was ruled by the Manikya dynasty for several centuries, with a lineage that dates back to the 14th century.</p>
+        <p><strong>Medieval Period:</strong> The Manikya dynasty continued to rule Tripura, maintaining its independence while occasionally being a vassal state to the Mughal Empire. The kingdom's rulers were known for their patronage of art and culture.</p>
+        <p><strong>Colonial Period:</strong> Tripura became a princely state under British India in the 19th century. After India's independence in 1947, Tripura acceded to the Indian Union in 1949 and was granted full statehood in 1972.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/ujjayanta_palace.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/neermahal_palace.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Bengali is the most widely spoken language in Tripura, and Kokborok is the language of the indigenous Tripuri people. English is also commonly used for official purposes.</p>
+        <p><strong>Culture:</strong> Tripura's culture is a blend of Bengali and indigenous traditions. The state is known for its rich cultural heritage, including traditional dances like Garia and Hojagiri, as well as its vibrant festivals such as Durga Puja, Kharchi Puja, and the Garia festival. Handicrafts, particularly bamboo and cane work, are also a significant part of Tripura's cultural identity.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/garia_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/tripura_handicrafts.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Agriculture is the backbone of Tripura's economy, with rice being the principal crop. The state is also known for its production of rubber, tea, and various fruits like pineapples and oranges.</p>
+        <p><strong>Industries:</strong> Tripura has a small but growing industrial sector, with key industries including natural gas, food processing, and handloom. The state is also making strides in rubber-based industries, given its substantial rubber production.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Tripura is home to several educational institutions, including Tripura University, National Institute of Technology (NIT) Agartala, and Maharaja Bir Bikram University. The state has been focusing on improving literacy rates and providing quality education.</p>
+        <p><strong>Historical Significance:</strong> The state has a strong tradition of education, with an emphasis on both modern and traditional knowledge systems. The government has initiated various programs to enhance educational infrastructure and access.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/tripura_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/nit_agartala.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Major tourist attractions include the Ujjayanta Palace in Agartala, Neermahal Palace in the middle of Rudrasagar Lake, and the ancient temples of Tripura Sundari and Unakoti. These sites offer a glimpse into the state's royal past and rich cultural heritage.</p>
+        <p><strong>Natural Beauty:</strong> Tripura is known for its lush green landscapes, serene lakes, and hilly terrain. The state's natural beauty is showcased in places like Sepahijala Wildlife Sanctuary, Trishna Wildlife Sanctuary, and the picturesque Jampui Hills.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/neermahal_palace.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/jampui_hills.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Manik Saha</p>
+        <p><strong>Current Governor:</strong> Indrasena Reddy Nallu</p>
+        <p><strong>Political Landscape:</strong> Tripura has a dynamic political environment, with the Bharatiya Janata Party (BJP) and Communist Party of India (Marxist) being the major political forces. The state has also seen political activity from regional parties that focus on local and tribal issues.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_tripura.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_tripura.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Tripura</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Biplab Kumar Deb</td>
+            <td>Tripura West</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Maharani Kriti Singh Debbarma</td>
+            <td>Tripura East</td>
+            <td>BJP</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

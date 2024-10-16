@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Meghalaya is a northeastern state in India, bordered by Assam to the north and east, and Bangladesh to the south and west. It is known for its hilly terrain, and its name means "Abode of Clouds."</p>
+        <p><strong>Capital:</strong> Shillong</p>
+        <p><strong>Major Cities:</strong> Shillong, Tura, Jowai, Nongstoin, Williamnagar</p>
+        <p><strong>Area:</strong> Approximately 22,429 square kilometers</p>
+        <p><strong>Population:</strong> Over 3 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/meghalaya_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/shillong_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Meghalaya has a rich history, with its indigenous people, the Khasi, Garo, and Jaintia tribes, having lived in the region for centuries. These tribes have maintained their distinct cultures and traditions.</p>
+        <p><strong>Medieval Period:</strong> The region was influenced by various external powers, including the Ahom kingdom and the Mughal Empire. However, the tribes of Meghalaya largely maintained their independence.</p>
+        <p><strong>Colonial Period:</strong> Meghalaya came under British control in the 19th century and was part of the Assam Province. It was later separated from Assam in 1972 to become an independent state of India.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/khasi_hills.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/jaintia_hills.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Khasi, Garo, and Jaintia are the major languages spoken in Meghalaya. English is the official language and is widely used in administration and education.</p>
+        <p><strong>Culture:</strong> Meghalaya is known for its vibrant culture, with traditional festivals like Nongkrem, Wangala, and Behdienkhlam celebrated with great enthusiasm. The state is also famous for its music, dance, and traditional crafts, particularly bamboo and cane products.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/nongkrem_festival.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/meghalaya_crafts.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Meghalaya's economy is primarily agrarian, with rice, maize, and potatoes being the major crops. The state is also known for its horticulture, particularly oranges, pineapples, and bay leaves.</p>
+        <p><strong>Industries:</strong> Meghalaya has a small but growing industrial base, with industries such as cement, mining, and handloom. The state's abundant natural resources, including limestone and coal, contribute to its industrial sector.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Meghalaya is home to several educational institutions, including North-Eastern Hill University (NEHU) in Shillong, Indian Institute of Management (IIM) Shillong, and St. Edmund's College.</p>
+        <p><strong>Historical Significance:</strong> The state has a strong tradition of education, with Shillong being known as the "Educational Hub of the Northeast." The government continues to focus on improving literacy and access to education in both urban and rural areas.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/nehu_shillong.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/iim_shillong.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Attractions:</strong> Major tourist attractions include the Living Root Bridges in Cherrapunji and Mawlynnong, the cleanest village in Asia, Umiam Lake, and the sacred groves of Mawphlang. The state's picturesque landscapes, waterfalls, and caves make it a popular destination for nature lovers.</p>
+        <p><strong>Natural Beauty:</strong> Meghalaya is renowned for its natural beauty, with rolling hills, dense forests, and numerous waterfalls. Cherrapunji, known as one of the wettest places on Earth, and the crystal-clear waters of Dawki are particularly famous.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/living_root_bridge.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/dawki_river.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Conrad Sangma</p>
+        <p><strong>Current Governor:</strong> C. H. Vijayashankar</p>
+        <p><strong>Political Landscape:</strong> Meghalaya has a vibrant political environment, with the National People's Party (NPP), Indian National Congress (INC), and United Democratic Party (UDP) being the major political parties. The state also has a significant presence of regional parties that focus on local issues and the rights of indigenous communities.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/meghalaya_governor.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/meghalaya_cm.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Meghalaya</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Dr. Ricky Andrew J. Syngkon</td>
+            <td>Shillong</td>
+            <td>VTPP</td>
+        </tr>
+        <tr>
+            <td>Saleng A. Sangma</td>
+            <td>Tura</td>
+            <td>INC</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer" style="margin-top: 2%;">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

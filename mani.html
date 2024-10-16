@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Manipur is located in the northeastern part of India, bordered by Nagaland to the north, Assam to the west, Mizoram to the south, and the international border with Myanmar to the east.</p>
+        <p><strong>Capital:</strong> Imphal</p>
+        <p><strong>Major Cities:</strong> Imphal, Churachandpur, Thoubal, Bishnupur, Ukhrul</p>
+        <p><strong>Area:</strong> Approximately 22,327 square kilometers</p>
+        <p><strong>Population:</strong> Over 3 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/manipur_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/imphal_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Manipur has a rich history dating back to ancient times. The region was known as Kangleipak in ancient texts, and it was ruled by various dynasties that contributed to its cultural and political heritage.</p>
+        <p><strong>Medieval Period:</strong> The Kingdom of Manipur emerged as a powerful state in the medieval period. The region was known for its martial traditions, art, and culture, particularly the classical Manipuri dance. The Meitei kings played a significant role in shaping the history of the region.</p>
+        <p><strong>Colonial Period:</strong> Manipur came under British influence in the 19th century following the Anglo-Manipur War of 1891. It became a princely state under British suzerainty until India's independence in 1947. Manipur was later merged into the Indian Union in 1949.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/manipur_palace.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/khongjom_war_memorial.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Meiteilon (Manipuri) is the official language of Manipur and is widely spoken across the state. Other languages include various tribal languages like Tangkhul, Hmar, and Paite.</p>
+        <p><strong>Culture:</strong> Manipur is known for its rich cultural heritage, including the classical Manipuri dance, traditional martial arts like Thang-Ta, and its vibrant festivals such as Yaoshang (Holi), Ningol Chakouba, and Lai Haraoba. The state is also famous for its handloom and handicraft products, particularly its intricate weaving and pottery.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/manipuri_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/manipur_handloom.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> The economy of Manipur is primarily agrarian, with rice being the staple crop. The state also produces maize, pulses, and a variety of fruits and vegetables. The Loktak Lake, the largest freshwater lake in northeastern India, plays a vital role in the state's economy.</p>
+        <p><strong>Industries:</strong> Manipur has a growing industrial base, with a focus on handloom, handicrafts, and small-scale industries. The state is also exploring the potential of tourism, given its natural beauty and cultural heritage. Imphal is the main commercial and industrial hub of the state.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Manipur is home to several important educational institutions, including Manipur University, the Indian Institute of Information Technology (IIIT) Manipur, and the National Institute of Technology (NIT) Manipur.</p>
+        <p><strong>Historical Significance:</strong> The state has a long tradition of education, with a growing emphasis on higher education and research. Manipur University in Imphal is a key center for academic and cultural studies in the region.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/manipur_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/nit_manipur.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Manipur is known for its historical and cultural landmarks, including the Kangla Fort, the Shree Govindajee Temple, and the INA Memorial in Moirang, which commemorates the Indian National Army's contributions during World War II.</p>
+        <p><strong>Natural Beauty:</strong> The state's natural beauty is a major attraction, with the serene Loktak Lake, the Keibul Lamjao National Park (the only floating national park in the world), and the picturesque hills of Ukhrul and Senapati drawing tourists from around the world.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/loktak_lake.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/kangla_fort.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> N. Biren Singh</p>
+        <p><strong>Current Governor:</strong> Lakshman Acharya</p>
+        <p><strong>Political Landscape:</strong> Manipur has a dynamic political environment, with the Bharatiya Janata Party (BJP) and the Indian National Congress (INC) being the major political forces. The state also sees active participation from regional parties and movements that advocate for the rights and aspirations of various ethnic communities.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_manipur.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_manipur.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Manipur</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Alfred Kanngam S. Arthur</td>
+            <td>Outer Manipur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Prof. Angomcha Bimol Akoijam</td>
+            <td>Inner Manipur</td>
+            <td>INC</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

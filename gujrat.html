@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+        
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Gujarat is located in the western part of India, bordered by Pakistan and Rajasthan to the north, Madhya Pradesh to the east, Maharashtra and the Union territories of Daman and Diu and Dadra and Nagar Haveli to the south, and the Arabian Sea to the west.</p>
+        <p><strong>Capital:</strong> Gandhinagar</p>
+        <p><strong>Major Cities:</strong> Ahmedabad, Surat, Vadodara, Rajkot, Jamnagar, Bhavnagar</p>
+        <p><strong>Area:</strong> Approximately 196,024 square kilometers</p>
+        <p><strong>Population:</strong> Over 60 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/gujrat_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/ahmedabad_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Gujarat's history dates back to ancient times, with the region being part of the Indus Valley Civilization. The region was later ruled by various dynasties, including the Mauryas, Guptas, and the Chalukyas.</p>
+        <p><strong>Medieval Period:</strong> The region saw the rise of the Solanki dynasty, followed by the establishment of the Gujarat Sultanate. Gujarat also became an important center of trade during this period, with connections to the Middle East, Africa, and Southeast Asia.</p>
+        <p><strong>Colonial Period:</strong> Gujarat came under British control in the 19th century and played a significant role in India's freedom movement, with leaders like Mahatma Gandhi hailing from the region. The Dandi March, a key event in the struggle for independence, took place in Gujarat.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/sabarmati_ashram.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/dandi_march.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Gujarati is the official language and is widely spoken across the state. Other languages include Hindi, English, and various tribal languages.</p>
+        <p><strong>Culture:</strong> Gujarat is known for its rich cultural heritage, including traditional dance forms like Garba and Dandiya Raas, as well as its vibrant festivals like Navratri, Uttarayan, and Diwali. The state is also famous for its handicrafts, such as Bandhani, Patola sarees, and intricate woodwork.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/garba_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/bandhani_fabric.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Gujarat has a diverse agricultural base, with crops like cotton, groundnut, and sugarcane being the major ones. The state is also known for its dairy industry, particularly the Amul cooperative, which is a leader in milk production.</p>
+        <p><strong>Industries:</strong> Gujarat has a strong industrial base, with significant contributions from sectors like petrochemicals, textiles, chemicals, and pharmaceuticals. The state is also a major hub for diamond cutting and polishing, as well as automobile manufacturing, with cities like Ahmedabad and Surat being key industrial centers.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Gujarat is home to several prestigious educational institutions, including the Indian Institute of Management (IIM) Ahmedabad, Indian Institute of Technology (IIT) Gandhinagar, and Gujarat University. The state has a strong focus on higher education and research.</p>
+        <p><strong>Historical Significance:</strong> The state has a rich educational history, with institutions like Maharaja Sayajirao University of Baroda contributing significantly to education and culture. Gujarat also places a strong emphasis on technical and vocational education.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iim_ahmedabad.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/maharaja_sayajirao_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Major attractions in Gujarat include the Sun Temple at Modhera, the Rani ki Vav stepwell in Patan, and the ancient city of Lothal, which was part of the Indus Valley Civilization. The state also boasts a number of impressive forts, palaces, and temples.</p>
+        <p><strong>Natural Beauty:</strong> Gujarat is known for its diverse landscapes, including the white salt flats of the Rann of Kutch, the Gir National Park, home to the Asiatic lion, and the serene beaches along its coastline. The state also features the Statue of Unity, the world’s tallest statue, which is a major tourist attraction.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/rann_of_kutch.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/statue_of_unity.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Bhupendra Bhai Patel</p>
+        <p><strong>Current Governor:</strong> Acharya Devvrat</p>
+        <p><strong>Political Landscape:</strong> Gujarat has a vibrant political environment, with the Bharatiya Janata Party (BJP) being the dominant political force. The Indian National Congress (INC) also plays a significant role in the state’s politics, along with various regional parties. Gujarat's political landscape is marked by its development-oriented governance and economic growth initiatives.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_gujrat.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_gujrat.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Gujrat</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Amit Shah</td>
+            <td>Gandhinagar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Bharat Manubhai Sutariya</td>
+            <td>Amreli</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Bharatsinghji Dabhi</td>
+            <td>Patan</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>C.R. Patil</td>
+            <td>Navsari</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Chandubhai Chhaganchai Shihora</td>
+            <td>Surendranagar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Devusinh Chauhan</td>
+            <td>Kheda</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dhawal Patel</td>
+            <td>Valshad</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dineshbhai Kodarbhai Makwana</td>
+            <td>Ahmedabad West</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr Hemang Yogeshchandra Joshi</td>
+            <td>Vadodara</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Hari Bhai Patel</td>
+            <td>Mahesana</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Jashubhai Bhilubhai Rathwa</td>
+            <td>Chhota Udaipur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Jasvantsinh Bhabhor</td>
+            <td>Dahod</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Mansukhbhai Mandaviya</td>
+            <td>Porbandar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Mansukhbhai Vasava</td>
+            <td>Bharuch</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Miteshbhai Rameshbhai Patel</td>
+            <td>Anand</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Ms. Geniben Thakor</td>
+            <td>Banaskhantha</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Mekeshbhai Chandrakant Dalal</td>
+            <td>Surat</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Parshottam Rupala</td>
+            <td>Rajkot</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Prabhubhai Nagarbhai Vasava</td>
+            <td>Bardoli</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Rajeshbhai Chudasama</td>
+            <td>Junagadh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Rajpalsinh Mahendrasinh Jadhav</td>
+            <td>Panchmahal</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Shobhaben Mahendrasinh Brariya</td>
+            <td>Sabarkantha</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Shri Hasmukhbhai Somabhai Patel</td>
+            <td>Ahmedabad East</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Nimuben Bambhania</td>
+            <td>Bhavnagar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Poonamben Maadam</td>
+            <td>Jamnagar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Vinodbhai Lakhmashi Chavda</td>
+            <td>Kachchh</td>
+            <td>BJP</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

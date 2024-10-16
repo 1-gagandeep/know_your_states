@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Maharashtra is located in the western part of India, bordered by the Arabian Sea to the west, Gujarat and Madhya Pradesh to the north, Chhattisgarh to the east, Telangana to the southeast, Karnataka to the south, and Goa to the southwest.</p>
+        <p><strong>Capital:</strong> Mumbai</p>
+        <p><strong>Major Cities:</strong> Mumbai, Pune, Nagpur, Nashik, Aurangabad, Thane</p>
+        <p><strong>Area:</strong> Approximately 307,713 square kilometers</p>
+        <p><strong>Population:</strong> Over 112 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/maharashtra_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/mumbai_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Maharashtra has a rich historical background, with evidence of early human settlements and connections to ancient civilizations like the Indus Valley. The region was part of various ancient empires, including the Maurya and Satavahana empires.</p>
+        <p><strong>Medieval Period:</strong> During the medieval period, Maharashtra was ruled by the Chalukyas, Rashtrakutas, and Yadavas. The region witnessed the rise of the Maratha Empire under the leadership of Chhatrapati Shivaji Maharaj, which played a significant role in resisting Mughal expansion.</p>
+        <p><strong>Colonial Period:</strong> Maharashtra came under British control in the 19th century and became a major center for the Indian independence movement. Leaders like Bal Gangadhar Tilak and Dr. B.R. Ambedkar were influential figures from the region.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/shivaji_maharaj.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/gateway_of_india.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Marathi is the official language of Maharashtra and is widely spoken across the state. Other languages include Hindi, Gujarati, Urdu, and English.</p>
+        <p><strong>Culture:</strong> Maharashtra is known for its vibrant culture, including traditional dance forms like Lavani and Tamasha, and its rich literary heritage with contributions from poets like Sant Tukaram and Jnaneshwar. The state celebrates various festivals with great enthusiasm, including Ganesh Chaturthi, Diwali, and Gudi Padwa. Maharashtra is also famous for its cuisine, particularly dishes like Vada Pav, Puran Poli, and Misal Pav.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/lavani_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/vada_pav.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Maharashtra's economy has a strong agricultural base, with major crops including sugarcane, cotton, rice, and fruits like grapes and oranges. The state is a leading producer of sugar and cotton in India.</p>
+        <p><strong>Industries:</strong> Maharashtra is one of the most industrialized states in India, with a robust industrial base in sectors like automobiles, pharmaceuticals, chemicals, textiles, and information technology. Mumbai, the state's capital, is the financial hub of India, housing the Bombay Stock Exchange (BSE) and numerous multinational corporations.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Maharashtra is home to several prestigious educational institutions, including the Indian Institute of Technology (IIT) Bombay, Tata Institute of Social Sciences (TISS), and University of Mumbai. The state also has a strong network of engineering, medical, and management colleges.</p>
+        <p><strong>Historical Significance:</strong> The state has a rich tradition of education and social reform, with figures like Mahatma Jyotiba Phule and Savitribai Phule advocating for women's education and social justice in the region.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iit_bombay.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/mumbai_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Maharashtra is renowned for its historical sites, including the UNESCO World Heritage Sites of Ajanta and Ellora Caves, the Elephanta Caves, and forts like Raigad and Sinhagad. The state is also home to religious sites like the Siddhivinayak Temple and Shirdi.</p>
+        <p><strong>Natural Beauty:</strong> Maharashtra is known for its diverse landscapes, including the Western Ghats, hill stations like Mahabaleshwar and Lonavala, and beaches along the Konkan coast. The state also has several wildlife sanctuaries and national parks, including Tadoba Andhari Tiger Reserve and Sanjay Gandhi National Park.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/ajanta_caves.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/mahabaleshwar_hill_station.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Eknath Shinde</p>
+        <p><strong>Current Governor:</strong> Ramesh Bais</p>
+        <p><strong>Political Landscape:</strong> Maharashtra has a vibrant political scene, with the Bharatiya Janata Party (BJP), Shiv Sena, Indian National Congress (INC), and Nationalist Congress Party (NCP) being the major political forces. The state has a history of coalition governments and political alliances, reflecting its diverse and dynamic political environment.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_maharashtra.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_maharashtra.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Maharashtra</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Aashtikar Patil Nagesh Bapurao</td>
+            <td>Hingoli</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>Amar Sharadrao Kale</td>
+            <td>Wardha</td>
+            <td>NCP</td>
+        </tr>
+        <tr>
+            <td>Anil Yeshwant Desai</td>
+            <td>Mumubai South Central</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>Anup Dhotre</td>
+            <td>Akola</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Arvind Ganpat Sawant</td>
+            <td>Mumbai South</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>Bajrang Manohar Sonwane</td>
+            <td>Beed</td>
+            <td>NCP</td>
+        </tr>
+        <tr>
+            <td>Balwant Basawant Wankhede</td>
+            <td>Amravati</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Balya Mama(Suresh Gopinath Mhatre)</td>
+            <td>Bhiwandi</td>
+            <td>NCP</td>
+        </tr>
+        <tr>
+            <td>Bhaskar Murlidhar Bhagare</td>
+            <td>Dindori</td>
+            <td>NCP</td>
+        </tr>
+        <tr>
+            <td>Bhausaheb Rajaram Wakchaure</td>
+            <td>Shirdi</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>Bhumare Sandipanrao Asaram</td>
+            <td>Aurangabad</td>
+            <td>SHS</td>
+        </tr>
+        <tr>
+            <td>Chhatrapati Shahu Shahaji</td>
+            <td>Kolhapur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dhairyasheel Mane</td>
+            <td>Hatkanangle</td>
+            <td>SHS</td>
+        </tr>
+        <tr>
+            <td>Dhanorkar Pratibha Suresh(Balabhau)</td>
+            <td>Chandrapur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dr. Amol Ramsing Kolhe</td>
+            <td>Shirur</td>
+            <td>NCP</td>
+        </tr>
+        <tr>
+            <td>Dr. Hemant Vishnu Savara</td>
+            <td>Palghar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr. Kalyan Kale</td>
+            <td>Jalna</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dr. Namdev Dasaram Kirsan</td>
+            <td>Gadchiroli-chimur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dr. Prashant Yadavrao Padole</td>
+            <td>Bhandara - Gondiya</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dr. Shivajirao Kalge</td>
+            <td>Latur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Gowaal K Padavi</td>
+            <td>Nandubar</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Jadhav Sanjay Haribhau</td>
+            <td>Parbhani</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>Kum. Praniti Sushilkumar Rajsinh</td>
+            <td>Madha</td>
+            <td>NCP</td>
+        </tr>
+        <tr>
+            <td>Muralidhar Kisan Maohol</td>
+            <td>Pune</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Narayan Rane</td>
+            <td>Ratnagiri - Sindhudurg</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Naresh Ganpat Mahske</td>
+            <td>Thane</td>
+            <td>SHS</td>
+        </tr>
+        <tr>
+            <td>Nilesh Dnyandev Lanke</td>
+            <td>Ahmadnagar</td>
+            <td>NCP</td>
+        </tr>
+        <tr>
+            <td>Nitin Jairam Gadkari</td>
+            <td>Nagpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Omprakash Bhupalsinh(Pavan Rajenimbalkar)</td>
+            <td>Osmanabad</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>Piyush Goyal</td>
+            <td>Mumbai North</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Prataprao Jadhav</td>
+            <td>Buldhana</td>
+            <td>SHS</td>
+        </tr>
+        <tr>
+            <td>Rajabhau Prakash Waje</td>
+            <td>Nashik</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>Rashmi Shyamkumar Barve</td>
+            <td>Ramtek</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Ravindar Wairkar</td>
+            <td>Mumbai North West</td>
+            <td>SHS</td>
+        </tr>
+        <tr>
+            <td>Sanjay Dina Patil</td>
+            <td>Mumbai North East</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>Sanjay Uttamrao Deshmukh</td>
+            <td>Yavatmal-washim</td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>Shobha Dinesh Bachhav</td>
+            <td>Dhule</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Shrirang Barane</td>
+            <td>Maval</td>
+            <td>SHS</td>
+        </tr>
+        <tr>
+            <td>Smt. Raksha Nikhil Khadse</td>
+            <td>Raver</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Smita Wagh</td>
+            <td>Jalgaon</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Srikant Eknath Shinde</td>
+            <td>Kalyan</td>
+            <td>SHS</td>
+        </tr>
+        <tr>
+            <td>Srimant Udayanraje Bhonsle</td>
+            <td>Satara</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Sunil Dattatrey Tatkare</td>
+            <td>Raigad</td>
+            <td>NCP</td>
+        </tr>
+        <tr>
+            <td>Supriya Sule</td>
+            <td>Baramati</td>
+            <td>NCP</td>
+        </tr>
+        <tr>
+            <td>Varsha Eknath Gaikwad</td>
+            <td>Mumbai North Central</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Vasantrao Balwantrao Chavan</td>
+            <td>Nanded</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Vishal Prakashbapu Patil</td>
+            <td>Sangli</td>
+            <td>IND</td>
+        </tr>
+        <tr>
+            <td>Mohite Patil Dhairyasheel Rajsinh</td>
+            <td>Madha</td>
+            <td>NCP</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

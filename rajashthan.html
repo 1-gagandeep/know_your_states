@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Rajasthan is located in the northwestern part of India, bordered by Punjab to the north, Haryana and Uttar Pradesh to the northeast, Madhya Pradesh to the southeast, and Gujarat to the southwest. It also shares an international border with Pakistan to the west.</p>
+        <p><strong>Capital:</strong> Jaipur</p>
+        <p><strong>Major Cities:</strong> Jaipur, Jodhpur, Udaipur, Kota, Bikaner, Ajmer</p>
+        <p><strong>Area:</strong> Approximately 342,239 square kilometers, making it the largest state in India by area.</p>
+        <p><strong>Population:</strong> Over 68 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/rajasthan_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/jaipur_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Rajasthan has a rich history dating back to the Vedic era. The region was part of several ancient kingdoms, including Matsya, Surasena, and Malwa. It was also influenced by the Maurya and Gupta empires.</p>
+        <p><strong>Medieval Period:</strong> Rajasthan is famous for its Rajput rulers who built a legacy of valor and heroism. The Rajput kingdoms, including Mewar, Marwar, and Amber, played a significant role in resisting invasions, including those by the Mughals. The state is dotted with magnificent forts and palaces that stand as a testament to this era.</p>
+        <p><strong>Colonial Period:</strong> Rajasthan came under British control in the 19th century but retained its princely states until India's independence in 1947. Post-independence, these princely states were integrated into the Indian Union, forming the state of Rajasthan.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/amber_fort.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/chittorgarh_fort.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Hindi is the official language of Rajasthan, while Rajasthani and its dialects like Marwari, Mewari, and Dhundhari are widely spoken across the state.</p>
+        <p><strong>Culture:</strong> Rajasthan is renowned for its rich cultural heritage, which includes traditional music, dance, and art forms. Folk dances like Ghoomar and Kalbeliya are world-famous, and the state is also known for its vibrant festivals like Diwali, Holi, Teej, and the Desert Festival. Rajasthan's handicrafts, particularly its textiles, pottery, and jewelry, are highly prized.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/ghoomar_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/rajasthani_handicrafts.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Rajasthan's economy is primarily agrarian, with key crops including wheat, barley, pulses, sugarcane, and oilseeds. Despite its arid climate, the state has developed irrigation infrastructure, such as the Indira Gandhi Canal, to support agriculture.</p>
+        <p><strong>Industries:</strong> The state has a significant industrial base, particularly in textiles, cement, and tourism. Rajasthan is also rich in minerals, with large reserves of marble, sandstone, and granite, making it a leading producer of these resources. Tourism plays a major role in the state's economy, with Rajasthan being a top destination for both domestic and international tourists.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Rajasthan is home to several prestigious educational institutions, including the Indian Institute of Technology (IIT) Jodhpur, the Indian Institute of Management (IIM) Udaipur, and the Birla Institute of Technology and Science (BITS) Pilani. The state has a strong emphasis on higher education and technical training.</p>
+        <p><strong>Historical Significance:</strong> The state has a long tradition of education, with institutions like the University of Rajasthan in Jaipur and the Maharana Pratap University of Agriculture and Technology in Udaipur contributing significantly to the region's academic landscape.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iit_jodhpur.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/bits_pilani.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Rajasthan is famous for its historical landmarks, including the majestic forts of Jaipur (Amber Fort), Jodhpur (Mehrangarh Fort), and Udaipur (City Palace). The Ranthambore National Park is another major attraction, known for its tiger population. The state also boasts beautiful palaces, havelis, and temples, such as the Dilwara Temples and the Jaisalmer Fort.</p>
+        <p><strong>Natural Beauty:</strong> Rajasthan is known for its diverse landscapes, ranging from the Thar Desert to the Aravalli Range. The state's natural beauty is further enhanced by its lakes, such as Lake Pichola in Udaipur and the Sambhar Salt Lake, India's largest inland salt lake.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/mehrangarh_fort.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/lake_pichola.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Bhajan Lal Sharma</p>
+        <p><strong>Current Governor:</strong> Haribhau Bagade</p>
+        <p><strong>Political Landscape:</strong> Rajasthan has a vibrant political environment, with the Indian National Congress (INC) and the Bharatiya Janata Party (BJP) being the dominant political forces. The state also has active participation from regional parties and community-based movements that influence its political landscape.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_rajasthan.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_rajsthan.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Rajasthan</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Amraram</td>
+            <td>Sikar</td>
+            <td>CPIM</td>
+        </tr>
+        <tr>
+            <td>Arjun Ram Meghwal</td>
+            <td>Bikaner</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Bhagirath Chaudhary</td>
+            <td>Ajmer</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Bhajan Lal Jatav</td>
+            <td>Karauli-dholpur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Bhupender Yadav</td>
+            <td>Alwar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Brijendra Ola</td>
+            <td>Jhunjhunu</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>C.P. Joshi</td>
+            <td>Chittorgarh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Damodar Agarwal</td>
+            <td>Bhilwara</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dushyant Singh</td>
+            <td>Jhalawar-baran</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Gajendra Singh Shekhawat</td>
+            <td>Jodhpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Hanuman Beniwal</td>
+            <td>Nagaur</td>
+            <td>RLP</td>
+        </tr>
+        <tr>
+            <td>Harish Chandra Meena</td>
+            <td>Tonk-sawai Madhopur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Kuldeep Indora</td>
+            <td>Ganganagar</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Lumbaram Choudhary</td>
+            <td>Jalore</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Mahima Visheshwar Singh</td>
+            <td>Rajsamand</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Manju Sharma</td>
+            <td>Jaipur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Mannalal Rawat</td>
+            <td>Udaipur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Ms.Sanjana Jatav</td>
+            <td>Bharatpur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Murari Lal Meena</td>
+            <td>Dausa</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Om Birla</td>
+            <td>Kota</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>P.P. Chaudhary</td>
+            <td>Pali</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Rahul Kaswan</td>
+            <td>Churu</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Raj Kumar Roat</td>
+            <td>Banswara</td>
+            <td>BHRTADVSIP</td>
+        </tr>
+        <tr>
+            <td>Rao Rajendra Singh</td>
+            <td>Jaipur Rural</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Umeda Ram Beniwal</td>
+            <td>Barmer</td>
+            <td>INC</td>
+        </tr>
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

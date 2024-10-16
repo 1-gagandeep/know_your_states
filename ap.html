@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Arunachal Pradesh is located in the northeastern part of India, bordered by Bhutan to the west, China to the north and northeast, Myanmar to the east, and the Indian state of Assam to the south.</p>
+        <p><strong>Capital:</strong> Itanagar</p>
+        <p><strong>Major Cities:</strong> Itanagar, Tawang, Pasighat, Ziro, Bomdila, Tezu</p>
+        <p><strong>Area:</strong> Approximately 83,743 square kilometers</p>
+        <p><strong>Population:</strong> Over 1.4 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/arunachal_pradesh_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/itanagar_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Arunachal Pradesh has a rich history that dates back to ancient times, with various tribes inhabiting the region for centuries. The area is mentioned in ancient Indian texts, including the Mahabharata, as part of the region called "Prabhu Mountains."</p>
+        <p><strong>Medieval Period:</strong> The region was influenced by the neighboring kingdoms of Assam and Tibet, with various tribes maintaining their unique cultures and traditions. The Monpa and Sherdukpen tribes in the Tawang region were under Tibetan influence, leading to the establishment of several Buddhist monasteries.</p>
+        <p><strong>Colonial Period:</strong> Arunachal Pradesh came under British control in the 19th century, initially as part of Assam. The British established administrative control over the region, and it was known as the North-East Frontier Agency (NEFA) during this period. The area played a strategic role in the Anglo-Tibetan relations.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/tawang_monastery.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/arunachal_tribal_art.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Arunachal Pradesh is home to a diverse linguistic heritage, with over 50 distinct languages spoken. The major languages include Nyishi, Adi, Apatani, Monpa, and English. Hindi and Assamese are also widely spoken and understood.</p>
+        <p><strong>Culture:</strong> Arunachal Pradesh is known for its rich tribal culture, with each tribe having its unique traditions, festivals, and crafts. Festivals like Losar, Solung, and Mopin are celebrated with great enthusiasm. The state's handicrafts, particularly bamboo and cane products, are famous for their craftsmanship.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/losar_festival.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/bamboo_craft.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> The economy of Arunachal Pradesh is primarily agrarian, with agriculture being the mainstay of the population. Rice, millet, maize, and pulses are the major crops, along with horticultural products like oranges, apples, and pineapples.</p>
+        <p><strong>Industries:</strong> The state has a small industrial base, with handloom, handicrafts, and cottage industries being significant contributors. Hydropower is an emerging sector, given the state's abundant water resources. Tourism, based on its natural beauty and cultural heritage, is also a growing industry.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Arunachal Pradesh has several educational institutions, including Rajiv Gandhi University in Itanagar, the National Institute of Technology (NIT) Arunachal Pradesh, and North Eastern Regional Institute of Science and Technology (NERIST).</p>
+        <p><strong>Historical Significance:</strong> The state has been focusing on improving literacy and education infrastructure, with efforts to provide quality education to students in remote and rural areas. Rajiv Gandhi University has been a key institution in higher education and research.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/rajiv_gandhi_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/nit_arunachal.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Arunachal Pradesh is rich in historical and cultural landmarks, including the Tawang Monastery, one of the largest monasteries in India, and the ancient ruins of Bhalukpong Fort. The state's cultural diversity and traditions offer a unique experience for visitors.</p>
+        <p><strong>Natural Beauty:</strong> The state is known for its breathtaking natural landscapes, including the picturesque Ziro Valley, the Sela Pass, and the Namdapha National Park, which is known for its diverse flora and fauna.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/ziro_valley.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/namdapha_national_park.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Pema Khandu</p>
+        <p><strong>Current Governor:</strong> Lt. Gen. Kaiwalya Trivikram Parnaik</p>
+        <p><strong>Political Landscape:</strong> Arunachal Pradesh has a dynamic political landscape, with the Bharatiya Janata Party (BJP) being the major political force in recent years. The state also sees participation from other regional and national parties in the political discourse, reflecting its diverse population and unique challenges.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_arunachal_pradesh.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_arunachal_pradesh.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Arunachal Pradesh</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Kiren Rijiju</td>
+            <td>Arunachal West</td>
+            <td>BJP</td>
+        </tr>
+
+        <tr>
+            <td>Tapir Gao</td>
+            <td>Arunachal East</td>
+            <td>BJP</td>
+        </tr>
+        
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Bordered by Uttar Pradesh to the north, Jharkhand to the northeast, Odisha to the east, Telangana to the south, Maharashtra to the southwest, Madhya Pradesh to the northwest, and Andhra Pradesh to the south.</p>
+        <p><strong>Capital:</strong> Raipur</p>
+        <p><strong>Major Cities:</strong> Raipur, Bilaspur, Durg, Bhilai, Korba, Rajnandgaon</p>
+        <p><strong>Area:</strong> Approximately 135,192 square kilometers</p>
+        <p><strong>Population:</strong> Over 29 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/chhattisgarh_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/raipur_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Chhattisgarh has a history that dates back to the ancient period, with evidence of early human settlements. The region was once part of the Maurya and Gupta empires.</p>
+        <p><strong>Medieval Period:</strong> The region was ruled by various dynasties, including the Kalachuri dynasty of Ratanpur and the Nagvanshi kings, contributing to its rich cultural heritage.</p>
+        <p><strong>Colonial Period:</strong> Chhattisgarh came under British control in the 19th century and was part of the Central Provinces. The region played a significant role in India's freedom struggle, with leaders like Veer Narayan Singh emerging from the area.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kalachuri_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/veer_narayan_singh.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Chhattisgarhi is the widely spoken language in the state, while Hindi is the official language. Other languages include Gondi, Halbi, and various tribal languages.</p>
+        <p><strong>Culture:</strong> Chhattisgarh is known for its tribal culture, traditional dances like Panthi and Raut Nacha, and its rich tradition of folk music. The state is also famous for its handicrafts, particularly bell metal art and bamboo craft.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/raut_nacha.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/bell_metal_art.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Chhattisgarh's economy is predominantly agrarian, with rice being the major crop. The state is often referred to as the "Rice Bowl of India."</p>
+        <p><strong>Industries:</strong> The state has a strong industrial base, with significant contributions from the steel, cement, and power sectors. Raipur and Bhilai are key industrial hubs, with Bhilai Steel Plant being one of the largest in India.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Chhattisgarh is home to several important educational institutions, including the Indian Institute of Technology (IIT) Bhilai, All India Institute of Medical Sciences (AIIMS) Raipur, and Pandit Ravishankar Shukla University.</p>
+        <p><strong>Historical Significance:</strong> The state has a growing focus on education, with initiatives to improve literacy and access to quality education in both urban and rural areas.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iit_bhilai.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/aiims_raipur.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Major attractions include the ancient temples of Bhoramdeo, the Bastar Palace, and the caves of Kutumsar and Kailash, which are rich in natural beauty and historical significance.</p>
+        <p><strong>Natural Beauty:</strong> Chhattisgarh is known for its natural landscapes, including the Chitrakote and Tirathgarh waterfalls, as well as its dense forests and wildlife sanctuaries like the Barnawapara and Udanti sanctuaries.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/chitrakote_waterfall.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/bhoramdeo_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Vishnu Deo Sai</p>
+        <p><strong>Current Governor:</strong> Ramen Deka</p>
+        <p><strong>Political Landscape:</strong> Chhattisgarh has a dynamic political environment, with the Indian National Congress (INC) and Bharatiya Janata Party (BJP) being the major political forces. The state also sees significant political activity from regional and tribal parties advocating for local interests.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_chhattisgarh.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_chhattisgarh.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Chhattisgarh</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Bhojraj Nag</td>
+            <td>Kanker</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Brijmohan Agrawal</td>
+            <td>Raipur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Chintmani Maharaj</td>
+            <td>Sarguja</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Mahesh Kashyap</td>
+            <td>Bastar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Ms. Jyotsana Mahant</td>
+            <td>Korba</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Radheshayam Rathia</td>
+            <td>Raigarh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Santosh Pandey</td>
+            <td>Rajnandgaon</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Kamlesh Jangde</td>
+            <td>Jangir-champa</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Roop Kumari Choudhary</td>
+            <td>Mahasamund</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Tokhan Sahu</td>
+            <td>Bilaspur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Vijay Baghel</td>
+            <td>Durg</td>
+            <td>BJP</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

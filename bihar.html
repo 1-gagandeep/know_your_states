@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+    <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Bordered by Nepal to the north, the Indian states of West Bengal to the east, Jharkhand to the south, and Uttar Pradesh to the west.</p>
+        <p><strong>Capital:</strong> Patna</p>
+        <p><strong>Major Cities:</strong> Patna, Gaya, Bhagalpur, Muzaffarpur, Rohtas</p>
+        <p><strong>Area:</strong> Approximately 94,163 square kilometers</p>
+        <p><strong>Population:</strong> Over 120 million (one of the most populous states in India)</p>
+
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/bihar_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/patna_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Bihar has a significant place in Indian history as the center of several ancient Indian empires, including the Maurya and Gupta Empires. It was also home to the ancient universities of Nalanda and Vikramashila.</p>
+        <p><strong>Medieval Period:</strong> The region was ruled by various Muslim dynasties, including the Mughals.</p>
+        <p><strong>Colonial Period:</strong> Bihar was part of British India and saw various movements against British rule.</p>
+
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/ashoka.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    The Great Ashoka
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/gupta.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Chandra Gupt Maurya
+                </label>
+            </div>
+        </div>
+        
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Hindi is the official language, but other languages like Bhojpuri, Maithili, and Magahi are also widely spoken.</p>
+        <p><strong>Culture:</strong> Bihar is known for its traditional festivals, such as Chhath Puja, and its contributions to literature and arts. It has a rich tradition of folk music and dance.</p>
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/chhath.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    All's Favourite Chhath Puja
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/madhubani.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    World Famous Madhubani Paintings
+                </label>
+            </div>
+        </div>
+
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> The economy of Bihar is primarily based on agriculture. Major crops include rice, wheat, sugarcane, and lentils.</p>
+        <p><strong>Industries:</strong> The state is working on industrial development, with a focus on improving infrastructure and attracting investment.</p>
+        
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Bihar is home to several renowned educational institutions, including the Indian Institute of Technology (IIT) Patna and Nalanda University.</p>
+        <p><strong>Historical Significance:</strong> Nalanda University, an ancient center of learning, was one of the first residential universities in the world.</p>
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/nalanda.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Nalanda University
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/iitp.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    IIT Patna
+                </label>
+            </div>
+        </div>
+
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Key attractions include the ruins of Nalanda University, the ancient city of Rajgir, Bodh Gaya (a major Buddhist pilgrimage site), and the Mahabodhi Temple.</p>
+        <p><strong>Natural Beauty:</strong> The state has several national parks and wildlife sanctuaries, such as the Valmiki National Park.</p>
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/valmiki.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Valmiki Tiger Reserve
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/rajgir.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Glass Bridge Of India, Rajgir
+                </label>
+            </div>
+        </div>
+
+        <h2>Rohtas</h2>
+        <p><strong>Green Nature:</strong> Rohtas, located in the Shahabad region, is known for its lush green landscapes and scenic beauty. The area features dense forests, hills, and the picturesque Rohtas Fort, which is surrounded by greenery. The fort, built by Afghan ruler Sher Shah Suri, is a UNESCO World Heritage Site and is notable for its architectural grandeur amidst a natural setting.</p>
+        
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Nitish Kumar</p>
+        <p><strong>Current Governor:</strong> Rajendra Arlekar</p>
+        <p><strong>Political Landscape:</strong> Bihar has a dynamic political scene with significant regional parties playing an important role in state politics.</p>
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/cm_bihar.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Nitish Kumar
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/governor_bihar.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Rajendra Arlekar
+                </label>
+            </div>
+        </div>
+    </div>   
+    <div class="content-state">
+        
+        <table>
+            <caption>MP's List of Bihar</caption>
+            <tr>
+                <th>Candidate Name</th>
+                <th>Constituency Name</th>
+                <th>Party Name</th>
+            </tr>
+            
+            <tr>
+                <td>Abhay Kushwaha</td>
+                <td>Aurangabad</td>
+                <td>RJD</td>
+            </tr>
+            <tr>
+                <td>Ajay Kumar Mandal</td>
+                <td>Bhagalpur</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Arun Bharti</td>
+                <td>Jamui</td>
+                <td>LJP</td>
+            </tr>
+            <tr>
+                <td>Ashok Kumar Yadav</td>
+                <td>Madhubani</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>ChiraG Paswan</td>
+                <td>Hajipur</td>
+                <td>LJP</td>
+            </tr>
+            <tr>
+                <td>Devesh Chandra Thakur</td>
+                <td>Sitamarhi</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Dileshwar Kamait</td>
+                <td>Supaul</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Dinesh Chandra Yadav</td>
+                <td>Medhepura</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Dr. Alok Kumar Suman</td>
+                <td>Gopalganj</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Dr. Sanjay Jaiswal</td>
+                <td>Paschim Champaran</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Girdhari Yadav</td>
+                <td>Banka</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Giriraj Singh</td>
+                <td>Begusarai</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Gopal Jee Thakur</td>
+                <td>Darbhanga</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Janardan Singh Sigriwal</td>
+                <td>Maharajganj</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Jitan Ram Manjhi</td>
+                <td>HAM</td>
+                <td>Gaya</td>
+            </tr>
+            <tr>
+                <td>Kaushlendra Kumar</td>
+                <td>Nalanda</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Manoj Kumar</td>
+                <td>Sasaram</td>
+                <td>INC</td>
+            </tr>
+            <tr>
+                <td>Misha Bharti</td>
+                <td>Patliputra</td>
+                <td>RJD</td>
+            </tr>
+            <tr>
+                <td>Mohammad Jawed</td>
+                <td>Kishanganj</td>
+                <td>INC</td>
+            </tr>
+            <tr>
+                <td>Nityanand Rai</td>
+                <td>Ujuaipur</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Pradeep Kumar Singh</td>
+                <td>Araria</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Radha Mohan Singh</td>
+                <td>Purvi Champaran</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Raj Bhushan Nishad</td>
+                <td>Muzaffarpur</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Raja Ram Singh</td>
+                <td>Karakat</td>
+                <td>CPI(ML)(L)</td>
+            </tr>
+            <tr>
+                <td>Rajesh Ranjan(Pappu Yadav)</td>
+                <td>Purnia</td>
+                <td>INDE</td>
+            </tr>
+            <tr>
+                <td>Rajesh Verma</td>
+                <td>Khagaria</td>
+                <td>LJP</td>
+            </tr>
+            <tr>
+                <td>Rajiv Pratap Rudy</td>
+                <td>Saran</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Rajiv Ranjan Singh(Lallan Singh)</td>
+                <td>Munger</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Rampreet Mandal</td>
+                <td>Jhanjharpur</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Ravi Shankar Prasad</td>
+                <td>Patna Sahib</td>
+                <td>BJP</td>
+            </tr>
+            <tr>
+                <td>Shambhavi</td>
+                <td>Samastipur</td>
+                <td>LJP</td>
+            </tr>
+            <tr>
+                <td>Smt. Lovely Anand</td>
+                <td>Sheohar</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Sudama Prasad</td>
+                <td>Arrah</td>
+                <td>CPI(ML)(L)</td>
+            </tr>
+            <tr>
+                <td>Sudhakar Singh</td>
+                <td>Buxar</td>
+                <td>RJD</td>
+            </tr>
+            <tr>
+                <td>Sunil Kumar</td>
+                <td>Valmiki Naga</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Surendra Prasad Yadav</td>
+                <td>Jahanabad</td>
+                <td>RJD</td>
+            </tr>
+            <tr>
+                <td>Tariq Anwar</td>
+                <td>Katihar</td>
+                <td>INC</td>
+            </tr>
+            <tr>
+                <td>Veena Devi</td>
+                <td>Vaishali</td>
+                <td>LJP</td>
+            </tr>
+            <tr>
+                <td>Vijayalakshmi Devi</td>
+                <td>Siwan</td>
+                <td>JDU</td>
+            </tr>
+            <tr>
+                <td>Vivek Thakur</td>
+                <td>Nawada</td>
+                <td>BJP</td>
+            </tr>
+            </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+ -->

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Himachal Pradesh is bordered by Jammu and Kashmir to the north, Punjab to the west, Haryana and Uttarakhand to the south, and Tibet to the east. It is located in the western Himalayas.</p>
+        <p><strong>Capital:</strong> Shimla (Summer), Dharamshala (Winter)</p>
+        <p><strong>Major Cities:</strong> Shimla, Dharamshala, Manali, Mandi, Solan, Kullu</p>
+        <p><strong>Area:</strong> Approximately 55,673 square kilometers</p>
+        <p><strong>Population:</strong> Over 7 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/himachal_pradesh_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/shimla_ridge.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Himachal Pradesh has a rich history dating back to the Vedic period. The region was part of various ancient kingdoms and was known for its distinct tribal culture.</p>
+        <p><strong>Medieval Period:</strong> The region was ruled by several local chieftains and princely states. The area was strategically important due to its proximity to Tibet and Central Asia, leading to various invasions and battles.</p>
+        <p><strong>Colonial Period:</strong> Himachal Pradesh came under British control in the 19th century. Shimla was developed as the summer capital of British India, and the region played a significant role in the freedom struggle.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/shimla_viceregal_lodge.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/jakhu_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Hindi is the official language of Himachal Pradesh, while Pahari dialects are widely spoken in rural areas. Other languages include Punjabi and Kangri.</p>
+        <p><strong>Culture:</strong> Himachal Pradesh is known for its rich cultural heritage, which includes traditional dances like Nati and Kulluvi Nati, as well as vibrant festivals like Dussehra, Diwali, and Lohri. The state's handicrafts, particularly woolen shawls, caps, and woodwork, are also renowned.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kulluvi_nati.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/himachali_shawl.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Agriculture is the backbone of Himachal Pradesh's economy, with apple farming being one of the major contributors. The state is also known for producing various fruits like plums, cherries, and peaches.</p>
+        <p><strong>Industries:</strong> Besides agriculture, Himachal Pradesh has a growing industrial base, including pharmaceuticals, textiles, and food processing. The tourism industry is also a significant contributor to the state's economy, with popular destinations like Shimla, Manali, and Dharamshala attracting tourists from all over the world.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Himachal Pradesh is home to several prestigious educational institutions, including Himachal Pradesh University in Shimla, the Indian Institute of Technology (IIT) Mandi, and the All India Institute of Medical Sciences (AIIMS) Bilaspur.</p>
+        <p><strong>Historical Significance:</strong> The state has a strong tradition of education, with several institutions dating back to the colonial period, contributing significantly to the region's intellectual and cultural development.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iit_mandi.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/himachal_pradesh_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Himachal Pradesh is known for its historical and religious sites, including the temples of Chamba and Kangra, the monasteries in Lahaul and Spiti, and the colonial architecture of Shimla.</p>
+        <p><strong>Natural Beauty:</strong> The state is famous for its breathtaking landscapes, including the Rohtang Pass, the valleys of Kullu and Kangra, and the serene lakes like Dal Lake and Rewalsar. Himachal Pradesh is also known for its adventure tourism, offering activities like trekking, skiing, and paragliding.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/rohtang_pass.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/chamba_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Sukhvinder Singh Sukhu</p>
+        <p><strong>Current Governor:</strong> Shiv Pratap Shukla</p>
+        <p><strong>Political Landscape:</strong> Himachal Pradesh has a dynamic political environment, with the Indian National Congress (INC) and Bharatiya Janata Party (BJP) being the major political parties. The state has a tradition of alternating power between these two parties in successive elections.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_himachal_pradesh.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_himachal_pradesh.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Himachal Pradesh</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Anurag Singh Thakur</td>
+            <td>Hamirpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr. Rajeev Bhardwaj</td>
+            <td>Kangara</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Kangana Ranuat</td>
+            <td>Mandi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Suresh Kumar Kashyap</td>
+            <td>Shimla</td>
+            <td>BJP</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

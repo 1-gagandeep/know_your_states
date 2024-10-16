@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> West Bengal is bordered by Bangladesh to the east, Nepal and Bhutan to the north, Assam to the northeast, Odisha to the southwest, Jharkhand and Bihar to the west, and Sikkim to the northwest.</p>
+        <p><strong>Capital:</strong> Kolkata, the cultural and financial hub of eastern India.</p>
+        <p><strong>Major Cities:</strong> Kolkata, Howrah, Siliguri, Durgapur, Asansol, Darjeeling.</p>
+        <p><strong>Area:</strong> Approximately 88,752 square kilometers.</p>
+        <p><strong>Population:</strong> Over 91 million.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/wb_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/kolkata_city.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> West Bengal's history dates back to the Mauryan Empire and the Gupta period. The region was also part of the Bengal Sultanate and a key center for Buddhism and Jainism in ancient India.</p>
+        <p><strong>Medieval Period:</strong> The region was ruled by various Muslim rulers and eventually became part of the Mughal Empire. It was later colonized by the British, who established Calcutta (now Kolkata) as the capital of British India until 1911.</p>
+        <p><strong>Colonial Period:</strong> West Bengal was the heart of the Indian independence movement. The partition of Bengal in 1905 and 1947 significantly shaped its socio-political landscape.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/bengal_sultanate.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/victoria_memorial.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Bengali is the official language and is widely spoken throughout the state. English is also commonly used, particularly in education and government.</p>
+        <p><strong>Culture:</strong> West Bengal is known for its rich cultural heritage, including the classical dance form of Manipuri, the Rabindra Sangeet (songs written by Rabindranath Tagore), and its vibrant literary tradition. Major festivals include Durga Puja, Kali Puja, and Poila Baisakh (Bengali New Year).</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/durga_puja.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/rabindra_sangeet.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> West Bengal is a leading producer of rice, jute, and tea. The Darjeeling tea from West Bengal is globally famous.</p>
+        <p><strong>Industries:</strong> The state has a diversified industrial base, including jute, textiles, information technology, and steel. Kolkata is a major industrial hub, particularly for the jute and tea industries.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> West Bengal is home to renowned educational institutions like the Indian Institute of Management (IIM) Calcutta, the Indian Statistical Institute (ISI), Jadavpur University, and the University of Calcutta.</p>
+        <p><strong>Historical Significance:</strong> The University of Calcutta, founded in 1857, is one of the oldest and most prestigious universities in India. The state has a long tradition of intellectual and cultural movements, including the Bengal Renaissance.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/calcutta_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/jadavpur_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> West Bengal boasts iconic landmarks such as the Howrah Bridge, Victoria Memorial, and the Sundarbans (home to the Royal Bengal Tiger).</p>
+        <p><strong>Natural Beauty:</strong> The state is known for its picturesque hill stations like Darjeeling, the Sundarbans mangrove forests, and scenic riverbanks along the Hooghly River.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/howrah_bridge.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/darjeeling_hills.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Mamata Banerjee.</p>
+        <p><strong>Current Governor:</strong> C.V. Ananda Bose.</p>
+        <p><strong>Political Landscape:</strong> West Bengal has a vibrant political environment, with the All India Trinamool Congress (AITC) being the ruling party. The Communist Party of India (Marxist) and the Bharatiya Janata Party (BJP) are also significant players in state politics.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_wb.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_wb.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <h2>MP's list of West Bengal</h2>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Abhishek Banerjee</td>
+            <td>Daimond Harbour</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Abu Taher Khan</td>
+            <td>Murshidabad</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Arup Chakrabarty</td>
+            <td>Bankura</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Asit Kumar Mal</td>
+            <td>Bolpur</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Bapi Halder</td>
+            <td>Mathurapur</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Deepak Adhikari</td>
+            <td>Ghatal</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Dr. Shramila Sarkar</td>
+            <td>Bardhaman Purba</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Dr. Jayant Roy</td>
+            <td>Jalpaiguri</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr. Sukanta Majumdar</td>
+            <td>Balurghat</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Haji Nurul Islam</td>
+            <td>Basirhat</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Isha Khan Choudhary</td>
+            <td>Maldaha Dakshin</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Jagadish C Basuniya</td>
+            <td>Cooch Behar</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Jagannath Sarkar</td>
+            <td>Ranaghat</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>June Malia</td>
+            <td>Medinipur</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Justice Abhijit Gangopadhyay</td>
+            <td>Tamluk</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Jyotirmay Singh Mahato</td>
+            <td>Purulia</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Kakoli Ghosh Dastidar</td>
+            <td>Barasat</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Kalipada Soren</td>
+            <td>Jhargram</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Kalyam Banerjee</td>
+            <td>Srerampur</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Kartick Paul</td>
+            <td>Raiganj</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Khagen Murmu</td>
+            <td>Maldaha Uttar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Khalilur Rahman</td>
+            <td>Jangipur</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Kirti Azad</td>
+            <td>Burdwan - Durgapur</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Mahua Moitra</td>
+            <td>Krishnanagar</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Mala Roy</td>
+            <td>Kolkata Dakshin</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Manoj Tigga</td>
+            <td>Aliourduars</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Milati Bag</td>
+            <td>Arambagh</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Partha Bhowmick</td>
+            <td>Barrackpore</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Prasun Banerjee</td>
+            <td>Howrah</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Pratima Mondal</td>
+            <td>Joynagar</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Prof Saugata Roy</td>
+            <td>Dum Dum</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Rachna Banerjee</td>
+            <td>Hooghly</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Raju Bista</td>
+            <td>Darjeeling</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Saayoni Ghosh</td>
+            <td>Jadavpur</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Sajda Ahmed</td>
+            <td>Uluberia</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Satabdi Roy</td>
+            <td>Birbhum</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Shantanu Thakur</td>
+            <td>Bangaon</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Shatrughan Sinha</td>
+            <td>Asansol</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Soumendu Adhikari</td>
+            <td>Kanthi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Soumitra Khan</td>
+            <td>Bishnupur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Sudip Bandhopadhyay</td>
+            <td>Kolkata Uttar</td>
+            <td>AITC</td>
+        </tr>
+        <tr>
+            <td>Yusuf Pathan</td>
+            <td>Bahrampur</td>
+            <td>AITC</td>
+        </tr>
+        
+        </table>
+    </div>
+    
+    <div class="footer" style="margin-top: 3%;">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

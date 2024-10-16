@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Karnataka is located in the southwestern region of India, bordered by Maharashtra to the north, Goa to the northwest, Kerala to the southwest, Tamil Nadu to the southeast, and Andhra Pradesh and Telangana to the east.</p>
+        <p><strong>Capital:</strong> Bengaluru</p>
+        <p><strong>Major Cities:</strong> Bengaluru, Mysuru, Mangaluru, Hubballi-Dharwad, Belagavi, Shivamogga</p>
+        <p><strong>Area:</strong> Approximately 191,791 square kilometers</p>
+        <p><strong>Population:</strong> Over 64 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/karnataka_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/bengaluru_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Karnataka has a rich history dating back to the ancient period, with evidence of early human habitation. The region was part of the Maurya Empire and later saw the rise of powerful dynasties like the Chalukyas and the Rashtrakutas.</p>
+        <p><strong>Medieval Period:</strong> The Vijayanagara Empire, with its capital at Hampi, marked a golden era in Karnataka's history, contributing to the region's architectural and cultural heritage. The region also witnessed the rule of the Bahmani Sultanate and later the Mysore Kingdom under the Wodeyars and Tipu Sultan.</p>
+        <p><strong>Colonial Period:</strong> Karnataka came under British rule in the 18th century, with the region being integrated into the Madras and Bombay presidencies. The state played a significant role in India's independence movement, with leaders like Kittur Rani Chennamma and Sangolli Rayanna emerging from the region.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/hampi_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/tipu_sultan_fort.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Kannada is the official language of Karnataka and is widely spoken across the state. Other languages spoken include Tulu, Konkani, and Kodava, reflecting the state's linguistic diversity.</p>
+        <p><strong>Culture:</strong> Karnataka is known for its diverse cultural heritage, including classical dance forms like Bharatanatyam and Yakshagana, as well as its rich tradition of Carnatic music. The state celebrates a variety of festivals, including Mysuru Dasara, Ugadi, and Karaga. Karnataka is also famous for its contributions to Indian literature, with writers like Kuvempu and Girish Karnad.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/yakshagana.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/mysuru_palace.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Karnataka's economy has a strong agricultural base, with major crops including rice, ragi, sugarcane, and coffee. The state is one of India's leading coffee producers, particularly from the regions of Coorg and Chikmagalur.</p>
+        <p><strong>Industries:</strong> Karnataka is a major industrial hub in India, particularly in sectors like information technology, biotechnology, aerospace, and electronics. Bengaluru, known as the "Silicon Valley of India," is the heart of the state's IT industry. The state also has a strong presence in manufacturing, textiles, and mining.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Karnataka is home to several prestigious educational institutions, including the Indian Institute of Science (IISc) Bengaluru, Indian Institutes of Technology (IIT) Dharwad, and the Indian Institute of Management (IIM) Bengaluru. The state's education system is known for its emphasis on research and innovation.</p>
+        <p><strong>Historical Significance:</strong> Karnataka has a long tradition of education, with ancient universities like the one at Nrupatunga and modern institutions playing significant roles in the region's intellectual development. The state continues to be a leader in higher education and research.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iisc_bengaluru.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/iit_dharwad.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Karnataka is home to many UNESCO World Heritage Sites, including the ruins of Hampi and the temples of Pattadakal. Other historical attractions include the Mysuru Palace, Gol Gumbaz in Bijapur, and the forts of Chitradurga and Bidar.</p>
+        <p><strong>Natural Beauty:</strong> The state is known for its diverse landscapes, including the Western Ghats, which are rich in biodiversity and home to national parks like Bandipur and Nagarhole. Karnataka also boasts beautiful hill stations like Coorg and Chikmagalur, as well as stunning waterfalls like Jog Falls and Abbey Falls.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/hampi_ruins.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/jog_falls.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Siddaramaiah</p>
+        <p><strong>Current Governor:</strong> Thaawarchand Gehlot</p>
+        <p><strong>Political Landscape:</strong> Karnataka has a vibrant political scene, with the Indian National Congress (INC) and Bharatiya Janata Party (BJP) being the major political parties. The state has a history of coalition governments and sees active political engagement from its citizens. Regional parties like the Janata Dal (Secular) also play a significant role in the state's politics.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_karnataka.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_karnataka.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Karnataka</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>B Y Raghavendra</td>
+            <td>Shimoga</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Basavaraj Bommai</td>
+            <td>Haveri</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Capt. Brijesh Chowta</td>
+            <td>Dakshina Kannada</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr. C N Manjunath</td>
+            <td>Banglore Rural</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dr. K Sudhakar</td>
+            <td>Raichur</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Govind Karjol</td>
+            <td>Chitradurga</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Hd Kumaraswamy</td>
+            <td>Mandaya</td>
+            <td>JDS</td>
+        </tr>
+        <tr>
+            <td>Jagadeesh Shettar</td>
+            <td>Belgaum</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>K. Rajshekar Basavaraj Hitnal</td>
+            <td>Koppal</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Kota Srinivas Poojary</td>
+            <td>Udupi Chikmagalur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Kum. Priyanka Jarakiholi</td>
+            <td>Chikkodi</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Kumari Shobha Karandlaje</td>
+            <td>Banglore North</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>M. Mallesh Babu</td>
+            <td>Kolar</td>
+            <td>JDS</td>
+        </tr>
+        <tr>
+            <td>M. Shreyas Patel</td>
+            <td>Hassan</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>P.C. Gaddigoudar</td>
+            <td>Bagalkot</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>P.C. Mohan</td>
+            <td>Banglore Central</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Prabha Malikarjun</td>
+            <td>Davanagere</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Prahlad Joshi</td>
+            <td>Dharwad</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Radhakrishna</td>
+            <td>Gulbarga</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Ramesh Jigajinagi</td>
+            <td>Bijapur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Sagar Khandre</td>
+            <td>Bidar</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Sunil Bose</td>
+            <td>Chamarajanagar</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Tejasvi Surya</td>
+            <td>Banglore South</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>V Somanna</td>
+            <td>Tumkur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Visheshwar Hegde Kageri</td>
+            <td>Uttara Kannada</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Yaduveer Krishnadatta Chamaraja Wadiyar</td>
+            <td>Mysore</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>E Thukaram</td>
+            <td>Bellary</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>G. Kumar Naik</td>
+            <td>Riachur</td>
+            <td>INC</td>
+        </tr>
+       
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

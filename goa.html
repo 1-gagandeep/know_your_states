@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Goa is located on the western coast of India, bordered by the Arabian Sea to the west, Maharashtra to the north and east, and Karnataka to the south and east.</p>
+        <p><strong>Capital:</strong> Panaji (Panjim)</p>
+        <p><strong>Major Cities:</strong> Panaji, Margao, Vasco da Gama, Mapusa, Ponda</p>
+        <p><strong>Area:</strong> Approximately 3,702 square kilometers</p>
+        <p><strong>Population:</strong> Over 1.5 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/goa_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/goa_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Goa's history dates back to ancient times, with references to the region in various ancient Indian texts. It was part of the Maurya and Satavahana empires, and later ruled by the Kadamba dynasty.</p>
+        <p><strong>Medieval Period:</strong> Goa was ruled by several dynasties, including the Chalukyas and the Yadavas, before coming under the control of the Delhi Sultanate. In 1510, the Portuguese established their presence in Goa, making it a significant part of their colonial empire for over 450 years.</p>
+        <p><strong>Colonial Period:</strong> The Portuguese influence is deeply ingrained in Goa's culture, architecture, and cuisine. Goa remained a Portuguese colony until 1961, when it was liberated and became a part of India.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/basilica_of_bom_jesus.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/aguada_fort.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Konkani is the official language of Goa and is widely spoken across the state. Other languages include Marathi, Hindi, and English, with Portuguese still spoken by some older generations.</p>
+        <p><strong>Culture:</strong> Goa is known for its vibrant and unique culture, influenced by its Portuguese heritage. The state is famous for its music, dance, and festivals such as Carnival, Christmas, and the Feast of St. Francis Xavier. Goa is also renowned for its cuisine, which blends Indian and Portuguese flavors, with seafood being a staple.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/goa_carnival.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/goa_cuisine.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Agriculture plays a role in Goa's economy, with rice, cashew, and coconut being the primary crops. However, the state's economy is more heavily reliant on tourism and mining.</p>
+        <p><strong>Industries:</strong> Goa's economy is driven by tourism, which attracts millions of visitors each year to its beaches, historical sites, and vibrant nightlife. The state also has a significant mining industry, particularly for iron ore, though environmental concerns have led to restrictions on mining activities.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Goa is home to several educational institutions, including Goa University, the National Institute of Technology (NIT) Goa, and the Goa Institute of Management (GIM). The state also has a number of well-regarded schools and colleges.</p>
+        <p><strong>Historical Significance:</strong> Education in Goa has been influenced by its colonial history, with several institutions established during Portuguese rule. The state continues to focus on improving educational infrastructure and quality.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/goa_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/goa_institute_of_management.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Goa is famous for its historical sites, including the Basilica of Bom Jesus, Se Cathedral, and Fort Aguada. These sites reflect the state's rich colonial past and are popular among tourists.</p>
+        <p><strong>Natural Beauty:</strong> Goa's natural beauty is its main attraction, with stunning beaches like Baga, Anjuna, and Palolem, as well as scenic landscapes in the Western Ghats. The state's wildlife sanctuaries, including Bhagwan Mahavir and Salim Ali Bird Sanctuary, are also popular destinations.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/baga_beach.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/dudhsagar_falls.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Pramod Sawant</p>
+        <p><strong>Current Governor:</strong> P.S. Sreedharan Pillai</p>
+        <p><strong>Political Landscape:</strong> Goa has a dynamic political scene, with the Bharatiya Janata Party (BJP) and the Indian National Congress (INC) being the major political parties. Regional parties also play a significant role in the state's politics, reflecting the diverse interests of its population.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_goa.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_goa.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Goa</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Capt. Viriato Fernandez</td>
+            <td>South Goa</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Chripad Yesso Naik</td>
+            <td>North Goa</td>
+            <td>BJP</td>
+        </tr>
+
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

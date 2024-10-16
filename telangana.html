@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Telangana is located in the southern part of India, bordered by Maharashtra to the north and northwest, Chhattisgarh to the northeast, Andhra Pradesh to the south and east, and Karnataka to the west.</p>
+        <p><strong>Capital:</strong> Hyderabad</p>
+        <p><strong>Major Cities:</strong> Hyderabad, Warangal, Nizamabad, Karimnagar, Khammam, Mahbubnagar</p>
+        <p><strong>Area:</strong> Approximately 112,077 square kilometers</p>
+        <p><strong>Population:</strong> Over 35 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/telangana_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/hyderabad_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Telangana's history dates back to ancient times, with references to the region in various historical texts. The region was part of various ancient kingdoms, including the Satavahanas and the Kakatiyas.</p>
+        <p><strong>Medieval Period:</strong> During the medieval period, Telangana was ruled by the Kakatiya dynasty, followed by the Bahmani Sultanate and later the Qutb Shahi dynasty, which established Hyderabad as their capital.</p>
+        <p><strong>Colonial Period:</strong> Telangana became part of the Nizam's dominions under the Asaf Jahi dynasty during the colonial period. After India's independence, it was integrated into the Indian Union, eventually becoming a separate state in 2014.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/charminar.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/kakatiya_fort.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Telugu is the official language of Telangana and is widely spoken across the state. Urdu is also spoken, especially in Hyderabad. The state has a rich literary and cultural tradition.</p>
+        <p><strong>Culture:</strong> Telangana is known for its diverse cultural heritage, which includes traditional music, dance forms like Perini Shivatandavam, and festivals such as Bathukamma and Bonalu. The state's cuisine is also notable, with Hyderabadi biryani being famous worldwide.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/bathukamma_festival.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/hyderabadi_biryani.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Agriculture plays a vital role in Telangana's economy, with rice, maize, cotton, and pulses being the primary crops. The state has also seen growth in horticulture and dairy farming.</p>
+        <p><strong>Industries:</strong> Telangana has a strong industrial base, with significant contributions from the information technology, pharmaceutical, and biotechnology sectors. Hyderabad, known as "Cyberabad," is a major IT hub, and the state is also home to several large-scale manufacturing industries.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Telangana is home to several prestigious educational institutions, including the Indian School of Business (ISB), the International Institute of Information Technology (IIIT) Hyderabad, and Osmania University. The state has a strong focus on higher education and research.</p>
+        <p><strong>Historical Significance:</strong> The state has a rich educational heritage, with institutions like Osmania University playing a significant role in the region's educational development.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/osmania_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/isb_hyderabad.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Key attractions include the Charminar, Golconda Fort, and the Qutb Shahi Tombs in Hyderabad, as well as the Thousand Pillar Temple in Warangal. These sites reflect the region's rich historical and architectural legacy.</p>
+        <p><strong>Natural Beauty:</strong> Telangana is known for its diverse landscapes, including the Nallamala Hills, the Godavari and Krishna rivers, and several national parks like KBR National Park and Eturnagaram Wildlife Sanctuary.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/golconda_fort.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/nallamala_hills.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> K. Chandrashekar Rao</p>
+        <p><strong>Current Governor:</strong> Tamilisai Soundararajan</p>
+        <p><strong>Political Landscape:</strong> Telangana has a dynamic political environment, with the Telangana Rashtra Samithi (TRS) being the dominant party since the state's formation. The state also has active participation from other major national and regional parties.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/telangana_governor.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_telangana.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Telangana</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Arvind Dharmapuri</td>
+            <td>Nizamabad</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Asaduddin Owaisi</td>
+            <td>Hyderabad</td>
+            <td>AIMIM</td>
+        </tr>
+        <tr>
+            <td>Balram Naik Porika</td>
+            <td>Mahabubabad</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Bandi Sanjay Kumar</td>
+            <td>Karimnagar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Chamala Kiran Kumar Reddy</td>
+            <td>Bhongir</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dr. Kadiyam Kavya</td>
+            <td>Warangal</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Dr. Mallu Ravi</td>
+            <td>Nagarkurnool</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Eatala Rajender</td>
+            <td>Malkajgiri</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>G Kishan Reddy</td>
+            <td>Secundrabad</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Gaddam Vamsi Krishna</td>
+            <td>Peddapalli</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Godam Nagesh</td>
+            <td>Adilabad</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Konda Vishweshwar Raddy</td>
+            <td>Chevella</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Madhavaneni Raghunandan Rao</td>
+            <td>Medak</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Raghuveer Kunduru</td>
+            <td>Nalgonda</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Ramasahayam Raghuram</td>
+            <td>Khammam</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Smt. DK Aruna</td>
+            <td>Mahbubnagar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Suresh Kumar Shetkar</td>
+            <td>Zahirabad</td>
+            <td>INC</td>
+        </tr>
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Bordered by Bhutan and Arunachal Pradesh to the north, Nagaland and Manipur to the east, Meghalaya, Tripura, Mizoram, and Bangladesh to the south, and West Bengal to the west.</p>
+        <p><strong>Capital:</strong> Dispur</p>
+        <p><strong>Major Cities:</strong> Guwahati, Dibrugarh, Jorhat, Silchar, Tezpur, Nagaon</p>
+        <p><strong>Area:</strong> Approximately 78,438 square kilometers</p>
+        <p><strong>Population:</strong> Over 35 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/assam_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/guwahati_skyline.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Assam has a rich history that dates back to the Vedic period. The region was part of various ancient kingdoms, including Kamarupa, which was one of the earliest known states in the region.</p>
+        <p><strong>Medieval Period:</strong> The Ahom dynasty ruled Assam for nearly 600 years, contributing significantly to the region's culture, language, and administration. The Ahoms successfully resisted Mughal invasions during their reign.</p>
+        <p><strong>Colonial Period:</strong> Assam came under British control in the 19th century and was part of the Bengal Presidency. The region played a significant role in India's independence movement.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/ahom_palace.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/kamarupa_empire.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Assamese is the official language and widely spoken across the state. Other languages include Bodo, Bengali, and several tribal languages.</p>
+        <p><strong>Culture:</strong> Assam is known for its rich cultural heritage, including traditional dance forms like Bihu and Sattriya, as well as its vibrant festivals like Bihu, Durga Puja, and Ambubachi Mela. The state is also famous for its handloom products, particularly Assam silk.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/bihu_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/assam_silk.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Assam's economy is primarily agrarian, with rice being the staple crop. The state is also famous for its tea plantations, making it one of the largest tea producers in the world.</p>
+        <p><strong>Industries:</strong> In addition to tea, Assam has a growing industrial base, including oil refineries, petrochemicals, and handloom industries. The city of Guwahati is a major commercial and industrial hub in the region.</p>
+        
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Assam is home to several prestigious educational institutions, including the Indian Institute of Technology (IIT) Guwahati, Gauhati University, and Tezpur University.</p>
+        <p><strong>Historical Significance:</strong> The state has a long tradition of education and scholarship, with institutions like Cotton University playing a significant role in the educational history of the region.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iit_guwahati.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/guwahati_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Key attractions include the ancient Kamakhya Temple, the Ahom-era palaces and monuments in Sivasagar, and the Kaziranga National Park, known for its population of one-horned rhinoceroses.</p>
+        <p><strong>Natural Beauty:</strong> Assam is known for its diverse landscapes, including the Brahmaputra River, lush tea gardens, and national parks like Kaziranga and Manas, which are UNESCO World Heritage Sites.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kaziranga_rhino.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/kamakhya_temple.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Himanta Biswa Sarma</p>
+        <p><strong>Current Governor:</strong> Lakshman Acharya</p>
+        <p><strong>Political Landscape:</strong> Assam has a vibrant political scene, with the Bharatiya Janata Party (BJP), Indian National Congress, and Asom Gana Parishad (AGP) being the major political parties. The region has also seen the rise of regional and ethnic parties advocating for the rights of various communities.</p>
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_assam.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_assam.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <section>MP's list of Assam</section>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Amar Sing Tisso</td>
+            <td>NA</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Dilip Saikia</td>
+            <td>Mangaldoi</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Gaurav Gogoi</td>
+            <td>Jorhat</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Joyanta Basumatary</td>
+            <td>United People's Party, Liberal</td>
+            <td>Kokrajhar</td>
+        </tr>
+        <tr>
+            <td>Kamakhya Prasad Tasa</td>
+            <td>Kaliabor</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Kripanath Mallah</td>
+            <td>Karimganj</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Parimal Suklabaidya</td>
+            <td>Silchar</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Phani Bhusan Choudhury</td>
+            <td>Barpeta</td>
+            <td>Asom Gana Parishad</td>
+        </tr>
+        <tr>
+            <td>Pradhan Baruah</td>
+            <td>Lakhimpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Pradyut Bordoloi</td>
+            <td>Nowgong</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Rakibul Hussain</td>
+            <td>Dhubri</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Ranjit Dutta</td>
+            <td>Tezpur</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Sarbananda Sonowal</td>
+            <td>Dibrugarh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Smt. Bijuli Kalita Medhi</td>
+            <td>Gauhati</td>
+            <td>BJP</td>
+        </tr>
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

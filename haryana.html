@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Bordered by Punjab and Himachal Pradesh to the north, Uttarakhand and Uttar Pradesh to the east, Rajasthan to the south, and the Union Territory of Delhi to the west.</p>
+        <p><strong>Capital:</strong> Chandigarh (shared with Punjab)</p>
+        <p><strong>Major Cities:</strong> Faridabad, Gurugram, Panipat, Ambala, Hisar, Karnal, Rohtak</p>
+        <p><strong>Area:</strong> Approximately 44,212 square kilometers</p>
+        <p><strong>Population:</strong> Over 25 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/haryana_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/hisar_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> Haryana's history dates back to the Vedic period, with the region being a part of the Kuru Kingdom. The area is also known for the epic battle of Mahabharata, believed to have been fought in Kurukshetra.</p>
+        <p><strong>Medieval Period:</strong> Haryana saw various dynasties, including the Tomaras and Mughals, ruling the region. It was also a significant site during the rise of the Delhi Sultanate and the Mughal Empire.</p>
+        <p><strong>Colonial Period:</strong> Haryana came under British control in the 19th century, becoming part of the Punjab Province. The region played an active role in the Indian independence movement, particularly during the 1857 rebellion.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kurukshetra.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/mughal_architecture_haryana.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Hindi is the official language, while Haryanvi, a dialect of Hindi, is widely spoken. Punjabi and Urdu are also spoken by certain communities.</p>
+        <p><strong>Culture:</strong> Haryana is known for its vibrant folk culture, including dances like Jhumar and Phag, and its rich tradition of music and festivals like Teej, Baisakhi, and Lohri. The state is also famous for its wrestling and traditional sports.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/haryanvi_dance.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/haryana_folk_music.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Haryana is one of India's leading agricultural states, with wheat and rice being the major crops. The state is a significant contributor to the country's food grain production.</p>
+        <p><strong>Industries:</strong> Haryana has a strong industrial base, especially in the automotive, IT, and textile sectors. Gurugram is a major industrial and financial hub, housing the offices of several multinational corporations.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Haryana is home to several prestigious institutions, including the Indian Institute of Management (IIM) Rohtak, National Institute of Technology (NIT) Kurukshetra, and Ashoka University in Sonipat.</p>
+        <p><strong>Historical Significance:</strong> The state has a long tradition of education, with institutions like Maharshi Dayanand University playing a significant role in the region's academic development.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/iim_rohtak.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/nit_kurukshetra.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Key attractions include the Brahma Sarovar in Kurukshetra, the historic town of Panipat known for its battles, and the Sheikh Chilli's Tomb, reflecting the region's rich history.</p>
+        <p><strong>Natural Beauty:</strong> Haryana is known for its scenic landscapes, including the Aravalli Hills, Morni Hills, and the Sultanpur Bird Sanctuary, which is a haven for bird watchers.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/brahma_sarovar.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/sultanpur_bird_sanctuary.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Nayab Singh Saini</p>
+        <p><strong>Current Governor:</strong> Bandaru Dattatreya</p>
+        <p><strong>Political Landscape:</strong> Haryana's political scene is dominated by the Bharatiya Janata Party (BJP), Indian National Congress (INC), and regional parties like the Indian National Lok Dal (INLD). The state has a robust political culture, with significant involvement in national politics.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_haryana.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_haryana.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <caption>MP's list of Haryana</caption>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>Chaudhary Dharambir Singh</td>
+            <td>Bhiwani-mahendragarh</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Deepender Singh Hooda</td>
+            <td>Rohtak</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Jai Prakash</td>
+            <td>Hisar</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Krishan Pal Gurjar</td>
+            <td>Faridabad</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Kumari Selja</td>
+            <td>Sirsa</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Manohar Lal Khattar</td>
+            <td>Karnal</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Naveen Jindal</td>
+            <td>Kurukshetra</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Rao Inderjit Singh Yadav</td>
+            <td>Gurgaon</td>
+            <td>BJP</td>
+        </tr>
+        <tr>
+            <td>Satpal Brahmachari</td>
+            <td>Sonipat</td>
+            <td>INC</td>
+        </tr>
+        <tr>
+            <td>Varun Choudhary</td>
+            <td>Ambala</td>
+            <td>INC</td>
+        </tr>
+        
+        </table>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

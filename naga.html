@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h2>Geography and Demographics</h2>
+        <p><strong>Location:</strong> Nagaland is located in the northeastern part of India, bordered by Assam to the west, Arunachal Pradesh to the north, Manipur to the south, and Myanmar to the east.</p>
+        <p><strong>Capital:</strong> Kohima</p>
+        <p><strong>Major Cities:</strong> Kohima, Dimapur, Mokokchung, Tuensang, Wokha, Zunheboto</p>
+        <p><strong>Area:</strong> Approximately 16,579 square kilometers</p>
+        <p><strong>Population:</strong> Over 2 million</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/nagaland_map.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/kohima_airport.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>History</h2>
+        <p><strong>Ancient Period:</strong> The history of Nagaland dates back to ancient times with the region being home to various Naga tribes. The Naga people have a distinct culture and history, and the region was relatively isolated from the rest of India.</p>
+        <p><strong>Colonial Period:</strong> During the British colonial period, Nagaland came under British control in the 19th century. The region was initially part of Assam and remained largely autonomous, with the British administering it through the Inner Line Permit system.</p>
+        <p><strong>Post-Independence:</strong> After India's independence, Nagaland became a separate state in 1963. The state has seen significant socio-political movements, with ongoing efforts towards peace and development in the region.</p>
+    
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/kohima_war_cemetery.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/naga_tribes.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Culture and Language</h2>
+        <p><strong>Languages:</strong> Nagamese, a creole language, is widely spoken across the state, along with English, which is the official language. The state is also home to several indigenous languages spoken by various Naga tribes.</p>
+        <p><strong>Culture:</strong> Nagaland is known for its vibrant tribal culture, traditional music, dance forms, and festivals like the Hornbill Festival, which showcases the rich cultural heritage of the Naga people. The state's traditional attire, handicrafts, and woodwork are also well-known.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/hornbill_festival.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/naga_attire.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Economy</h2>
+        <p><strong>Agriculture:</strong> Nagaland's economy is primarily agrarian, with rice, maize, and millet being the staple crops. The state also has a rich tradition of organic farming, with a focus on sustainable agricultural practices.</p>
+        <p><strong>Industries:</strong> The state's industrial base is still developing, with small-scale industries and handicrafts being prominent. Efforts are being made to promote tourism, horticulture, and handloom industries as key drivers of economic growth.</p>
+    
+        <h2>Education and Institutions</h2>
+        <p><strong>Notable Institutions:</strong> Nagaland is home to several important educational institutions, including Nagaland University, North Eastern Hill University (NEHU) Kohima Campus, and National Institute of Technology (NIT) Nagaland.</p>
+        <p><strong>Historical Significance:</strong> The state has a strong focus on improving literacy rates and educational infrastructure, with various government initiatives aimed at enhancing access to education, particularly in rural areas.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/nagaland_university.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/nit_nagaland.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Tourism</h2>
+        <p><strong>Historical Sites:</strong> Major attractions include the Kohima War Cemetery, which commemorates the soldiers of World War II, and the Dzükou Valley, known for its stunning natural beauty. Other notable sites include the Kachari Ruins in Dimapur.</p>
+        <p><strong>Natural Beauty:</strong> Nagaland is known for its picturesque landscapes, including lush green hills, valleys, and rivers. The state offers opportunities for trekking, bird watching, and experiencing the unique biodiversity of the region.</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/dzukou_valley.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/kachari_ruins.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    
+        <h2>Government and Politics</h2>
+        <p><strong>Current Chief Minister:</strong> Neiphiu Rio</p>
+        <p><strong>Current Governor:</strong> La. Ganesan</p>
+        <p><strong>Political Landscape:</strong> Nagaland has a unique political environment with strong regional parties like the Naga People's Front (NPF) and Nationalist Democratic Progressive Party (NDPP) playing a significant role. The state also sees active participation from national parties like the Bharatiya Janata Party (BJP) and Indian National Congress (INC).</p>
+        
+        <div style="text-align: center; margin: 20px 0; display: flex; justify-content: center;">
+            <!-- Container for first image and label -->
+            <div style="margin-right: 40px;">
+                <img src="images/governor_nagaland.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Bihar's Map
+                </label>
+            </div>
+    
+            <!-- Container for second image and label -->
+            <div>
+                <img src="images/cm_nagaland.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
+                <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
+                    Patna Airport
+                </label>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="content-state">
+        <table>
+        <h2>MP's list of Nagaland</h2>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Constituency Name</th>
+            <th>Party Name</th>
+        </tr>
+        
+        <tr>
+            <td>S. Supongmeren Jamir</td>
+            <td>Nagaland</td>
+            <td>INC</td>
+        </tr>
+        </table>
+    </div>
+    
+    <div class="footer" >
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

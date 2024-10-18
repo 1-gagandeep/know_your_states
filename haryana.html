@@ -176,66 +176,72 @@
     
 
     <div class="content-state">
-        <table>
-        <caption>MP's list of Haryana</caption>
-        <tr>
-            <th>Candidate Name</th>
-            <th>Constituency Name</th>
-            <th>Party Name</th>
-        </tr>
-        
-        <tr>
-            <td>Chaudhary Dharambir Singh</td>
-            <td>Bhiwani-mahendragarh</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Deepender Singh Hooda</td>
-            <td>Rohtak</td>
-            <td>INC</td>
-        </tr>
-        <tr>
-            <td>Jai Prakash</td>
-            <td>Hisar</td>
-            <td>INC</td>
-        </tr>
-        <tr>
-            <td>Krishan Pal Gurjar</td>
-            <td>Faridabad</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Kumari Selja</td>
-            <td>Sirsa</td>
-            <td>INC</td>
-        </tr>
-        <tr>
-            <td>Manohar Lal Khattar</td>
-            <td>Karnal</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Naveen Jindal</td>
-            <td>Kurukshetra</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Rao Inderjit Singh Yadav</td>
-            <td>Gurgaon</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Satpal Brahmachari</td>
-            <td>Sonipat</td>
-            <td>INC</td>
-        </tr>
-        <tr>
-            <td>Varun Choudhary</td>
-            <td>Ambala</td>
-            <td>INC</td>
-        </tr>
-        
-        </table>
+        <h1>Know Your State's MP's</h1>
+        <button id="fetchDataBtn">Show MP</button>
+        <div class="data-container" id="dataContainer">
+            <!-- Table for Haryana will be inserted here -->
+        </div>
+    
+        <script>
+            document.getElementById('fetchDataBtn').addEventListener('click', fetchData);
+    
+            async function fetchData() {
+                try {
+                    const response = await fetch('https://script.googleusercontent.com/macros/echo?user_content_key=13O0G5bFubG1EgkIeXPCbXW5h27u60nNEVfYDJJ5pZJ5LGuOd8qpYjRQ5feGUON8h32N1pBkCSafbSsT0wKPZ08kFTHFMjXnm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnIAiWRBesHUCuSx0LTXE1zZbC1HO-Nv4x94qPJQNLvtIkV6JHUq2nf-cxa49C-1W2SFkjMe5XpgKuzqH4M8JLZrv4IqyCpi0Mw&lib=MYTsC6a5lTkSElyU0Vk-Jau9Jg3V2GsDM');
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    const data = await response.json();
+                    console.log('Fetched Data:', data);
+    
+                    if (data && typeof data === 'object' && data.data) {
+                        displayHaryanaData(data.data);
+                    } else if (Array.isArray(data)) {
+                        displayHaryanaData(data);
+                    } else {
+                        console.error('Unexpected data format:', data);
+                    }
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                }
+            }
+    
+            function displayHaryanaData(data) {
+                const dataContainer = document.getElementById('dataContainer');
+                dataContainer.innerHTML = '';
+    
+                const haryanaData = data.filter(item => item.state === 'Haryana');
+    
+                if (haryanaData.length === 0) {
+                    dataContainer.innerHTML = '<p>No data available for Haryana.</p>';
+                    return;
+                }
+    
+                // Create a table for Haryana
+                const table = document.createElement('table');
+                table.innerHTML = `
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Party</th>
+                            <th>Constituency</th>
+                            <th>State</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${haryanaData.map(item => `
+                            <tr>
+                                <td>${item.name}</td>
+                                <td>${item.party}</td>
+                                <td>${item.constituency}</td>
+                                <td>${item.state}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                `;
+                const header = document.createElement('h2');
+                dataContainer.appendChild(header);
+                dataContainer.appendChild(table);
+            }
+        </script>
     </div>
     
     <div class="footer">

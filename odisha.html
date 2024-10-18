@@ -175,120 +175,72 @@
     
 
     <div class="content-state">
-        <table>
-        <caption>MP's list of Odisha</caption>
-        <tr>
-            <th>Candidate Name</th>
-            <th>Constituency Name</th>
-            <th>Party Name</th>
-        </tr>
-        
-        <tr>
-            <td>Abhimanyu Sethi</td>
-            <td>Bhadrak</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Ananta Naik</td>
-            <td>Keonjhar</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Anita Subhadarshini</td>
-            <td>Aska</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Aparajita Sarangi</td>
-            <td>Bhubaneswar</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Balbhadra Majhi</td>
-            <td>Nabarangpur</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Bhartruhari Mahtab</td>
-            <td>Cuttack</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Bibhu Prasad Tarai</td>
-            <td>Jagatsinghpur</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Dharmendra Pradhan</td>
-            <td>Sambalpur</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Dr. Rabindra Narayan Behera</td>
-            <td>Jajpur</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Dr. Sambit Patra</td>
-            <td>Puri</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Jual Oram</td>
-            <td>Sundargarh</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Naba Charan Majhi</td>
-            <td>Mayurbhanj</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Pradeep Kumar Panigraphy</td>
-            <td>Berhampur</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Pradeep Purohit</td>
-            <td>Bargarh</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Pratap Chandra Sarangi</td>
-            <td>Balasore</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Rudra Narayan Pany</td>
-            <td>Dhenkanal</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Sapatgiri Shankar Ulaka</td>
-            <td>Koraput</td>
-            <td>INC</td>
-        </tr>
-        <tr>
-            <td>Smt. Malvika Keshari Deo</td>
-            <td>Kalahandi</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Smt. Sangeeta Kumari Singh Deo</td>
-            <td>Bolangir</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Sukanta Kumar Panigrahi</td>
-            <td>Kandhamal</td>
-            <td>BJP</td>
-        </tr>
-        <tr>
-            <td>Baijayant Jay Panda</td>
-            <td>Kendrapara</td>
-            <td>BJP</td>
-        </tr>
-        </table>
+        <h1>Know Your State's MP's</h1>
+        <button id="fetchDataBtn">Show MP</button>
+        <div class="data-container" id="dataContainer">
+            <!-- Table for Odisha will be inserted here -->
+        </div>
+    
+        <script>
+            document.getElementById('fetchDataBtn').addEventListener('click', fetchData);
+    
+            async function fetchData() {
+                try {
+                    const response = await fetch('https://script.googleusercontent.com/macros/echo?user_content_key=13O0G5bFubG1EgkIeXPCbXW5h27u60nNEVfYDJJ5pZJ5LGuOd8qpYjRQ5feGUON8h32N1pBkCSafbSsT0wKPZ08kFTHFMjXnm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnIAiWRBesHUCuSx0LTXE1zZbC1HO-Nv4x94qPJQNLvtIkV6JHUq2nf-cxa49C-1W2SFkjMe5XpgKuzqH4M8JLZrv4IqyCpi0Mw&lib=MYTsC6a5lTkSElyU0Vk-Jau9Jg3V2GsDM');
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    const data = await response.json();
+                    console.log('Fetched Data:', data);
+    
+                    if (data && typeof data === 'object' && data.data) {
+                        displayOdishaData(data.data);
+                    } else if (Array.isArray(data)) {
+                        displayOdishaData(data);
+                    } else {
+                        console.error('Unexpected data format:', data);
+                    }
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                }
+            }
+    
+            function displayOdishaData(data) {
+                const dataContainer = document.getElementById('dataContainer');
+                dataContainer.innerHTML = '';
+    
+                const odishaData = data.filter(item => item.state === 'Odisha');
+    
+                if (odishaData.length === 0) {
+                    dataContainer.innerHTML = '<p>No data available for Odisha.</p>';
+                    return;
+                }
+    
+                // Create a table for Odisha
+                const table = document.createElement('table');
+                table.innerHTML = `
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Party</th>
+                            <th>Constituency</th>
+                            <th>State</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${odishaData.map(item => `
+                            <tr>
+                                <td>${item.name}</td>
+                                <td>${item.party}</td>
+                                <td>${item.constituency}</td>
+                                <td>${item.state}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                `;
+                const header = document.createElement('h2');
+                dataContainer.appendChild(header);
+                dataContainer.appendChild(table);
+            }
+        </script>
     </div>
     
     <div class="footer">

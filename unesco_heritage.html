@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+    <link rel="stylesheet" href="mainStyle.css">
+    <style>
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .site-name {
+            color: #2a9df4;
+            font-weight: bold;
+        }
+
+        .criteria {
+            font-style: italic;
+            
+        }
+
+        .description {
+            max-width: 400px;
+        }
+
+        .image {
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 120px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+        
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h1>List of World Heritage Sites in India</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Location(State)</th>
+                    <th>Listed Year</th>
+                    <th>Criteria</th>
+                    <th>Site</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="description">The caves at Ajanta represent a collection of Buddhist art from two periods. The first monuments date to the 2nd and 1st centuries BCE and were created by the followers of Theravada Buddhism. Further monuments were added in the 5th and 6th centuries CE, during the Vakataka dynasty, by the followers of Mahayana Buddhism. The monuments are masterpieces of Buddhist art and exerted strong artistic influence in India and the broader region, especially in Java.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Mahatashtra</td>
+                    <td>1983</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Ajanta Caves</td>
+                </tr>
+               
+                <tr>
+                    <td class="description">The caves at Ajanta represent a collection of Buddhist art from two periods. The first monuments date to the 2nd and 1st centuries BCE and were created by the followers of The Ellora Caves comprise 34 temples and monasteries that were cut into a 2 km (1.2 mi) long basalt cliff between the 7th and 11th centuries. As they were built by followers of Buddhism, Hinduism, and Jainism, they illustrate the religious tolerance of the period when they were constructed. The largest temple is the Kailasa Temple (pictured), which is elaborately decorated with sculptures and paintings.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Mahatashtra</td>
+                    <td>1983</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Ellora Caves</td>
+                </tr>
+               
+                <tr>
+                    <td class="description">Agra Fort is a 16th-century Mughal imperial fortress in Agra. It got its present layout under the Emperor Akbar. The complex contains several palaces (Jahangiri Mahal pictured), audience halls, and two mosques. Stylistically, it is one of the high points of Indo-Islamic architecture, with influences of Persian and Timurid architecture.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Uttar Pradesh</td>
+                    <td>1983</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Agra Fort</td>
+                </tr>
+               
+                <tr>
+                    <td class="description">The Taj Mahal is considered the finest example of Indo-Islamic architecture. It was built in Agra on the bank of the Yamuna river as a mausoleum of Mumtaz Mahal, the Persian wife of the Mughal emperor Shah Jahan, between 1631 and 1648. It was designed by Ustad Ahmad Lahori and built in white marble inlaid with precious and semi-precious stones. The tomb is surrounded by four free-standing minarets. The complex also includes the main gate, a mosque, a guesthouse, and surrounding gardens.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Uttar Pradesh</td>
+                    <td>1983</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Taj Mahal</td>
+                </tr>
+                 
+                <tr>
+                    <td class="description">This Hindu temple was built in the 13th century and is one of the finest examples of Kalinga architecture. It represents the chariot of the solar deity Surya: on the outer sides, it has 24 wheels carved of stone and richly decorated, being pulled by six horses. Other decorative motifs include lions, musicians, dancers, and erotic scenes.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Odisha</td>
+                    <td>1984</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Sun Temple, Konark</td>
+                </tr>
+                 
+                <tr>
+                    <td class="description">The monuments around the town of Mamallapuram were built in the 7th and 8th centuries, under the Pallava dynasty. There are different types of monuments: the rathas, which are chariot-shaped temples (Dharmaraja Ratha); the mandapas (rock-cut temples); rock reliefs, including the giant Descent of the Ganges; Shore Temple (pictured) and other temples and archaeological remains. The artistic expression of the monuments was influential in the broader region, including Cambodia, Vietnam, and Java.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Tamil Nadu</td>
+                    <td>1984</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Group of Monuments at Mahabalipuram</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Kaziranga is located in the floodplains of the Brahmaputra River. It is one of the best wildlife sanctuaries in the world, home to the world's largest population of the Indian rhinoceros (pictured), as well as tigers, Asian elephants, wild water buffalo, and the Ganges river dolphin. The wetlands are important for migratory bird species.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Assam</td>
+                    <td>1985</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Kaziranga National Park</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The sanctuary along the Manas River covers grasslands on floodplains and forests, both in lowlands and in hills. The area is a biodiversity hotspot and home to several endangered species, including the Indian rhinoceros, Asian elephant (pictured), wild water buffalo, tiger, sloth bear, pygmy hog, Gee's golden langur, and Bengal florican. The forests are constantly being renewed after floods and changes in the river courses. Between 1992 and 2011, the site was listed as endangered due to poaching and the activities of Bodo militias.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Assam</td>
+                    <td>1985</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Manas wildlife Sanctuary</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Old Goa was the capital of Portuguese India, a colony that lasted for 450 years until 1961. The site comprises seven churches and convents that were built in the 16th and 17th centuries in the Gothic, Manueline, Mannerist, and Baroque styles, but which were also adapted to suit local techniques and resources. They spread architectural influences to Asian countries where Catholic missions were established. The Basilica of Bom Jesus, where Saint Francis Xavier is buried, is pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Goa</td>
+                    <td>1986</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Churches and Convents of Goa</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This site comprises 23 temples, both Hindu and Jain, that were built in the 10th and 11th centuries, during the Chandela dynasty. The temples are built in the Nagara style. They are richly decorated with stone carvings and sculptures that depict sacred and secular motifs, including depictions of domestic life, musicians, dancers, and amorous couples. A detail from the Lakshmana Temple is pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Madhya Pradesh</td>
+                    <td>1986</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Khajuraho Group of Monuments</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Hampi was the capital of the Vijayanagara Empire until its abandonment after its sacking and pillaging by the Deccan sultanates in 1565. For about 200 years, it was a prosperous multi-cultural city that left several monuments in the Dravidian style as well as the Indo-Islamic style. The remains include religious and secular buildings and defensive structures. The Vitthala Temple is pictured. A minor boundary modification of the site took place in 2012. Between 1999 and 2006, the site was listed as endangered due to risks posed by increased traffic and new constructions.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Karnataka</td>
+                    <td>1986</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Group of Monuments Hampi</td>
+                </tr>
+
+                <tr>
+                    <td class="description">For about a decade in the second half of the 16th century, Fatehpur Sikri was the capital of the Mughal Empire under Emperor Akbar, until the capital was moved to Lahore in 1585 and the city was mostly abandoned. The site comprises a large collection of monuments and temples in the Mughal style, such as the Jama Masjid (the gate to the mosque, the Buland Darwaza, pictured), the Panch Mahal palace, and the Tomb of Salim Chishti</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Uttar Pradesh</td>
+                    <td>1986</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Fatehpur Sikri</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This site comprises nine Hindu temples and one Jain temple that were built in the 7th and 8th centuries under the Chalukya dynasty. They were constructed in the Badami Chalukya style that blends influences from northern and southern India. The Temple of Virupaksha is pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Karnataka</td>
+                    <td>1987</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Group of Monuments at Pattadakal</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The cave complex, located on Elephanta Island in Mumbai Harbour, was constructed mainly in the 5th and 6th centuries, with remains of human occupation dating back to the 2nd century BCE. The temples are dedicated to Shiva. The caves are decorated with stone carvings, some of them colossal. A statue of Trimurti Shiva, flanked by the dvarapalas, is pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Mahatashtra</td>
+                    <td>1987</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Elephanta Caves</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This site comprises three Hindu temples built in the 11th and 12th centuries under the Chola dynasty. They represent some of the best examples of Dravidian architecture of the Chola period. They are made of stone and decorated with stone and bronze sculptures. Initially, only the Brihadisvara Temple (pictured) was listed as a World Heritage Site; two other temples, the Brihadisvara Temple and the Airavatesvara Temple were added in 2004, after which the site was renamed to its current name.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Tamil Nadu</td>
+                    <td>1987</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Great Living Chola Temples</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The national park covers the Indian part of the Sundarbans, the delta of the Ganges and Brahmaputra rivers. It is the world's largest and richest mangrove forest, with about 78 recorded mangrove species. It is a biodiversity hotspot, home to a large population of Bengal tigers (one pictured), as well as an important habitat for the Irrawaddy dolphin and Ganges river dolphin, several species of birds and sea turtles. In Bangladesh, the Sundarbans is listed as a separate World Heritage Site.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>West Bengal</td>
+                    <td>1987</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Sundarbans National Park</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This site comprises two areas in the West Himalayas, the Valley of Flowers National Park (pictured) and the Nanda Devi National Park. There are different types of high-altitude habitats, from high mountain peaks (Nanda Devi at 7,817 m (25,646 ft) is India's second-highest mountain) to alpine meadows. In addition to numerous mountain plant species, the area is home to the Asiatic black bear, snow leopard, brown bear, and bharal. Nanda Devi NP was originally listed alone in 1988; the Valley of Flowers NP was added in 2005.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Uttarakhand</td>
+                    <td>1988</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Nanda Devi and Valley of Flowers National Parks</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Sanchi is one of the oldest extant Buddhist sanctuaries and was instrumental in the spread of the religion through the Indian subcontinent. It became important under Emperor Ashoka of the Maurya Empire in the 3rd century BCE. The remains of a pillar from the period are preserved. Stupas (Stupa 1 pictured), palaces, temples, and monasteries are preserved in different states of conservation, mostly dating to the 2nd and 1st centuries BCE. The city declined in importance in the 12th century.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Madhya Pradesh</td>
+                    <td>1989</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Buddhist Monuments at Sanchi</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The tomb of the Mughal emperor Humayun was constructed in the 1560s and represents the first example of a garden tomb on the Indian subcontinent, introducing the elements of Persian gardens. The monumental double-domed mausoleum represents a leap in Mughal architecture and is an architectural predecessor of the Taj Mahal. The complex includes several smaller tombs from the period. A minor boundary modification took place in 2016.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Delhi</td>
+                    <td>1993</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Humayun's Tomb </td>
+                </tr>
+
+                <tr>
+                    <td class="description">The complex comprises several early Islamic India monuments from the 13th and 14th centuries when the Delhi Sultanate established power there. They include the Qutb Minar, a 72.5 m (238 ft)-high minaret (pictured), the Alai Darwaza gateway, the Quwwat-ul-Islam Mosque where several stone pillars from previous Hindu temples were repurposed, the Iron pillar, and several tombs and other monuments.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Delhi</td>
+                    <td>1993</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Qutub Minar and its Monuments</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This site comprises three mountain railways built in the late 19th and early 20th centuries to provide access to towns in the highlands. They represent a technology transfer in a colonial setting; the construction involved building bridges and tunnels to cross difficult terrains. The railways supported further human settlement of the areas they linked to and are still fully operational. The Darjeeling Himalayan Railway was initially listed alone in 1999. The Nilgiri Mountain Railway was added in 2005, and the Kalka–Shimla railway (pictured) in 2008.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>West Bengal, Tamil Nadu</td>
+                    <td>1999</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Mountain Railways of India</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The Buddhist temple complex marks the site where Buddha is said to have attained enlightenment under the Bodhi Tree. The present temple dates to the 5th and 6th centuries CE (during the Gupta period) and was built upon a previous structure commissioned by Emperor Ashoka in the 3rd century BCE. The temple is 50 m (160 ft) high and made of brick. It had a substantial influence on the development of architecture in the following centuries. After centuries of abandonment and neglect, the temple was extensively restored in the 19th century.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Bihar</td>
+                    <td>2002</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Mahabodhi Temple Complex at Bodh Gaya</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This site comprises five clusters of rock shelters in the foothills of the Vindhya Range. They contain rock paintings from the hunter-gatherer societies of the Mesolithic to the historical period. The nearby villages still maintain some cultural practices similar to those depicted in the paintings.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Madhya Pradesh</td>
+                    <td>2003</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Rock Shelters of Bhimbetka</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The historic terminal train station in Mumbai was built in the late 19th century. It was designed by Frederick William Stevens in the Victorian Gothic style, drawing influences from Italian Gothic architecture and combining them with influences from Indian traditional buildings. It symbolized the wealth of Mumbai as a major commercial port within the British Commonwealth.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Mahatashtra</td>
+                    <td>2004</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Chhatrapati Shivaji Terminus</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The site contains remains from several periods, from the Chalcolithic to the remains of Champaner, a short-lived capital of the Gujarat Sultanate in the 16th century. Important buildings include the Hindu temple Kalika Mata, Jain temples, and Jama Mosque (pictured) which features both Hindu and Muslim architectural elements, and the remains of water-managing systems, fortifications, and 14th-century temples.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Gujrat</td>
+                    <td>2004</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Champaner Pavagadh Archaeological</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The Red Fort was built under Mughal emperor Shah Jahan in the mid-17th century. It represents the zenith of Mughal architecture, blending the elements of Indo-Persian culture with Timurid elements. Its architecture had a strong influence on later palaces and gardens in the region. The Red Fort was also the setting of historical events; it was sacked and partially repurposed by the British, and it was the site where the independence of India was first celebrated. The Delhi Gate is pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Delhi</td>
+                    <td>2007</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Red Fort Complex</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The Jantar Mantar in Jaipur is India's most significant historic astronomical observatory. It dates from the early 18th century and was built by Rajput king Sawai Jai Singh. There are about 20 astronomical instruments that were designed and built for naked eye observations of the positions of stars and planets. It also served as a meeting point for different scientific cultures.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Jaipur, Rajasthan</td>
+                    <td>2010</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">The Jantar Mantar</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The Western Ghats is a mountain range that runs along the western coast of the Indian subcontinent. It is covered with montane forests. The area is a biodiversity hotspot and home to endangered species such as the Bengal tiger, lion-tailed macaque, Nilgiri tahr, and Nilgiri langur. In terms of evolutionary history, the area is important given the breakup of Gondwana in the early Jurassic period, after which India was an isolated landmass until its collision with the Eurasian Plate. The World Heritage Site comprises 39 individual properties.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Mahatashtra, Karnataka, Kerala, Tamil Nadu</td>
+                    <td>2012</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Western Ghats</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This site comprises six forts: the Chittor Fort, Kumbhalgarh Fort, Ranthambore Fort, Gagron Fort, Amber Fort (pictured), and Jaisalmer Fort, which were constructed between the 8th and 18th centuries by Rajput kingdoms. They are eclectic in style, with elements of Sultanate and Mughal architecture, and were influential on the later styles of the Maratha Empire. They are situated in different settings; for example, Ranthambore is in a forest, and Jaisalmer is in a desert.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Rajasthan</td>
+                    <td>2013</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Hill Forts of Rajasthan</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Rani-ki-Vav is one of the finest examples of a stepwell, an elaborate type of well where groundwater is accessed through several levels of stairs. It was constructed in the 11th century, during the Chaulukya dynasty, on the banks of the Saraswati River in the city of Patan. It has seven levels, each decorated with stone carvings and sculptures depicting religious and secular themes and literary works. After the change in the river course in the 13th century, it was no longer in use and got covered with silt, which allowed for its preservation.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Gujarat</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Rani-Ki-Vav(the Queen's Stepwell) at Patan, Gujrat</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The national park covers habitats from alpine peaks of the Himalayas above 6,000 m (20,000 ft) to alpine meadows and riverine forests below 2,000 m (6,600 ft). In total, there are 25 types of forests recorded, and they have rich floral and faunal assemblies, including numerous species of birds, mammals, reptiles, and insects. It is home to endangered species such as the western tragopan and musk deer.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Himachal Pradesh</td>
+                    <td>2014</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Great Himalayan National Park</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Nalanda Mahavihara was a Buddhist ancient higher-learning institution established in the 5th century and lasting until its sacking in the 13th century. However, some archaeological remains also date back to the 3rd century BCE. The remains include shrines and stupas, viharas (residential and educational buildings), and artworks in different materials. Both the architectural solutions and educational approaches were influential in other similar institutions in the broader region.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Bihar</td>
+                    <td>2016</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Archaeological Site of Nalanda MahaVihara at Nalanda</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The national park is located around Mount Khangchendzonga, the world's third highest mountain (8,586 m (28,169 ft)). It is a sacred mountain in Tibetan Buddhism, where the area is considered a beyul, a sacred hidden land. It is home to ethnically very diverse Sikkimese communities. From the natural perspective, the area comprises various habitats, from high mountains with glaciers to old-growth forests, and is rich in animal and plant species.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Sikkim</td>
+                    <td>2016</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Khangchendzonga National Park</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This transnational site (shared with Argentina, Belgium, France, Germany, Switzerland, and Japan) encompasses 17 works of Franco-Swiss architect Le Corbusier. Le Corbusier was an important representative of the 20th-century Modernist movement, which introduced new architectural techniques to meet the needs of the changing society. The Chandigarh Capitol Complex is listed in India. It is the central part of the city of Chandigarh and is designed in line with the principles of a radiant city. The Palace of Assembly is pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Chandigarh</td>
+                    <td>2016</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">The Architectural Work of Le Corbusier</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The city of Ahmedabad was founded by Ahmad Shah I in 1411 to serve as the capital of the Gujarat Sultanate. It was the meeting place of many religions (Hinduism, Islam, Buddhism, Jainism, Christianity, Zoroastrianism, and Judaism), which resulted in a unique urban fabric. The architecture is based on timber, and the typical neighbourhoods are called pols, densely packed traditional houses with gated streets. Important buildings from the Sultanate period include the Bhadra Fort city walls, Sidi Saiyyed Mosque (pictured) and numerous mosques, tombs, and shrines.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Gujrat</td>
+                    <td>2017</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Historic City of Ahmedabad</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This site comprises two assemblies of buildings in Mumbai from the British Empire era. Public buildings in the Victorian Gothic style from the second half of the 19th century adapted Gothic Revival elements for the Indian climate, introducing features such as balconies and verandas. The Bombay High Court building is pictured. The Art Deco buildings date to the early 20th century and include cinema halls and apartment buildings. See also Art Deco in Mumbai.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Mahatashtra</td>
+                    <td>2018</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Victorian Gothic and Art Deco Ensembles of Mumbai</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Jaipur was founded by the Rajput ruler Jai Singh II in 1727. The city was built with a grid plan, inspired by ancient Hindu and Western ideals, in a departure from the medieval architecture of the region. It was a strong trade centre and home to craftsmen and artists. Important buildings and sites include the Hawa Mahal palace (pictured), Govind Dev Ji Temple, City Palace, and Jantar Mantar, which is listed as a separate World Heritage Site.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Rajasthan</td>
+                    <td>2019</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Jaipur City</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The Hindu temple, dedicated to Shiva, was constructed in the first half of the 13th century under the Kakatiya dynasty. It is decorated with stone carvings and sculptures in granite and dolerite that depict regional dance customs. In line with Hindu practices, the temple is constructed in a way that blends harmonically with the environment.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Telangana</td>
+                    <td>2021</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Kakatiya Rudreshwara(Ramappa) Temple</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Dholavira was one of the centres of the Harappan Civilisation from the 3rd to mid-2nd millennium BCE, in the Bronze Age. The remains include a walled city and a cemetery, and there are remains of buildings and water management systems. The city's location was chosen because of nearby sources of precious minerals. The city had trade connections with other cities in the region and as far as Mesopotamia. The site was rediscovered in 1968.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Gujarat</td>
+                    <td>2021</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Dholavira: a Harappan City</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Santiniketan was founded as an ashram by Debendranath Tagore in the second half of the 19th century and then developed into a university town for Visva-Bharati University. It is connected to the life and philosophy of Debendranath's son Rabindranath Tagore, the leading figure of the Bengali Renaissance. The prayer hall is pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>West Bengal</td>
+                    <td>2023</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Shantiniketan</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Three Hoysala temples - the Chennakeshava Temple in Belur, the Hoysaleswara Temple in Halebidu and the Keshava temple (pictured) in Somanathapura, dating between the 12th and 14th centuries. Hoysala architecture combined the elements of Dravidian architecture with influences from northern India. The temples were built by the followers of Vaishnavism and Shaivism and they are richly decorated with stone sculptures and carvings. The Chennakeshava Temple in Belur is still an important pilgrimage site.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Karnataka</td>
+                    <td>2023</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Sacred Ensembles of the Hoysalas</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Charaideo was the capital of the Ahom kingdom (1228–1826), and the tumuli were the burial sites of the royals and nobility. The tumuli create an undulating landscape reminiscent of hills, in line with the spiritual beliefs of the Tai-Ahom people.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Assam</td>
+                    <td>2024</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Moidams - The Mound-Burial system of the Ahom Dynasty</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The terracotta temples built by Malla rulers date to the 17th century. They were built in brick and laterite stone. They have characteristic sloping roofs. The Jor Bangle temple, from 1655, is pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>West Bengal</td>
+                    <td>1998</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Temples at Bishnupur</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The palace was built by the Portuguese for the local rulers around 1555. It is a two-storey building with several halls and a ceiling decorated with carvings in the coronation hall.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Kerala</td>
+                    <td>1998</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Mattancherry Palace, Ernakulam</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The palace was built by the Portuguese for the local rulers around 1555. It is a two-storey building with several halls and a ceiling decorated with carvings in the coronation hall.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Madhya Pradesh</td>
+                    <td>1998</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Group of Monuments at Mandu</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This nomination comprises two groups of monuments. The first group includes Buddhist temples, stupas (Dhamek Stupa pictured), and monasteries, as well as the remains of a pillar of Ashoka. They date from the 3rd century BCE to the 12th century CE. The second group is represented by the Chaukhandi Stupa, built in 1588.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Uttar Pradesh</td>
+                    <td>1998</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Ancient Buddhist Site, Sarnath, Varanasi</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Sri Harimandir Sahib, also known as the Golden Temple, is the spiritual centre of Sikhism. The temple complex was rebuilt several times. The architectural layout of the complex reflects the spiritual concepts of the religion. The main temple building is richly decorated with floral patterns, either painted or as marble inlay.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Punjab</td>
+                    <td>2004</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Sri Harimandir Sahib, Amritsar</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Majuli is a large river island in the Brahmaputra River. There are over 200 villages on the island, inhabited by people from various ethnic origins. A characteristic concept of the region is the satras, institutional centres for cultural activities that also serve as democratic mediators for dispute resolution.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Assam</td>
+                    <td>2004</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">River Island of Majuli in Midstream of Brahmaputra River</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The national park covers an extensive wilderness area mostly covered in forests and sparsely explored. It is located in the Eastern Himalayas. The highest peak is Dapha Bum, at 4,571 m (14,997 ft).</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Arunachal Pradesh</td>
+                    <td>2006</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Namdapha National Park</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Little Rann of Kutch is a salt marsh with sparse vegetation, mostly with xerophytic species. It is home to the last wild population of the Indian wild ass (two specimens pictured). It is also an important nesting area for birds.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Gujarat</td>
+                    <td>2006</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Wild Ass Sanctuary, Little Rann of Kutch</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The area is covered by virgin forest and is a biodiversity hotspot. The valley spans from lowlands to altitudes around 3,200 m (10,500 ft), which results in a variety of habitats. It is home to several bird species and mammals, including the red panda and two species of pangolin.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>West Bengal</td>
+                    <td>2009</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Neora Valley National Park</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The national park covers a part of the Thar Desert. It is home to several endemic species, such as the Indian hairy-footed gerbil and the Rajasthan toad-headed lizard. It is also home to two endangered species of vultures. There are fossil beds in the park, dating to the Jurassic period.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Rajasthan</td>
+                    <td>2009</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Desert National Park</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This nomination comprises 12 sites connected to the ancient Silk Road, a network of trade routes connecting China with the west. There were at least three corridors in India. In addition to the movement of goods, they were important in the spread of Buddhism and Greco-Buddhist culture. Sites in the nomination include the Roman trade port at Arikamedu, Vikramashila (pictured) and the early Buddhist site of Vaishali (the Relic Stupa).</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Bihar, Jammu and Kashmir, Mahatashtra, Puducherry, Punjab, Tamil Nadu, Uttar Pradesh</td>
+                    <td>2010</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Silk Road Sites in India</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This nomination comprises the monuments of the Qutb Shahi dynasty, a sultanate that ruled in the 16th and 17th century, in Hyderabad and its surroundings. The Golconda Fort is a citadel and early capital. Qutb Shahi tombs (two pictured) are mosques and burial places of the sultans, and Charminar, built in 1591, is a monumental gateway with four minarets. These sites illustrate the cosmopolitan nature of the region in that period.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Telangana</td>
+                    <td>2010</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">The Qutb Shahi Monuments of Hyderabad</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Mughal gardens were built in a style influenced by Persian gardens, particularly by the Charbagh layout, with terraces and fountains arranged around a central water channel, reflecting the Islamic concept of paradise. Six gardens are listed in the nomination: Chashme Shahi, Shalimar Bagh (pavilion pictured), Pari Mahal, Verinag, Achabal Gardens, and Nishat Bagh.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Jammu and Kashmir</td>
+                    <td>2010</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Mughal Gardens in Kashmir</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Delhi, as Lal Kot, was founded in 1060 as a capital of the Tomara dynasty. Later, rulers built subsequent cities on the site. Delhi was the capital of the Delhi Sultanate and an intermittent capital of the Mughal Empire. During the British rule, the capital was moved from Calcutta to the newly constructed New Delhi in 1911. The nomination lists the following areas of historical and architectural importance: Mehrauli, Nizamuddin Dargah (the tomb of the Sufi saint Nizamuddin Auliya), Shahjahanabad (pictured), and New Delhi.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Delhi</td>
+                    <td>2012</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Delhi - A Heritage City</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This nomination comprises the monuments of Deccan sultanates, dating between the 14th and 17th centuries, in four cities: Gulbarga, Bidar, Bijapur in Karnataka state, and Hyderabad in Telangana state. The architecture of the Deccan sultanates represents interactions between Islamic and Hindu influences. Some of the monuments in the nomination include the Bidar Fort (pictured), Jama Mosque in Gulbarga, and the Qutb Shahi tombs.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Karnataka, Telangana</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Monuments and Forts of the Deccan Sultanate</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The jail was constructed in 1906 by the British, primarily to exile political prisoners to the remote archipelago. The architecture was based on the panopticon system, with radiating wings that were easy to monitor by a single guard. Jail cells were intended for individuals for confinement. The jail was infamous for the brutal treatment of inmates and is important in the history of the Indian independence movement.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Andaman and Nicobar Islands</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Cellular Jail</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Sari, or saree, is a traditional attire of Indian women. Sari weaving required particular adjustments of the weavers' houses to accommodate looms and other devices for silk processing, resulting in a specific vernacular architecture. This nomination comprises eight clusters where sari weaving was and still is a major profession of the villagers. Different styles of saris are pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Madhya Pradesh, Uttar Pradesh, Mahatashtra, Andhra Pradesh, Assam</td>td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Iconic Saree Weaving Clusters of India</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Apatani people live in the Ziro Valley that is surrounded by high mountains of the Himalayas. They have a culture that is distinct from that of other tribes in the region, with traditional crafts and festivals. They practice wet rice cultivation and are careful in land management, which allowed sustainable agriculture for several centuries. The resulting cultural landscape reflects the ability of the tribe to make the adverse environment habitable.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Arunachal Pradesh</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Apatani Cultural Landscape</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The Sri Ranganathaswamy Temple is dedicated to Ranganatha. It is the world's largest operating Hindu temple and is, in fact, a temple town, with inner enclosures constituting the temple and outer ones being used for settlements. There have been temples at the site for over two millennia; however, the key buildings standing today date to the time of the Vijayanagara Empire, from the 14th to the 16th century. The temple has 21 gopurams, which are richly decorated with paintings and sculptures.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Tamil Nadu</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Sri Ranganatha Temple</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Srirangapatna, the river island in the Kaveri river, is an important pilgrimage site in South India. It has been continuously inhabited since the 12th century. The monuments on the island date to different historical periods, including the periods of the Hoysala Empire, Vijayanagara Empire, Kingdom of Mysore, and the British Raj. Most monuments date from the 16th to the 19th centuries and have elements of Hindu, Indo-Islamic, and British styles. The Gumbaz mausoleum is pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Karnataka</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Monuments of Srirangapatna Island Town</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Chilika Lake is a large brackish water lagoon, fed by over 50 rivers and streams. It is an ephemeral environment, with the river sediments being deposited to the Bay of Bengal. Different parts of the lake are freshwater, brackish, and marine ecosystems and are an important habitat for birds and mammals, including the endangered Irrawaddy dolphin. The lake is rich in fish species that support the local fishermen population.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Odisha</td>
+                    <td>2014</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Chilika Lake</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The palace in Padmanabhapuram was constructed in the 16th century, with later additions continuing into the early 19th century, to serve as the seat of the Travancore royal family. It is a masterpiece of traditional timber architecture decorated with murals and carvings. Murals depict Hindu mythology and secular themes.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Tamil Nadu</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Padmanabhapuram Palace</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Satyagraha, a form of nonviolent resistance or civil resistance, was developed by Mahatma Gandhi in the first half of the 20th century, as a part of the Indian independence movement. The nomination comprises 22 sites across India related to the movement. Several sites are ashrams (Sabarmati Ashram pictured), founded by Gandhi to teach his philosophy. Other sites are related to the independence movement. Satyagraha theory was influential in the civil rights movement in the United States and in the fight against apartheid in South Africa.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Gujarat</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Sites of Satyagrah, India's non-violent freedom movement</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The village of Thembang is located in the Eastern Himalayas at an altitude above 2,000 m (6,600 ft). It is built as a dzong, a type of fortified monastery also found in neighbouring Bhutan and Tibet. It is inhabited by the Monpas and was constructed before the 12th century.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Arunachal Pradesh</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Thembang Fortified Village</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Narcondam Island is a volcanic island off the main chain of the Andaman Islands. It is composed mostly of andesite, dacite, and amphibole, types of volcanic rocks and minerals. The island provides an important example of evolutionary processes due to its isolation. It is the only place where the endangered Narcondam hornbill (pictured) is found, and it is also home to several endemic species of the Andaman Islands.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Andaman and Nicobar Islands</td>
+                    <td>2014</td>
+                    <td class="criteria">Natural</td>
+                    <td class="site-name">Narcondam Island</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Ekamra Kshetra is the name of the old part of the city of Bhubaneswar. It is a holy city and has earned the nickname "Temple City" due to about 700 temples that once stood here. The temples were built between the 3rd century BCE and 15th century CE. They are built in the Kalinga style, and belong to Hindu, Buddhist, and Jain religions. The Lingaraja Temple is pictured. In addition to the temples, there are also Udayagiri and Khandagiri Caves built by Jain worshipers.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Odisha</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Ekamra Kshetra - The Temple City, Bhubaneswar</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The archaeological site at Burzahom has provided information about different stages of societal development from the 4th to the 2nd millennium BCE. People initially lived in pit-houses and later built houses of mud and brick. There are also remains of megalithic structures. Material remains excavated at the site hint at interactions with cultures of Central and South West Asia. A painted pot from 2700 BCE is pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Jammu and Kashmir</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">The Neolithic Settlement of Burzahom</td>
+                </tr>
+
+                <tr>
+                    <td class="description">Lothal was the only port-town of the Indus Valley civilisation, or Harappan Civilization, from the Bronze Age. It was occupied from around 2400 BCE to 1600 BCE when it was likely damaged by tidal flooding. The settlement consisted of a citadel with wide streets, a warehouse, and a port area along the river. Remains found at the site demonstrate trade links with the Persian Gulf region. The remains of drainage channels are pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Gujarat</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Archaeological remains of a Harappa Port-Town, Lothal</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This is a proposed extension of the existing World Heritage Site. It includes the Matheran Hill Railway (pictured) and the Kangra Valley Railway. They were built in the early 20th century; construction involved technical innovation to overcome difficult mountainous terrain.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Mahatashtra, Himachal Pradesh</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Mountain Railways of India (Extension)</td>
+                </tr>
+
+                <tr>
+                    <td class="description">This nomination comprises 11 villages in three clusters. Wealthy merchants built them in the second half of the 19th and early 20th centuries. The villages mix urban and rural influences, both Tamil and those from a broader region, as a result of the travels of the merchants in Southeast Asia. Thousands of palatial houses were built using local and imported materials. The most recent ones, built in the 1930s and 1940s, are in the Art Deco style. An example of a palatial house is pictured.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Tamil Nadu</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Chettinad, Village Clusters of the Tamil Merchants</td>
+                </tr>
+
+                <tr>
+                    <td class="description">The Lotus Temple is the main Baháʼí House of Worship in India. It was inaugurated in 1986. It has the shape of a lotus flower, with petals made of concrete and covered by marble.</td>
+                    <td class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Taj_Mahal_in_March_2004.jpg/250px-Taj_Mahal_in_March_2004.jpg"
+                        alt="Taj Mahal">
+                    </td>
+                    <td>Delhi</td>
+                    <td>2014</td>
+                    <td class="criteria">Cultural</td>
+                    <td class="site-name">Bahá'í House of Worship at New Delhi</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

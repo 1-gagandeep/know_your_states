@@ -93,7 +93,7 @@ body {
 
 .content.dark {
     background-color: black; 
-    color: white; 
+    color: #F0EFE7; 
 }
 
 .content h2 {
@@ -247,11 +247,11 @@ td {
 }
 
 th {
-    background-color: #e0dcdc;
+    background-color: #dfbfbf;
 }
 
 tr {
-    background-color: #e7e7e7;
+    background-color: #9e7f7f;
 }
 
 .content-state-info {
@@ -303,8 +303,3 @@ tr {
     cursor: pointer;
     
 }
-
-consider above css code make changes to  make my page responsive for different screen sizes
-
-
-

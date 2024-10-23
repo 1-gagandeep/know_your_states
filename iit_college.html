@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+    <link rel="stylesheet" href="mainStyle.css">
+    <style>
+         h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 40%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin: auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #937f76;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h1>List of All IIT Colleges of India</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sl.</th>
+                    <th>Name of the IIT</th>
+                    <th>Established</th>
+                    <th>Short Name</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>IIT Roorkee</td>
+                    <td>2001</td>
+                    <td>IITR</td>
+                    <td>Uttarakhand</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>IIT Kharagpur</td>
+                    <td>1951</td>
+                    <td>IITKGP</td>
+                    <td>West Bengal</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>IIT Madras</td>
+                    <td>1959</td>
+                    <td>IITM</td>
+                    <td>Tamil Nadu</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>IIT Bombay</td>
+                    <td>1958</td>
+                    <td>IITB</td>
+                    <td>Maharashtra</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>IIT Kanpur</td>
+                    <td>1959</td>
+                    <td>IITK</td>
+                    <td>Uttar Pradesh</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>IIT Delhi</td>
+                    <td>1963</td>
+                    <td>IITD</td>
+                    <td>Delhi</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>IIT Guwahati</td>
+                    <td>1994</td>
+                    <td>IITG</td>
+                    <td>Assam</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>IIT Ropar</td>
+                    <td>2008</td>
+                    <td>IITRPR</td>
+                    <td>Punjab</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>IIT Bhubaneswar</td>
+                    <td>2008</td>
+                    <td>IITBBS</td>
+                    <td>Odisha</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>IIT Gandhinagar</td>
+                    <td>2008</td>
+                    <td>IITGN</td>
+                    <td>Gujarat</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>IIT Hyderabad</td>
+                    <td>2008</td>
+                    <td>IITH</td>
+                    <td>Telangana</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>IIT Jodhpur</td>
+                    <td>2008</td>
+                    <td>IITJ</td>
+                    <td>Rajasthan</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>IIT Patna</td>
+                    <td>2008</td>
+                    <td>IITP</td>
+                    <td>Bihar</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>IIT Indore</td>
+                    <td>2009</td>
+                    <td>IITI</td>
+                    <td>Madhya Pradesh</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>IIT Mandi</td>
+                    <td>2009</td>
+                    <td>IITMandi</td>
+                    <td>Himachal Pradesh</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>IIT (BHU) Varanasi</td>
+                    <td>2012</td>
+                    <td>IIT (BHU)</td>
+                    <td>Uttar Pradesh</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>IIT Palakkad</td>
+                    <td>2015</td>
+                    <td>IITPKD</td>
+                    <td>Kerala</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>IIT Tirupati</td>
+                    <td>2015</td>
+                    <td>IITTP</td>
+                    <td>Andhra Pradesh</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>IIT (ISM) Dhanbad</td>
+                    <td>2016</td>
+                    <td>IIT (ISM)</td>
+                    <td>Jharkhand</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>IIT Bhilai</td>
+                    <td>2016</td>
+                    <td>IITBH</td>
+                    <td>Chhattisgarh</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>IIT Goa</td>
+                    <td>2016</td>
+                    <td>IITGOA</td>
+                    <td>Goa</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>IIT Jammu</td>
+                    <td>2016</td>
+                    <td>IITJM</td>
+                    <td>Jammu & Kashmir</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>IIT Dharwad</td>
+                    <td>2016</td>
+                    <td>IITDH</td>
+                    <td>Karnataka</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

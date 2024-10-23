@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown and Background Image</title>
+    <link rel="stylesheet" href="mainStyle.css">
+    <style>
+         h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 40%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin: auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #937f76;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#webdev">Web Development</a>
+                <a href="#appdev">App Development</a>
+            </div>
+        </div>
+        <a href="index.html">Contact</a>
+
+        <!-- Autocomplete state input -->
+        <div class="autocomplete-container" style="margin-left: 1150px; padding-top: 2px;">
+            <input type="text" id="stateInput" placeholder="Select Your State..." onkeyup="showSuggestions()" />
+            <div id="suggestionsBox" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <button id="mode" style="float: right;">Change Mode</button>
+        <h1>List of All IIT Colleges of India</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sl.</th>
+                    <th>Name of the NIT</th>
+                    <th>Established</th>
+                    <th>Short Name</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>NIT Trichy</td><td>1964</td><td>NITT</td><td>Tamil Nadu</td></tr>
+                <tr><td>2</td><td>NIT Rourkela</td><td>1961</td><td>NITRKL</td><td>Odisha</td></tr>
+                <tr><td>3</td><td>NIT Surathkal</td><td>1960</td><td>NITK</td><td>Karnataka</td></tr>
+                <tr><td>4</td><td>NIT Warangal</td><td>1959</td><td>NITW</td><td>Telangana</td></tr>
+                <tr><td>5</td><td>NIT Calicut</td><td>1961</td><td>NITC</td><td>Kerala</td></tr>
+                <tr><td>6</td><td>NIT Kurukshetra</td><td>1963</td><td>NITKKR</td><td>Haryana</td></tr>
+                <tr><td>7</td><td>NIT Durgapur</td><td>1960</td><td>NITDGP</td><td>West Bengal</td></tr>
+                <tr><td>8</td><td>NIT Jamshedpur</td><td>1960</td><td>NITJSR</td><td>Jharkhand</td></tr>
+                <tr><td>9</td><td>NIT Patna</td><td>1886</td><td>NITP</td><td>Bihar</td></tr>
+                <tr><td>10</td><td>NIT Raipur</td><td>1956</td><td>NITRR</td><td>Chhattisgarh</td></tr>
+                <tr><td>11</td><td>NIT Silchar</td><td>1967</td><td>NITS</td><td>Assam</td></tr>
+                <tr><td>12</td><td>NIT Srinagar</td><td>1960</td><td>NITSRI</td><td>Jammu & Kashmir</td></tr>
+                <tr><td>13</td><td>NIT Nagpur</td><td>1960</td><td>VNIT</td><td>Maharashtra</td></tr>
+                <tr><td>14</td><td>NIT Hamirpur</td><td>1986</td><td>NITH</td><td>Himachal Pradesh</td></tr>
+                <tr><td>15</td><td>NIT Jaipur</td><td>1963</td><td>MNIT</td><td>Rajasthan</td></tr>
+                <tr><td>16</td><td>NIT Agartala</td><td>1965</td><td>NITA</td><td>Tripura</td></tr>
+                <tr><td>17</td><td>NIT Goa</td><td>2010</td><td>NITG</td><td>Goa</td></tr>
+                <tr><td>18</td><td>NIT Delhi</td><td>2010</td><td>NITD</td><td>Delhi</td></tr>
+                <tr><td>19</td><td>NIT Puducherry</td><td>2010</td><td>NITPY</td><td>Puducherry</td></tr>
+                <tr><td>20</td><td>NIT Arunachal Pradesh</td><td>2010</td><td>NITAP</td><td>Arunachal Pradesh</td></tr>
+                <tr><td>21</td><td>NIT Sikkim</td><td>2010</td><td>NITSKM</td><td>Sikkim</td></tr>
+                <tr><td>22</td><td>NIT Meghalaya</td><td>2010</td><td>NITM</td><td>Meghalaya</td></tr>
+                <tr><td>23</td><td>NIT Manipur</td><td>2010</td><td>NITMN</td><td>Manipur</td></tr>
+                <tr><td>24</td><td>NIT Mizoram</td><td>2010</td><td>NITMZ</td><td>Mizoram</td></tr>
+                <tr><td>25</td><td>NIT Nagaland</td><td>2010</td><td>NITN</td><td>Nagaland</td></tr>
+                <tr><td>26</td><td>NIT Uttarakhand</td><td>2010</td><td>NITUK</td><td>Uttarakhand</td></tr>
+                <tr><td>27</td><td>NIT Andhra Pradesh</td><td>2015</td><td>NITAP</td><td>Andhra Pradesh</td></tr>
+                <tr><td>28</td><td>NIT Bhopal</td><td>1960</td><td>MANIT</td><td>Madhya Pradesh</td></tr>
+                <tr><td>29</td><td>NIT Surat</td><td>1961</td><td>SVNIT</td><td>Gujarat</td></tr>
+                <tr><td>30</td><td>NIT Jalandhar</td><td>1987</td><td>NITJ</td><td>Punjab</td></tr>
+                <tr><td>31</td><td>NIT Allahabad</td><td>1961</td><td>MNNIT</td><td>Uttar Pradesh</td></tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Gagandeep. All rights reserved.</p>
+        <p>
+            <a href="#privacy-policy">Privacy Policy</a> |
+            <a href="#terms-of-service">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </p>
+        <div class="social-media">
+            <a href="https://whatsapp.com" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://linked.com" target="_blank"><img src="images/linkedin.png" alt="Linked"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://email.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

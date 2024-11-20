@@ -43,10 +43,10 @@ const statesWithLinks = [
 function showSuggestions() {
     const input = document.getElementById('stateInput').value.toLowerCase();
     const suggestionsBox = document.getElementById('suggestionsBox');
-    suggestionsBox.innerHTML = '';  // Clear previous suggestions
+    suggestionsBox.innerHTML = '';  
 
     if (input.length === 0) {
-        suggestionsBox.style.display = 'none';  // Hide if input is empty
+        suggestionsBox.style.display = 'none';  
         return;
     }
 
@@ -57,22 +57,22 @@ function showSuggestions() {
         return;
     }
 
-    suggestionsBox.style.display = 'block';  // Show suggestions box
+    suggestionsBox.style.display = 'block';  
 
-    // Add each filtered state to the suggestions box
+    
     filteredStates.forEach(state => {
         const suggestionDiv = document.createElement('div');
-        suggestionDiv.innerHTML = `<a href="${state.link}">${state.name}</a>`;  // Add link to each suggestion
-        suggestionDiv.onclick = () => selectState(state);  // On click, fill the input with selected state
+        suggestionDiv.innerHTML = `<a href="${state.link}">${state.name}</a>`;  
+        suggestionDiv.onclick = () => selectState(state);  
         suggestionsBox.appendChild(suggestionDiv);
     });
 }
 
 // Function to handle suggestion click
 function selectState(state) {
-    document.getElementById('stateInput').value = state.name;  // Set input to clicked suggestion
-    document.getElementById('suggestionsBox').style.display = 'none';  // Hide suggestions
-    window.location.href = state.link;  // Redirect to the corresponding page
+    document.getElementById('stateInput').value = state.name;  
+    document.getElementById('suggestionsBox').style.display = 'none';  
+    window.location.href = state.link;  
 }
 
 // Form validation

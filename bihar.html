@@ -167,7 +167,7 @@
             <div>
                 <img src="images/governor_bihar.png" alt="image not found" style="display: block; margin: 0 auto;" class="fixed-size">
                 <label style="display: block; margin-top: 10px; font-size: 16px; font-weight: bold; color: #333;">
-                    Rajendra Arlekar
+                    Arif Mohammad Khan
                 </label>
             </div>
         </div>
@@ -214,26 +214,27 @@
     
                 // Create a table for Bihar
                 const table = document.createElement('table');
-                table.innerHTML = `
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Party</th>
-                            <th>Constituency</th>
-                            <th>State</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${biharData.map(item => `
-                            <tr>
-                                <td>${item.name}</td>
-                                <td>${item.party}</td>
-                                <td>${item.constituency}</td>
-                                <td>${item.state}</td>
-                            </tr>
-                        `).join('')}
-                    </tbody>
-                `;
+table.innerHTML = `
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Party</th>
+            <th>Constituency</th>
+            <th>State</th>
+        </tr>
+    </thead>
+    <tbody>
+        ${biharData.map(item => `
+            <tr>
+                <td>${item.name}</td>
+                <td>${item.party}</td>
+                <td>${item.constituency}</td>
+                <td>${item.state}</td>
+            </tr>
+        `).join('')}
+    </tbody>
+`;
+
                 const header = document.createElement('h2');
                 dataContainer.appendChild(header);
                 dataContainer.appendChild(table);
@@ -260,4 +261,3 @@
 </body>
 
 </html>
-

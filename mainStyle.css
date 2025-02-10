@@ -272,14 +272,29 @@ tr {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .images img {
     height: 350px;
     width: 100%;
-    max-width: 500px;
     margin: 20px;
-    object-fit: cover;
+    /* object-fit: cover; */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .images {
+        width: 100%;
+    }
+    
+    .images img {
+        height: 150px;
+        width: 45%; /* Adjust width */
+        margin: 10px; /* Reduce margin */
+        object-fit: cover;
+        box-sizing: border-box;
+    }
 }
 
 #stateInput {
